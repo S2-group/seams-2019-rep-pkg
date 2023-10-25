@@ -1,6 +1,6 @@
 # SEAMS 2019 – Replication package
 
-This repo contains the replication package of the paper we published at SEAMS 2019 with the title “Self-Adaptation in Mobile Applications: a Systematic Literature Study”.
+This repo contains the replication package of the paper we published at SEAMS 2019 with the title [Self-Adaptation in Mobile Applications: a Systematic Literature Study](./SEAMS_2019.pdf).
 
 This study has been designed, developed, and reported by the following investigators:
 - Eoin Grua (Vrije Universiteit Amsterdam)
