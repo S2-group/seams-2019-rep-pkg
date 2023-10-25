@@ -1,0 +1,1223 @@
+ID,Authors,Title,Abstract,Venue,Venue Type,Year,Source (query/snowballing),Origin Paper,Snowballing Direction: (F)oward or (B)ackwards,Read Title?,Read Abstract?,Read Whole?,Inclusion Criterion 1,Inclusion Criterion 2,Exclusion Criterion 1,Exclusion Criterion 2,Exclusion Criterion 3,Exclusion Criterion 4,Exclusion Criterion 5,Exclusion Criterion 6,Snowballing applied?,Notes
+219,,Adaptive Offloading for Pervasive Computing,"Pervasive computing allows a user to access an application on heterogeneous devices continuously and con-
+sistently. However, it is challenging to deliver complex applications on resource-constrained mobile devices such
+
+as cell phones. Application-based or system-based adaptations have been proposed to address the problem, but
+they often require application fidelity to be significantly degraded. We believe that this problem can be overcome
+by dynamically partitioning the application, and by offloading part of the application execution with data to a
+powerful nearby surrogate. This allows the application to be delivered in a pervasive computing environment
+without significant fidelity degradation or expensive application rewriting. Runtime offloading needs to adapt to
+different application execution patterns and resource fluctuations in the pervasive computing environment. Hence,
+we have developed an offloading inference engine to adaptively solve two key decision-making problems in runtime
+offloading: (1) timely triggering of offloading, and (2) efficient partitioning of applications. Both trace-driven
+simulations and prototype experiments show the effectiveness of the adaptive offloading system.",,,,,3,B,yes,yes,yes,,x,,,,,,,,
+220,,"Facilitating the Implementation of Adaptive Cloud
+Offloading to Improve the Energy Efficiency of
+Mobile Applications","Abstract—Cloud offloading—leveraging remote cloud-based
+computing resources to execute energy-intensive functionality—
+has become a widely-used optimization technique for mobile
+applications. However, implementing cloud offloading techniques
+
+remains a delicate and complex task, reserved for expert pro-
+grammers. If cloud computing is to realize its promise as a
+
+generally applicable, powerful optimization technique for mobile
+applications, its implementation barrier must be lowered. As
+we have discovered, reusable system building blocks exposed
+
+via a convenient programming model can facilitate the im-
+plementation of complex cloud offloading optimizations. This
+
+paper describes a system architecture for implementing adaptive
+cloud offloading optimizations. In particular, the architecture
+features parameterizable building blocks for monitoring and
+estimating energy consumption and performance efficiency as
+well as state synchronization across address spaces, which the
+mobile programmer can use a la carte. These blocks streamline `
+
+the implementation procedure for a wide array of adaptive of-
+floading optimizations. Applying this system architecture to third-
+party mobile applications has optimized their energy efficiency,
+
+depending on the execution environment in place.
+Index Terms—mobile applications; energy optimization; cloud
+offloading; programming model; adaptation",,,,,3,F,yes,yes,,,,,,,x,,,,
+221,,"Decision tree-based approaches for handling
+offloading decisions and performing adaptive
+monitoring in MCC systems","Abstract—Mobile cloud computing (MCC) has emerged as a
+solution to overcome the resource constraints of mobile devices by
+using computation offloading to execute mobile application tasks
+on remote servers, thus enhancing performance and reducing the
+
+energy consumption of mobile devices. Nevertheless, the effective-
+ness of an offloading solution is determined by its ability to infer
+
+when offloading will improve performance. In this context, several
+solutions have been proposed to handle computational offloading
+operations and the decisions of when and where to offload. The
+problem is that such decisions depend on periodic monitoring of
+several metrics and usually involve compute intensive task that,
+when executed on mobile devices, can contribute to overhead
+the system. Thus, this paper proposes a novel approach for
+handling offloading decisions using decision trees and an adaptive
+monitoring scheme that allows MCC systems to monitor only
+the metrics that are relevant to the offloading decision. The
+results show that computation offloading can be beneficial for
+improving the performance of mobile applications and the energy
+consumption of mobile devices can be reduced by using the
+proposed adaptive monitoring scheme.
+Keywords—mobile cloud computing, computation offloading,
+offloading decision, decision trees, adaptive monitoring, historical
+data","5th IEEE International Conference on Mobile Cloud Computing, Services, and Engineering",C,,,3,F,,,,pass,pass,pass,pass,pass,pass,pass,pass,,
+222,,"Self-Adaptive Battery and Context Aware Mobile
+Application Development","Overall high power consumption in the mobile
+applications forces the mobile users to recharge frequently. Most
+of the Android applications do not implement any self-adaptive
+strategies that react to the battery level, status and context. Thus
+the applications continue to consume power even when battery is
+critically low. Intelligent control of hardware and software
+optimization based on the battery level is the key to power saving.
+This paper introduces a self-adaptive application development
+
+framework which proposes three profiles with various self-
+adaptive features for mobile applications. The framework
+
+employs an analyzer engine which decides the activation of
+appropriate profile based on battery and context information.
+The self-adaption takes place in four levels – hardware &
+software features adaption, user features adaption and additional
+optimization. When the battery is critically low, priority is given
+to maximize the battery life until next charging opportunity.
+Such implementation is highly desirable for mobile applications
+with high dependency on display hardware (e.g. games) and/or
+on network operations (e.g. YouTube, Dropbox). Prototype
+Android applications are developed and results show up to 40%
+reduction in application power consumption. Power Tutor has
+been used to get the power consumption results.
+Keywords—Android; Battery level and status; Context; Power
+consumption; Self-adaptive application.",,,,,7,F,,,,,,,,,x,,,,
+223,,An Adaptive Context Acquisition Framework to Support Mobile Spatial and Context-Aware Applications,,,,,,7,F,,,,,,,,,x,,,,can't access full paper
+224,,,,,,,,7,F,,,,,,,,,,,,,
+225,,Generic Context Adaptation for Mobile Cloud Computing Environments,"Markets for mobile applications offer myr-
+iads of apps ranging from simple to quite demanding
+
+ones. The latter are on the rise since every new gener-
+ation of smartphones is equipped with more resources
+
+(CPU, memory, bandwidth, energy) to even allow re-
+source-demanding services like speech- or face recogni-
+tion to be executed locally on a device. But compared
+
+to their stationary counterparts, mobile devices remain
+comparatively limited in terms of resources. Because of
+this, current approaches aim at extending mobile device
+
+capabilities with computation and storage resources of-
+fered by cloud services or other nearby devices. This
+
+paradigm, known as Mobile Cloud Computing (MCC),
+is challenged by the dynamically changing context of
+mobile devices, which developers are required to take
+into account to decide, e.g., which application parts are
+when to offload. To rise to such and similar challenges
+
+we introduce the concept of Generic Context Adap-
+tation (GCA), a data mining process that facilitates
+
+the adaptation of (mobile) applications to their current
+and future context. Moreover, we evaluate our approach
+with real usage data provided by the Nokia Mobile
+Data Challenge (MDC) as well as with CloudAware, a context-adaptive mobile middleware for MCC that
+supports automated and context-aware self-adaptation
+techniques.",,,,,7,F,,,,pass,pass,pass,pass,pass,pass,pass,pass,,
+226,,Context-Aware Adaptation of Mobile Applications Driven by Software Quality and User Satisfaction,"Abstract—Mobile applications experience context changes dur-
+ing their execution, moreover their success depends on the user
+
+satisfaction that is strictly related to application quality. However,
+context changes may affect system quality and therefore user
+satisfaction, hence mobile applications may greatly benefit from
+context awareness that allows the application to adapt to context
+changes. In this paper we propose a context aware approach
+for mobile applications that targets both software quality and
+user satisfaction. In particular, we focus on service availability
+and develop a methodology that, leveraging on a novel reward
+formula that contains the notion of software availability and
+users feedback, determines the best application adaptation to
+be applied in a given context. We show the devised methodology
+on a motivating example.",,,,,19,F,,,,pass,pass,pass,pass,pass,pass,pass,pass,,
+227,,"Context-aware recommendations through context
+and activity recognition in a mobile environment","The mobile Internet introduces new opportunities to gain insight in the
+user’s environment, behavior, and activity. This contextual information can be
+used as an additional information source to improve traditional recommendation
+algorithms. This paper describes a framework to detect the current context and
+activity of the user by analyzing data retrieved from different sensors available on
+mobile devices. The framework can easily be extended to detect custom activities
+and is built in a generic way to ensure easy integration with other applications. On
+top of this framework, a recommender system is built to provide users a personalized
+content offer, consisting of relevant information such as points-of-interest, train
+schedules, and touristic info, based on the user’s current context. An evaluation of the
+recommender system and the underlying context recognition framework shows that
+power consumption and data traffic is still within an acceptable range. Users who
+tested the recommender system via the mobile application confirmed the usability
+and liked to use it. The recommendations are assessed as effective and help them to
+discover new places and interesting information.",,,,,19,B,,,,x,,,,,,,,,
+228,,Context-aware Battery Management for Mobile Phones,"In this paper, we propose a system for context-
+aware battery management that warns the user when
+
+it detects that the phone battery can run out before
+the next charging opportunity is encountered. At the
+heart of this system, are algorithms that predict: (1)
+when the next charging opportunity will be available,
+(2) how much call-time will be required by the user
+in the interim, and (3) how long the battery will last
+if the current set of applications continue to execute.
+We propose algorithms that process user’s location
+
+traces and call-logs for making some of these predic-
+tions. We also propose a technique to predict battery
+
+consumption of applications. We present the design
+
+of the system and demonstrate its feasibility by ex-
+perimentally showing that each of the prediction al-
+gorithms can perform with fairly high accuracy.",,,,,19,B,,,,x,,,,,,,,,
+229,,"An Adaptive Mobile Application Development
+Framework","Although wireless networks and mobile devices become popular
+these days, the diversity of mobile devices and unsteadiness of wireless
+networks still cause software development much trouble. Thus, when
+developing a mobile application, developers are forced to expose to these
+problems and to be familiar with these technologies and therefore it will spend
+a lot of time to write a mobile application. Furthermore, a mobile application
+often needs to be ported to different platform (for example from Java to .NET)
+which is also burdensome. In order to overcome these problems, the author
+proposes an adaptive framework to help developers build mobile application
+effortlessly and rapidly. The mobile application developed on this framework
+can run in different devices and operating system, so developers does not need
+to worry about portability. As a result, a mobile application developed on this
+framework can enjoy the benefit of “write once, run everywhere, and access
+any services.”",,,,,19,B,,,,x,,,,,,,,,
+230,,Reliable Discovery and Selection of Composite Services in Mobile Environments,"Service providers as we know them nowadays are the
+always-on “static” web service providers, that aim at Five9
+availability (99.999%). Formal, or de-facto, standards,
+
+such as WSDL and BPEL, have become technology en-
+ablers for the easy discovery, use and coordination of such
+
+services. However, we envisage tomorrow’s services to be-
+come increasingly pervasive, being deployed within build-
+ings, transport systems, markets, as well as people portable
+
+devices. Such services will be, by their own nature, sim-
+ple and fine grained; as a consequence, service composi-
+tion will become crucial to deliver rich functionalities that
+
+satisfy end users requests. Composing services in mobile
+
+environments opens up significant challenges. In particu-
+lar, the Five9 availability assumption no longer holds: the
+
+higher the dynamic nature of the environment, the higher
+the chances that services will move out-of-reach before the
+composition completes, causing the service as a whole to
+
+fail. We argue that, in order to enable the successful com-
+pletion of compound services, the reliability of the compo-
+sition must be measured and reasoned about. In order to do
+
+so, we propose to dynamically deploy a prediction model
+to estimate the duration of colocation between component
+
+services. These estimates are fed in input to a service com-
+position semantics reasoner, which then autonomically se-
+lects those providers, within the current environment, that
+
+maximise the chances of successful compound service com-
+pletion. We demonstrate the positive impact that the relia-
+bility reasoning has onto the ratio of successfully completed
+
+compound services in a typical human movement scenario.",,,,,19,B,,,,pass,pass,pass,pass,pass,pass,pass,pass,,
+231,,An Experience Sampling System for Context-Aware Mobile Application Development,,,,,,19,B,,,,,,,,,,,,,can't access full paper
+232,,"FUSION: A Framework for Engineering
+Self-Tuning Self-Adaptive Software Systems ","Self-adaptive software systems are capable of adjusting their
+behavior at run-time to achieve certain objectives. Such systems
+typically employ analytical models specified at design-time to
+assess their characteristics at run-time and make the appropriate
+adaptation decisions. However, prior to system’s deployment,
+engineers often cannot foresee the changes in the environment,
+requirements, and system’s operational profile. Therefore, any
+analytical model used in this setting relies on underlying
+assumptions that if not held at run-time make the analysis and
+hence the adaptation decisions inaccurate. We present and
+evaluate FeatUre-oriented Self-adaptatION (FUSION)
+framework, which aims to solve this problem by learning the
+impact of adaptation decisions on the system’s goals. The
+framework (1) allows for automatic online fine-tuning of the
+adaptation logic to unanticipated conditions, (2) reduces the
+upfront effort required for building such systems, and (3) makes
+the run-time analysis of such systems very efficient.",,,,,19,B,,,,pass,pass,pass,pass,pass,pass,pass,pass,,
+233,,"CARISMA: Context-Aware Reflective mIddleware
+System for Mobile Applications","Abstract—Mobile devices, such as mobile phones and per-
+sonal digital assistants, have gained wide-spread popular-
+ity. These devices will increasingly be networked, thus en-
+abling the construction of distributed applications that have
+
+to adapt to changes in context, such as variations in net-
+work bandwidth, battery power, connectivity, reachability
+
+of services and hosts, and so on. In this paper we describe
+CARISMA, a mobile computing middleware which exploits
+the principle of reflection to enhance the construction of
+
+adaptive and context-aware mobile applications. The mid-
+dleware provides software engineers with primitives to de-
+scribe how context changes should be handled using poli-
+cies. These policies may conflict. We classify the differ-
+ent types of conflicts that may arise in mobile computing
+
+and argue that conflicts cannot be resolved statically at the
+
+time applications are designed, but, rather, need to be re-
+solved at execution time. We demonstrate a method by
+
+which policy conflicts can be handled; this method uses a
+micro-economic approach that relies on a particular type
+
+of sealed-bid auction. We describe how this method is im-
+plemented in the CARISMA middleware architecture, and
+
+sketch a distributed context-aware application for mobile
+devices to illustrate how the method works in practise. We
+show, by way of a systematic performance evaluation, that
+conflict resolution does not imply undue overheads, before
+comparing our research to related work and concluding the
+paper.",,,,,19,B,,,,,x,,,,,,,,
+234,,A context-aware mobile web middleware for service of surveillance video with privacy,"Video surveillance systems are becoming ubiquitous nowadays. To protect citizens’
+privacy and to be compliant with legal requirements, surveillance video cannot generally be
+accessed in public places. However, a large amount of video data is often still required to
+provide timely services in these places. This work proposes a novel approach to support a
+developer to improve the service access to surveillance video. Firstly, a mobile web
+middleware architecture for the development of context-awareness applications, using NFC
+(Near Field Communication) and a new framework for NFC utilization by analyzing and
+constructing a service model, are proposed. Based on them, the efficient support for acquiring,
+
+interpreting and accessing contexts is provided, and more advanced applications with context-
+awareness and adaptability to their changing contexts are allowed. Moreover, a privacy-aware
+
+approach for video communication in our middleware is proposed. Symmetric key encryption
+
+and public-key encryption techniques are used to ensure privacy information security. A real-
+time scrambling approach to conceal video information is presented. Finally, we present the
+
+design and the implementation of the context-aware middleware and validate the expressive-
+ness of application logics through prototype development.",,,,,19,B,,,,x,,,,,,,,,
+235,,"Integrating the Physical World with the Web to Enable
+Context-Enhanced Mobile Services","This work has its roots in the HP Labs Cooltown project, whose core principle is that the integration of our physical world
+with the Web offers unique opportunities to enable ubiquitous computing applications. This paper describes our latest results in building
+a model and a software architecture called the Web presence manager (WPM) to support this physical-virtual integration. This software
+layer implements and specifies the services and information provided by Web representations of physical entities such as people, places, or
+things. We detail an extensive context-enhanced media-oriented application built on top of our platform. Our application enables mobile
+and context-aware access to personal contents and rendering on local appliances in a variety of ubiquitous computing environments.",,,,,19,B,,,,,x,,,,,,,,
+236,,"Supporting Context-Aware Multiparty Sessions
+in Heterogeneous Mobile Networks","The article addresses context-aware, adaptive
+multiparty sessions in a heterogeneous system through
+such elements as adaptivity and context-awareness. The
+
+effective usage of context information can lead to context-
+aware content casting, especially context-aware, adaptive
+
+multicasting. Therefore, regarding the multicast service, the
+key functionality of an enhanced Session Management is to
+motivate the creation of user subgroups, subsets of the same
+content group based on network, user and environment
+context to the extent that these are necessary for efficiency.
+Their characteristics in the form of content descriptions are
+communicated to the media delivery to obtain the appropriate
+content for each session. The article presents in detail the
+initiation, modification, termination and mobility of an
+adaptive, context-aware multicast session.",,,,,19,B,,,,,x,,,,,,,,
+237,,"An Approach for Developing Adaptive, Mobile
+Applications with Separation of Concerns ","Modern mobile computing paradigms have set new
+challenges for the development of distributed mobile
+applications and services. Because of the variability
+which characterizes the context of such environments,
+it is important that mobile applications are developed
+
+so that they can dynamically adapt their extra-
+functional behavior, in order to optimize the
+
+experience perceived by their users. This paper
+proposes an approach for developing adaptive, mobile
+applications. It is argued that this approach eases the
+development effort by clearly separating the work
+required for the development of the application logic
+from that required for enabling its adaptive behavior.
+It is argued that in addition to mitigating the
+development complexity, this approach also enables a
+new generation of distributed applications. The novelty
+in the latter is that the applications can dynamically
+and collaboratively adapt in an ad-hoc manner to
+improve the quality of the services offered to mobile
+users.",,,,,19,B,,,,,x,,,,,,,,
+238,,"Context-oriented Programming for Mobile Devices:
+JCop on Android","The behavior of mobile applications is particularly affected
+by their execution context, such as location and state a the
+mobile device. Among other approaches, context-oriented
+
+programming can help to achieve context-dependent behav-
+ior without sacrificing modularity or adhering to a certain
+
+framework or library by enabling fine-grained adaptation of
+default behavior per control-flow.
+
+However, context information relevant for mobile applica-
+tions is mostly defined by external events and sensor data
+
+rather than by code and control flow. To accommodate this,
+the JCop language provides a more declarative approach by
+pointcut-like adaptation rules.
+
+In this paper, we explain how we applied JCop to the de-
+velopment of Android applications for which we extended
+
+the language semantics for static contexts and modified the
+
+compiler. Additionally, we outline the successful implemen-
+tation of a simple, proof-of-concept mobile application using
+
+our approach and report on promising early evaluation re-
+sults.",,,,,19,B,,,,pass,pass,pass,pass,pass,pass,pass,pass,,
+239,,"A Rule-Based Approach Towards
+Context-Aware User Notification Services ","Pervasive Computing is the vision of technology that
+is invisibly embedded in our natural surroundings. Users are
+offered unobtrusive services that require minimal attention. In
+this paper the Awareness and Notification Service (ANS) is
+presented that enables to rapidly build applications that inform
+users about their environment. Additionally, the service offers
+notifications tailored to the user’s preferences and current
+
+context. ANS takes a rule based approach based on the Event-
+Condition-Action pattern. Users specify when and what should
+
+be notified to them by using a convenient ANS rule language.
+This flexible mechanism allows to rapidly develop applications
+that provide context-aware notifications without the need to
+write programming code to activate rules, nor to implement
+personalized notifications.",,,,,19,B,,,,x,,,,,,,,,
+240,,"Usability of Mobile Devices and
+intelligently adapting to a User’s needs ","Usability is defined in ISO 9241 (1998) as the extent to
+which a product can be used by specified users to achieve
+specified goals with effectiveness, efficiency and
+satisfaction. Usability in relation to mobile services i.e.
+services that run on Mobile Phones and PDAs must look at
+the mobile user and surmise what interfaces for mobile
+services are appreciated and anticipated by the user. This
+paper will cover the area of usability issues when
+developing Mobile services. It will look at the mobile users
+and will propose a system that will store and utilise users’
+context information to help a user carry out a task. It will
+formulate a structure that allows applications to learn the
+significance and interrelations of people, places, objects
+and documents. By knowing the significance and
+relationships between objects and data, applications can
+always provide the user with the most relevant data and
+build up a context for user interaction.",,,,,29,B,,,,,x,,,,,,,,
+241,,Dynamic user interface adaptation for mobile computing devices,"A large number of heterogeneous and mobile comput-
+ing devices nowadays are employed by users to access ser-
+vices they have subscribed to. The work of application de-
+velopers, which have to maintain several versions of user
+
+interface for a single application, is becoming more and
+
+more difficult, error-prone and time consuming. New soft-
+ware development models, able to easily adapt the applica-
+tion to the client execution context, have to be exploited. In
+
+this work we present a framework that allows developers to
+
+specify the user interaction with the application, in an inde-
+pendent manner with respect to the specific execution con-
+text, by using an XML-based language. Starting from such a
+
+specification, the system will subsequently ”render” the ac-
+tual user’s application interface on a specific execution en-
+vironment, adapting it to the used terminal characteristics.",,,,,29,B,,,,,x,,,,,,,,
+242,,"On Efficiency of Adaptation Algorithms for Mobile
+Interfaces Navigation ", ,,,,,29,F,,,,,x,,,,,,,,
+243,,AFChecker: Effective model checking for context-aware adaptive applications,,,,,,32,F,,,,x,,,,,,,,,
+244,,"CAMF – CONTEXT-AWARE MACHINE LEARNING FRAMEWORK
+FOR ANDROID","Context-aware computing is a promising approach for
+utilizing the characteristics of mobile computing:
+communication, mobility and portability. By
+combining machine learning and context-aware
+computing, we can provide proactive services based
+on the users’ usage patterns of the mobile device
+combined with the environmental context of the user.
+Android has become a popular mobile platform,
+which have addressed context-awareness from day
+one through hardware and software support for sensor
+and context management. In this paper, we have
+
+evaluated the Android platform support for context-
+awareness and identified some shortcomings. Further,
+
+we have designed a Context-Aware Machine learning
+Framework (CAMF) for the Android platform that
+addresses these shortcomings as well as incorporating
+machine learning. We also demonstrate the usefulness
+of the framework through the implementation of an
+application that monitors the applications a user is
+running on an Android device along with the
+environmental context the applications are running in.
+This information can be used to proactively launch
+Android applications when the context is appropriate.
+Finally, the paper evaluates the CAMF framework
+and our context-aware application AppL.",,,,,32,F,,,,pass,pass,pass,pass,pass,pass,pass,pass,,
+245,,"Middleware for Distributed Context-Aware
+Systems",,,,,,35,B,,,,,x,,,,,,,,
+246,,A middleware for building context-aware mobile services,,,,,,35,B,,,,,x,,,,,,,,
+247,,"CAMPUS: A middleware for automated context-aware adaptation
+decision making at run time",,,,,,35,B,,,,,x,,,,,,,,
+248,,"A Deliberative Model for Self-Adaptation Middleware Using Architectural
+Dependency",,,,,,39,B,,,,,x,,,,,,,,
+249,,"The SATIN Component System—A Metamodel
+for Engineering Adaptable Mobile Systems",,,,,,39,B,,,,,x,,,,,,,,
+250,,A Context-Aware Web Content Generator Based on Personal Tracking,,,,,,53,B,,,,,,,,,,,,,can't access the full paper
+251,,"Self-Adaptive Software:
+Landscape and Research Challenges",,,,,,53,B,,,,,x,,,,,,,,
+252,,"Clariisa, a context-aware framework based on geolocation for a health care governance system","Context-awareness has been successfully included
+in the mobile device applications due mainly to the presence of
+numerous sensors and the access to several communication
+networks. Therefore, this paper presents a context-aware
+framework based on geolocation for a health care governance
+system. While enabling remote health diagnosis of a patient using
+his/her own mobile device, the proposed system enriches the
+patient’s health data with geolocation before sending it to the
+
+Lariisa framework, an intelligent platform to support decision-
+making in public health governance. In order to collect
+
+information about a patient’s health status, the proposed
+application uses mobile devices equipped with medical sensors.
+While remotely registering a patient’s health diagnosis using a
+mobile device, the system allows the creation of an enriched
+description of the user context (e.g. weather, location, and date).
+The main contributions related to our framework include patient
+health diagnosis provided remotely, support for decision-making
+health systems, and context information for context-aware health
+systems.",,,,,53,F,,,,pass,pass,pass,pass,pass,pass,pass,pass,,
+253,,Context-aware eHealth information approach for the Brazilian primary healthcare system,"The eHealth technology will bring many benefits for
+patients, healthcare professionals, and institutions, especially in
+developing countries, such as Brazil. The eHealth solutions will
+enable faster, safer, and better healthcare services through the
+integration of Information and Communication Technologies
+(ICTs) with eHealth issue. This paper gives an overview of the
+Context-Aware Mobile Approach (CAMA) on going research
+activities for eHealth environments. CAMA seeks to improve the
+Brazilian primary healthcare system through context-aware
+eHealth facilities, expecting to change the way that healthcare
+services are applied, managed, and maintained to achieve
+efficiency, safety, and reliability for both patients and hospital
+staffs.",,,,,53,F,,,,,,,x,,,,,,
+254,,Context-Awareness to Increase Inclusion of People with DS in Society,,,,,,53,F,,,,,x,,,,,,,,
+255,,"Context-Aware Mobile Power Management Using
+Fuzzy Inference as a Service","As smartphones become ubiquitous, their energy consumption
+remains one of the most important issues. Mobile devices operate in a
+dynamically changing context, and their embedded sensors can be used to
+extract the relevant context needed for resource optimization. In this paper, we
+
+present a context-aware power management system implemented as a widely-
+applicable middleware application. Fuzzy inference is used to represent a high-
+level description of context, which is provided as a service. We test our
+
+approach using actual periodic and streaming applications on a mobile phone.
+Our results show energy reduction of 13-50% for periodic applications, and 18-
+36% for streaming applications.",,,,,54,B,,,,pass,pass,pass,pass,pass,pass,pass,pass,,
+256,,"Adaptive online deployment for resource
+constrained mobile smart clients",,,,,,55,B,,,,,,,,,,,,,
+257,,"What, Where, When, How and Right of Runtime Adaptation in Service-Oriented Systems",,,,,,62,F,,,,,,,,,,,,,can't access the full paper
+258,,An Agile Adaptation Framework for Context-Aware User Interfaces,,,,,,64,F,,,,,,,,,,,,,
+259,,Rainbow: Architecture-based Self-adaptation with Reusable Infrastructure,"Software-based systems today are increasingly expected
+
+to dynamically self-adapt to accommodate resource vari-
+ability, changing user needs, and system faults. Recent work
+
+uses closed-loop control based on external models to mon-
+itor and adapt system behavior at run time. Taking this ex-
+ternalized approach, the Rainbow framework we have de-
+veloped uses software architectural models to dynamically
+
+monitor and adapt a running system. A key goal and pri-
+mary challenge of this framework is to support the reuse
+
+of adaptation strategies and infrastructure across differ-
+ent systems. In this poster, we show that the separation
+
+of a generic adaptation infrastructure from system-specific
+adaptation knowledge makes this reuse possible.",,,,,78,B,,,,,x,,,,,,,,
+260,,Global adaptation framework for Quality of Experience of mobile services,,,,,,78,F,,,,,x,,,,,,,,
+261,,Adaptation Strategies for Performance Failure Avoindance,,,,,,78,F,,,,,x,,,,,,,,
+262,,"A Generic Adaptation Framework
+for Mobile Communication",,,,,,78,F,,,,,x,,,,,,,,
+263,,"Software Engineering for Self-Adaptive Systems:
+Assurances",,,,,,104,B,,,,,,x,,,,,,,
+264,,"Software Engineering for Self-Adaptive Systems:
+A Second Research Roadmap",,,,,,104,B,,,,,,x,,,,,,,
+265,,"MAPE-K Formal Templates to Rigorously Design Behaviors for
+Self-Adaptive Systems","Designing software systems that have to deal with dynamic operating conditions, such as changing availabil-
+ity of
+resources and faults that are difficult to predict, is complex. A promising approach to handle such dy-
+namics is self-adaptation that can be realized by a MAPE-K feedback loop (Monitor-Analyze-Plan-Execute
+
+plus Knowledge). To provide evidence that the system goals are satisfied, given the changing conditions,
+
+the state of the art advocates the use of formal methods. However, little research has been done on consol-
+idating design knowledge of self-adaptive systems. To support designers, this paper contributes with a set
+
+of formally specified MAPE-K templates that encode design expertise for a family of self-adaptive systems.
+The templates comprise: (1) behavior specification templates for modeling the different components of a
+MAPE-K feedback loop (based on networks of timed automata), and (2) property specification templates
+that support verification of the correctness of the adaptation behaviors (based on timed computation tree
+logic). To demonstrate the reusability of the formal templates, we performed four case studies in which
+final-year Masters students used the templates to design different self-adaptive systems.",,,,,104,F,,,,,x,,,,,,,,
+266,,"A Self-Adaptive Middleware for Efficient Routing
+in Distributed Sensor Networks",,,,,,104,F,,,,,x,,,,,,,,
+267,,"Software Engineering
+for Self-Adaptive Systems: A Research Roadmap",,,,,,110,B,,,,,,,,,,,,,can't access the full paper
+268,,"On Patterns for Decentralized Control
+in Self-Adaptive Systems",,,,,,110,B,,,,,x,,,,,,,,
+269,,"FORMS: Unifying Reference Model for Formal
+Specification of Distributed Self-Adaptive Systems",,,,,,110,B,,,,,x,,,,,,,,
+270,,"Engineering Self-Adaptive Systems
+through Feedback Loops",,,,,,110,B,,,,,,x,,,,,,,
+271,,"Dynamic Decision Networks for
+Decision-Making in Self-Adaptive Systems:
+A Case Study","Abstract—Bayesian decision theory is increasingly applied to
+
+support decision-making processes under environmental vari-
+ability and uncertainty. Researchers from application areas
+
+like psychology and biomedicine have applied these techniques
+successfully. However, in the area of software engineering and
+specifically in the area of self-adaptive systems (SASs), little
+progress has been made in the application of Bayesian decision
+theory. We believe that techniques based on Bayesian Networks
+(BNs) are useful for systems that dynamically adapt themselves
+
+at runtime to a changing environment, which is usually uncer-
+tain. In this paper, we discuss the case for the use of BNs,
+
+specifically Dynamic Decision Networks (DDNs), to support the
+decision-making of self-adaptive systems. We present how such
+
+a probabilistic model can be used to support the decision-
+making in SASs and justify its applicability. We have applied
+
+our DDN-based approach to the case of an adaptive remote data
+mirroring system. We discuss results, implications and potential
+benefits of the DDN to enhance the development and operation
+of self-adaptive systems, by providing mechanisms to cope with
+uncertainty and automatically make the best decision.
+
+Index Terms—self-adaptive systems, dynamic decision net-
+works, bayesian networks, uncertainty modeling.",,,,,121,B,,,,,x,,,,,,,,
+272,,Adaptive computation offloading from mobile devices into the cloud,"Abstract—The inherently limited processing power and battery
+lifetime of mobile phones hinder the possible execution of
+computationally intensive applications like content-based video
+analysis or 3D modeling. Offloading of computationally intensive
+application parts from the mobile platform into a remote cloud
+infrastructure or nearby idle computers addresses this problem.
+This paper presents our Mobile Augmentation Cloud Services
+(MACS) middleware which enables adaptive extension of Android
+
+application execution from a mobile client into the cloud. Applica-
+tions are developed by using the standard Android development
+
+pattern. The middleware does the heavy lifting of adaptive
+application partitioning, resource monitoring and computation
+offloading. These elastic mobile applications can run as usual
+
+mobile application, but they can also reach transparently re-
+mote computing resources. Two prototype applications using the
+
+MACS middleware demonstrate the benefits of the approach. The
+evaluation shows that applications, which involve complicated
+algorithms and large computations, can benefit from offloading
+with around 95% energy savings and significant performance
+gains compared to local execution only.",,,,,121,B,,,,pass,pass,pass,pass,pass,pass,pass,pass,,
+273,,"Model-based Reinforcement Learning Approach for
+Planning in Self-Adaptive Software System",,,,,,121,B,,,,,x,,,,,,,,
+274,,A context-aware and self-adaptive offloading decision support model for mobile cloud computing system,,,,,,121,F,,,,pass,pass,pass,pass,pass,pass,pass,pass,,
+275,,"Adaptive model-driven user interface development
+systems",,,,,,161,B,,,,,x,,,,,,,,
+276,,"Proactive self-adaptation for improving the reliability of mission-critical, embedded, and mobile software",,,,,,165,B,,,,pass,pass,pass,pass,pass,pass,pass,pass,,
+277,,,,,,,,,,,,,,,,,,,,,,
+278,,,,,,,,,,,,,,,,,,,,,,
+279,,,,,,,,,,,,,,,,,,,,,,
+280,,,,,,,,,,,,,,,,,,,,,,
+281,,,,,,,,,,,,,,,,,,,,,,
+282,,,,,,,,,,,,,,,,,,,,,,
+283,,,,,,,,,,,,,,,,,,,,,,
+284,,,,,,,,,,,,,,,,,,,,,,
+285,,,,,,,,,,,,,,,,,,,,,,
+286,,,,,,,,,,,,,,,,,,,,,,
+287,,,,,,,,,,,,,,,,,,,,,,
+288,,,,,,,,,,,,,,,,,,,,,,
+289,,,,,,,,,,,,,,,,,,,,,,
+290,,,,,,,,,,,,,,,,,,,,,,
+291,,,,,,,,,,,,,,,,,,,,,,
+292,,,,,,,,,,,,,,,,,,,,,,
+293,,,,,,,,,,,,,,,,,,,,,,
+294,,,,,,,,,,,,,,,,,,,,,,
+295,,,,,,,,,,,,,,,,,,,,,,
+296,,,,,,,,,,,,,,,,,,,,,,
+297,,,,,,,,,,,,,,,,,,,,,,
+298,,,,,,,,,,,,,,,,,,,,,,
+299,,,,,,,,,,,,,,,,,,,,,,
+300,,,,,,,,,,,,,,,,,,,,,,
+301,,,,,,,,,,,,,,,,,,,,,,
+302,,,,,,,,,,,,,,,,,,,,,,
+303,,,,,,,,,,,,,,,,,,,,,,
+304,,,,,,,,,,,,,,,,,,,,,,
+305,,,,,,,,,,,,,,,,,,,,,,
+306,,,,,,,,,,,,,,,,,,,,,,
+307,,,,,,,,,,,,,,,,,,,,,,
+308,,,,,,,,,,,,,,,,,,,,,,
+309,,,,,,,,,,,,,,,,,,,,,,
+310,,,,,,,,,,,,,,,,,,,,,,
+311,,,,,,,,,,,,,,,,,,,,,,
+312,,,,,,,,,,,,,,,,,,,,,,
+313,,,,,,,,,,,,,,,,,,,,,,
+314,,,,,,,,,,,,,,,,,,,,,,
+315,,,,,,,,,,,,,,,,,,,,,,
+316,,,,,,,,,,,,,,,,,,,,,,
+317,,,,,,,,,,,,,,,,,,,,,,
+318,,,,,,,,,,,,,,,,,,,,,,
+319,,,,,,,,,,,,,,,,,,,,,,
+320,,,,,,,,,,,,,,,,,,,,,,
+321,,,,,,,,,,,,,,,,,,,,,,
+322,,,,,,,,,,,,,,,,,,,,,,
+323,,,,,,,,,,,,,,,,,,,,,,
+324,,,,,,,,,,,,,,,,,,,,,,
+325,,,,,,,,,,,,,,,,,,,,,,
+326,,,,,,,,,,,,,,,,,,,,,,
+327,,,,,,,,,,,,,,,,,,,,,,
+328,,,,,,,,,,,,,,,,,,,,,,
+329,,,,,,,,,,,,,,,,,,,,,,
+330,,,,,,,,,,,,,,,,,,,,,,
+331,,,,,,,,,,,,,,,,,,,,,,
+320,,,,,,,,,,,,,,,,,,,,,,
+321,,,,,,,,,,,,,,,,,,,,,,
+322,,,,,,,,,,,,,,,,,,,,,,
+323,,,,,,,,,,,,,,,,,,,,,,
+324,,,,,,,,,,,,,,,,,,,,,,
+325,,,,,,,,,,,,,,,,,,,,,,
+326,,,,,,,,,,,,,,,,,,,,,,
+327,,,,,,,,,,,,,,,,,,,,,,
+328,,,,,,,,,,,,,,,,,,,,,,
+329,,,,,,,,,,,,,,,,,,,,,,
+330,,,,,,,,,,,,,,,,,,,,,,
+331,,,,,,,,,,,,,,,,,,,,,,
+332,,,,,,,,,,,,,,,,,,,,,,
+333,,,,,,,,,,,,,,,,,,,,,,
+334,,,,,,,,,,,,,,,,,,,,,,
+335,,,,,,,,,,,,,,,,,,,,,,
+336,,,,,,,,,,,,,,,,,,,,,,
+337,,,,,,,,,,,,,,,,,,,,,,
+338,,,,,,,,,,,,,,,,,,,,,,
+339,,,,,,,,,,,,,,,,,,,,,,
+340,,,,,,,,,,,,,,,,,,,,,,
+341,,,,,,,,,,,,,,,,,,,,,,
+342,,,,,,,,,,,,,,,,,,,,,,
+343,,,,,,,,,,,,,,,,,,,,,,
+344,,,,,,,,,,,,,,,,,,,,,,
+345,,,,,,,,,,,,,,,,,,,,,,
+346,,,,,,,,,,,,,,,,,,,,,,
+347,,,,,,,,,,,,,,,,,,,,,,
+348,,,,,,,,,,,,,,,,,,,,,,
+349,,,,,,,,,,,,,,,,,,,,,,
+350,,,,,,,,,,,,,,,,,,,,,,
+351,,,,,,,,,,,,,,,,,,,,,,
+352,,,,,,,,,,,,,,,,,,,,,,
+353,,,,,,,,,,,,,,,,,,,,,,
+354,,,,,,,,,,,,,,,,,,,,,,
+355,,,,,,,,,,,,,,,,,,,,,,
+356,,,,,,,,,,,,,,,,,,,,,,
+357,,,,,,,,,,,,,,,,,,,,,,
+358,,,,,,,,,,,,,,,,,,,,,,
+359,,,,,,,,,,,,,,,,,,,,,,
+360,,,,,,,,,,,,,,,,,,,,,,
+361,,,,,,,,,,,,,,,,,,,,,,
+362,,,,,,,,,,,,,,,,,,,,,,
+363,,,,,,,,,,,,,,,,,,,,,,
+364,,,,,,,,,,,,,,,,,,,,,,
+365,,,,,,,,,,,,,,,,,,,,,,
+366,,,,,,,,,,,,,,,,,,,,,,
+367,,,,,,,,,,,,,,,,,,,,,,
+368,,,,,,,,,,,,,,,,,,,,,,
+369,,,,,,,,,,,,,,,,,,,,,,
+370,,,,,,,,,,,,,,,,,,,,,,
+371,,,,,,,,,,,,,,,,,,,,,,
+372,,,,,,,,,,,,,,,,,,,,,,
+373,,,,,,,,,,,,,,,,,,,,,,
+374,,,,,,,,,,,,,,,,,,,,,,
+375,,,,,,,,,,,,,,,,,,,,,,
+376,,,,,,,,,,,,,,,,,,,,,,
+377,,,,,,,,,,,,,,,,,,,,,,
+378,,,,,,,,,,,,,,,,,,,,,,
+379,,,,,,,,,,,,,,,,,,,,,,
+380,,,,,,,,,,,,,,,,,,,,,,
+381,,,,,,,,,,,,,,,,,,,,,,
+382,,,,,,,,,,,,,,,,,,,,,,
+383,,,,,,,,,,,,,,,,,,,,,,
+384,,,,,,,,,,,,,,,,,,,,,,
+385,,,,,,,,,,,,,,,,,,,,,,
+386,,,,,,,,,,,,,,,,,,,,,,
+387,,,,,,,,,,,,,,,,,,,,,,
+388,,,,,,,,,,,,,,,,,,,,,,
+389,,,,,,,,,,,,,,,,,,,,,,
+390,,,,,,,,,,,,,,,,,,,,,,
+391,,,,,,,,,,,,,,,,,,,,,,
+392,,,,,,,,,,,,,,,,,,,,,,
+393,,,,,,,,,,,,,,,,,,,,,,
+394,,,,,,,,,,,,,,,,,,,,,,
+395,,,,,,,,,,,,,,,,,,,,,,
+396,,,,,,,,,,,,,,,,,,,,,,
+397,,,,,,,,,,,,,,,,,,,,,,
+398,,,,,,,,,,,,,,,,,,,,,,
+399,,,,,,,,,,,,,,,,,,,,,,
+400,,,,,,,,,,,,,,,,,,,,,,
+401,,,,,,,,,,,,,,,,,,,,,,
+402,,,,,,,,,,,,,,,,,,,,,,
+403,,,,,,,,,,,,,,,,,,,,,,
+404,,,,,,,,,,,,,,,,,,,,,,
+405,,,,,,,,,,,,,,,,,,,,,,
+406,,,,,,,,,,,,,,,,,,,,,,
+407,,,,,,,,,,,,,,,,,,,,,,
+408,,,,,,,,,,,,,,,,,,,,,,
+409,,,,,,,,,,,,,,,,,,,,,,
+410,,,,,,,,,,,,,,,,,,,,,,
+411,,,,,,,,,,,,,,,,,,,,,,
+412,,,,,,,,,,,,,,,,,,,,,,
+413,,,,,,,,,,,,,,,,,,,,,,
+414,,,,,,,,,,,,,,,,,,,,,,
+415,,,,,,,,,,,,,,,,,,,,,,
+416,,,,,,,,,,,,,,,,,,,,,,
+417,,,,,,,,,,,,,,,,,,,,,,
+418,,,,,,,,,,,,,,,,,,,,,,
+419,,,,,,,,,,,,,,,,,,,,,,
+420,,,,,,,,,,,,,,,,,,,,,,
+421,,,,,,,,,,,,,,,,,,,,,,
+422,,,,,,,,,,,,,,,,,,,,,,
+423,,,,,,,,,,,,,,,,,,,,,,
+424,,,,,,,,,,,,,,,,,,,,,,
+425,,,,,,,,,,,,,,,,,,,,,,
+426,,,,,,,,,,,,,,,,,,,,,,
+427,,,,,,,,,,,,,,,,,,,,,,
+428,,,,,,,,,,,,,,,,,,,,,,
+429,,,,,,,,,,,,,,,,,,,,,,
+430,,,,,,,,,,,,,,,,,,,,,,
+431,,,,,,,,,,,,,,,,,,,,,,
+432,,,,,,,,,,,,,,,,,,,,,,
+433,,,,,,,,,,,,,,,,,,,,,,
+434,,,,,,,,,,,,,,,,,,,,,,
+435,,,,,,,,,,,,,,,,,,,,,,
+436,,,,,,,,,,,,,,,,,,,,,,
+437,,,,,,,,,,,,,,,,,,,,,,
+438,,,,,,,,,,,,,,,,,,,,,,
+439,,,,,,,,,,,,,,,,,,,,,,
+440,,,,,,,,,,,,,,,,,,,,,,
+441,,,,,,,,,,,,,,,,,,,,,,
+442,,,,,,,,,,,,,,,,,,,,,,
+443,,,,,,,,,,,,,,,,,,,,,,
+444,,,,,,,,,,,,,,,,,,,,,,
+445,,,,,,,,,,,,,,,,,,,,,,
+446,,,,,,,,,,,,,,,,,,,,,,
+447,,,,,,,,,,,,,,,,,,,,,,
+448,,,,,,,,,,,,,,,,,,,,,,
+449,,,,,,,,,,,,,,,,,,,,,,
+450,,,,,,,,,,,,,,,,,,,,,,
+451,,,,,,,,,,,,,,,,,,,,,,
+452,,,,,,,,,,,,,,,,,,,,,,
+453,,,,,,,,,,,,,,,,,,,,,,
+454,,,,,,,,,,,,,,,,,,,,,,
+455,,,,,,,,,,,,,,,,,,,,,,
+456,,,,,,,,,,,,,,,,,,,,,,
+457,,,,,,,,,,,,,,,,,,,,,,
+458,,,,,,,,,,,,,,,,,,,,,,
+459,,,,,,,,,,,,,,,,,,,,,,
+460,,,,,,,,,,,,,,,,,,,,,,
+461,,,,,,,,,,,,,,,,,,,,,,
+462,,,,,,,,,,,,,,,,,,,,,,
+463,,,,,,,,,,,,,,,,,,,,,,
+464,,,,,,,,,,,,,,,,,,,,,,
+465,,,,,,,,,,,,,,,,,,,,,,
+466,,,,,,,,,,,,,,,,,,,,,,
+467,,,,,,,,,,,,,,,,,,,,,,
+468,,,,,,,,,,,,,,,,,,,,,,
+469,,,,,,,,,,,,,,,,,,,,,,
+470,,,,,,,,,,,,,,,,,,,,,,
+471,,,,,,,,,,,,,,,,,,,,,,
+472,,,,,,,,,,,,,,,,,,,,,,
+473,,,,,,,,,,,,,,,,,,,,,,
+474,,,,,,,,,,,,,,,,,,,,,,
+475,,,,,,,,,,,,,,,,,,,,,,
+476,,,,,,,,,,,,,,,,,,,,,,
+477,,,,,,,,,,,,,,,,,,,,,,
+478,,,,,,,,,,,,,,,,,,,,,,
+479,,,,,,,,,,,,,,,,,,,,,,
+480,,,,,,,,,,,,,,,,,,,,,,
+481,,,,,,,,,,,,,,,,,,,,,,
+482,,,,,,,,,,,,,,,,,,,,,,
+483,,,,,,,,,,,,,,,,,,,,,,
+484,,,,,,,,,,,,,,,,,,,,,,
+485,,,,,,,,,,,,,,,,,,,,,,
+486,,,,,,,,,,,,,,,,,,,,,,
+487,,,,,,,,,,,,,,,,,,,,,,
+488,,,,,,,,,,,,,,,,,,,,,,
+489,,,,,,,,,,,,,,,,,,,,,,
+490,,,,,,,,,,,,,,,,,,,,,,
+491,,,,,,,,,,,,,,,,,,,,,,
+492,,,,,,,,,,,,,,,,,,,,,,
+493,,,,,,,,,,,,,,,,,,,,,,
+494,,,,,,,,,,,,,,,,,,,,,,
+495,,,,,,,,,,,,,,,,,,,,,,
+496,,,,,,,,,,,,,,,,,,,,,,
+497,,,,,,,,,,,,,,,,,,,,,,
+498,,,,,,,,,,,,,,,,,,,,,,
+499,,,,,,,,,,,,,,,,,,,,,,
+500,,,,,,,,,,,,,,,,,,,,,,
+501,,,,,,,,,,,,,,,,,,,,,,
+502,,,,,,,,,,,,,,,,,,,,,,
+503,,,,,,,,,,,,,,,,,,,,,,
+504,,,,,,,,,,,,,,,,,,,,,,
+505,,,,,,,,,,,,,,,,,,,,,,
+506,,,,,,,,,,,,,,,,,,,,,,
+507,,,,,,,,,,,,,,,,,,,,,,
+508,,,,,,,,,,,,,,,,,,,,,,
+509,,,,,,,,,,,,,,,,,,,,,,
+510,,,,,,,,,,,,,,,,,,,,,,
+511,,,,,,,,,,,,,,,,,,,,,,
+512,,,,,,,,,,,,,,,,,,,,,,
+513,,,,,,,,,,,,,,,,,,,,,,
+514,,,,,,,,,,,,,,,,,,,,,,
+515,,,,,,,,,,,,,,,,,,,,,,
+516,,,,,,,,,,,,,,,,,,,,,,
+517,,,,,,,,,,,,,,,,,,,,,,
+518,,,,,,,,,,,,,,,,,,,,,,
+519,,,,,,,,,,,,,,,,,,,,,,
+520,,,,,,,,,,,,,,,,,,,,,,
+521,,,,,,,,,,,,,,,,,,,,,,
+522,,,,,,,,,,,,,,,,,,,,,,
+523,,,,,,,,,,,,,,,,,,,,,,
+524,,,,,,,,,,,,,,,,,,,,,,
+525,,,,,,,,,,,,,,,,,,,,,,
+526,,,,,,,,,,,,,,,,,,,,,,
+527,,,,,,,,,,,,,,,,,,,,,,
+528,,,,,,,,,,,,,,,,,,,,,,
+529,,,,,,,,,,,,,,,,,,,,,,
+530,,,,,,,,,,,,,,,,,,,,,,
+531,,,,,,,,,,,,,,,,,,,,,,
+532,,,,,,,,,,,,,,,,,,,,,,
+533,,,,,,,,,,,,,,,,,,,,,,
+534,,,,,,,,,,,,,,,,,,,,,,
+535,,,,,,,,,,,,,,,,,,,,,,
+536,,,,,,,,,,,,,,,,,,,,,,
+537,,,,,,,,,,,,,,,,,,,,,,
+538,,,,,,,,,,,,,,,,,,,,,,
+539,,,,,,,,,,,,,,,,,,,,,,
+540,,,,,,,,,,,,,,,,,,,,,,
+541,,,,,,,,,,,,,,,,,,,,,,
+542,,,,,,,,,,,,,,,,,,,,,,
+543,,,,,,,,,,,,,,,,,,,,,,
+544,,,,,,,,,,,,,,,,,,,,,,
+545,,,,,,,,,,,,,,,,,,,,,,
+546,,,,,,,,,,,,,,,,,,,,,,
+547,,,,,,,,,,,,,,,,,,,,,,
+548,,,,,,,,,,,,,,,,,,,,,,
+549,,,,,,,,,,,,,,,,,,,,,,
+550,,,,,,,,,,,,,,,,,,,,,,
+551,,,,,,,,,,,,,,,,,,,,,,
+552,,,,,,,,,,,,,,,,,,,,,,
+553,,,,,,,,,,,,,,,,,,,,,,
+554,,,,,,,,,,,,,,,,,,,,,,
+555,,,,,,,,,,,,,,,,,,,,,,
+556,,,,,,,,,,,,,,,,,,,,,,
+557,,,,,,,,,,,,,,,,,,,,,,
+558,,,,,,,,,,,,,,,,,,,,,,
+559,,,,,,,,,,,,,,,,,,,,,,
+560,,,,,,,,,,,,,,,,,,,,,,
+561,,,,,,,,,,,,,,,,,,,,,,
+562,,,,,,,,,,,,,,,,,,,,,,
+563,,,,,,,,,,,,,,,,,,,,,,
+564,,,,,,,,,,,,,,,,,,,,,,
+565,,,,,,,,,,,,,,,,,,,,,,
+566,,,,,,,,,,,,,,,,,,,,,,
+567,,,,,,,,,,,,,,,,,,,,,,
+568,,,,,,,,,,,,,,,,,,,,,,
+569,,,,,,,,,,,,,,,,,,,,,,
+570,,,,,,,,,,,,,,,,,,,,,,
+571,,,,,,,,,,,,,,,,,,,,,,
+572,,,,,,,,,,,,,,,,,,,,,,
+573,,,,,,,,,,,,,,,,,,,,,,
+574,,,,,,,,,,,,,,,,,,,,,,
+575,,,,,,,,,,,,,,,,,,,,,,
+576,,,,,,,,,,,,,,,,,,,,,,
+577,,,,,,,,,,,,,,,,,,,,,,
+578,,,,,,,,,,,,,,,,,,,,,,
+579,,,,,,,,,,,,,,,,,,,,,,
+580,,,,,,,,,,,,,,,,,,,,,,
+581,,,,,,,,,,,,,,,,,,,,,,
+582,,,,,,,,,,,,,,,,,,,,,,
+583,,,,,,,,,,,,,,,,,,,,,,
+584,,,,,,,,,,,,,,,,,,,,,,
+585,,,,,,,,,,,,,,,,,,,,,,
+586,,,,,,,,,,,,,,,,,,,,,,
+587,,,,,,,,,,,,,,,,,,,,,,
+588,,,,,,,,,,,,,,,,,,,,,,
+589,,,,,,,,,,,,,,,,,,,,,,
+590,,,,,,,,,,,,,,,,,,,,,,
+591,,,,,,,,,,,,,,,,,,,,,,
+592,,,,,,,,,,,,,,,,,,,,,,
+593,,,,,,,,,,,,,,,,,,,,,,
+594,,,,,,,,,,,,,,,,,,,,,,
+595,,,,,,,,,,,,,,,,,,,,,,
+596,,,,,,,,,,,,,,,,,,,,,,
+597,,,,,,,,,,,,,,,,,,,,,,
+598,,,,,,,,,,,,,,,,,,,,,,
+599,,,,,,,,,,,,,,,,,,,,,,
+600,,,,,,,,,,,,,,,,,,,,,,
+601,,,,,,,,,,,,,,,,,,,,,,
+602,,,,,,,,,,,,,,,,,,,,,,
+603,,,,,,,,,,,,,,,,,,,,,,
+604,,,,,,,,,,,,,,,,,,,,,,
+605,,,,,,,,,,,,,,,,,,,,,,
+606,,,,,,,,,,,,,,,,,,,,,,
+607,,,,,,,,,,,,,,,,,,,,,,
+608,,,,,,,,,,,,,,,,,,,,,,
+609,,,,,,,,,,,,,,,,,,,,,,
+610,,,,,,,,,,,,,,,,,,,,,,
+611,,,,,,,,,,,,,,,,,,,,,,
+612,,,,,,,,,,,,,,,,,,,,,,
+613,,,,,,,,,,,,,,,,,,,,,,
+614,,,,,,,,,,,,,,,,,,,,,,
+615,,,,,,,,,,,,,,,,,,,,,,
+616,,,,,,,,,,,,,,,,,,,,,,
+617,,,,,,,,,,,,,,,,,,,,,,
+618,,,,,,,,,,,,,,,,,,,,,,
+619,,,,,,,,,,,,,,,,,,,,,,
+620,,,,,,,,,,,,,,,,,,,,,,
+621,,,,,,,,,,,,,,,,,,,,,,
+622,,,,,,,,,,,,,,,,,,,,,,
+623,,,,,,,,,,,,,,,,,,,,,,
+624,,,,,,,,,,,,,,,,,,,,,,
+625,,,,,,,,,,,,,,,,,,,,,,
+626,,,,,,,,,,,,,,,,,,,,,,
+627,,,,,,,,,,,,,,,,,,,,,,
+628,,,,,,,,,,,,,,,,,,,,,,
+629,,,,,,,,,,,,,,,,,,,,,,
+630,,,,,,,,,,,,,,,,,,,,,,
+631,,,,,,,,,,,,,,,,,,,,,,
+632,,,,,,,,,,,,,,,,,,,,,,
+633,,,,,,,,,,,,,,,,,,,,,,
+634,,,,,,,,,,,,,,,,,,,,,,
+635,,,,,,,,,,,,,,,,,,,,,,
+636,,,,,,,,,,,,,,,,,,,,,,
+637,,,,,,,,,,,,,,,,,,,,,,
+638,,,,,,,,,,,,,,,,,,,,,,
+639,,,,,,,,,,,,,,,,,,,,,,
+640,,,,,,,,,,,,,,,,,,,,,,
+641,,,,,,,,,,,,,,,,,,,,,,
+642,,,,,,,,,,,,,,,,,,,,,,
+643,,,,,,,,,,,,,,,,,,,,,,
+644,,,,,,,,,,,,,,,,,,,,,,
+645,,,,,,,,,,,,,,,,,,,,,,
+646,,,,,,,,,,,,,,,,,,,,,,
+647,,,,,,,,,,,,,,,,,,,,,,
+648,,,,,,,,,,,,,,,,,,,,,,
+649,,,,,,,,,,,,,,,,,,,,,,
+650,,,,,,,,,,,,,,,,,,,,,,
+651,,,,,,,,,,,,,,,,,,,,,,
+652,,,,,,,,,,,,,,,,,,,,,,
+653,,,,,,,,,,,,,,,,,,,,,,
+654,,,,,,,,,,,,,,,,,,,,,,
+655,,,,,,,,,,,,,,,,,,,,,,
+656,,,,,,,,,,,,,,,,,,,,,,
+657,,,,,,,,,,,,,,,,,,,,,,
+658,,,,,,,,,,,,,,,,,,,,,,
+659,,,,,,,,,,,,,,,,,,,,,,
+660,,,,,,,,,,,,,,,,,,,,,,
+661,,,,,,,,,,,,,,,,,,,,,,
+662,,,,,,,,,,,,,,,,,,,,,,
+663,,,,,,,,,,,,,,,,,,,,,,
+664,,,,,,,,,,,,,,,,,,,,,,
+665,,,,,,,,,,,,,,,,,,,,,,
+666,,,,,,,,,,,,,,,,,,,,,,
+667,,,,,,,,,,,,,,,,,,,,,,
+668,,,,,,,,,,,,,,,,,,,,,,
+669,,,,,,,,,,,,,,,,,,,,,,
+670,,,,,,,,,,,,,,,,,,,,,,
+671,,,,,,,,,,,,,,,,,,,,,,
+672,,,,,,,,,,,,,,,,,,,,,,
+673,,,,,,,,,,,,,,,,,,,,,,
+674,,,,,,,,,,,,,,,,,,,,,,
+675,,,,,,,,,,,,,,,,,,,,,,
+676,,,,,,,,,,,,,,,,,,,,,,
+677,,,,,,,,,,,,,,,,,,,,,,
+678,,,,,,,,,,,,,,,,,,,,,,
+679,,,,,,,,,,,,,,,,,,,,,,
+680,,,,,,,,,,,,,,,,,,,,,,
+681,,,,,,,,,,,,,,,,,,,,,,
+682,,,,,,,,,,,,,,,,,,,,,,
+683,,,,,,,,,,,,,,,,,,,,,,
+684,,,,,,,,,,,,,,,,,,,,,,
+685,,,,,,,,,,,,,,,,,,,,,,
+686,,,,,,,,,,,,,,,,,,,,,,
+687,,,,,,,,,,,,,,,,,,,,,,
+688,,,,,,,,,,,,,,,,,,,,,,
+689,,,,,,,,,,,,,,,,,,,,,,
+690,,,,,,,,,,,,,,,,,,,,,,
+691,,,,,,,,,,,,,,,,,,,,,,
+692,,,,,,,,,,,,,,,,,,,,,,
+693,,,,,,,,,,,,,,,,,,,,,,
+694,,,,,,,,,,,,,,,,,,,,,,
+695,,,,,,,,,,,,,,,,,,,,,,
+696,,,,,,,,,,,,,,,,,,,,,,
+697,,,,,,,,,,,,,,,,,,,,,,
+698,,,,,,,,,,,,,,,,,,,,,,
+699,,,,,,,,,,,,,,,,,,,,,,
+700,,,,,,,,,,,,,,,,,,,,,,
+701,,,,,,,,,,,,,,,,,,,,,,
+702,,,,,,,,,,,,,,,,,,,,,,
+703,,,,,,,,,,,,,,,,,,,,,,
+704,,,,,,,,,,,,,,,,,,,,,,
+705,,,,,,,,,,,,,,,,,,,,,,
+706,,,,,,,,,,,,,,,,,,,,,,
+707,,,,,,,,,,,,,,,,,,,,,,
+708,,,,,,,,,,,,,,,,,,,,,,
+709,,,,,,,,,,,,,,,,,,,,,,
+710,,,,,,,,,,,,,,,,,,,,,,
+711,,,,,,,,,,,,,,,,,,,,,,
+712,,,,,,,,,,,,,,,,,,,,,,
+713,,,,,,,,,,,,,,,,,,,,,,
+714,,,,,,,,,,,,,,,,,,,,,,
+715,,,,,,,,,,,,,,,,,,,,,,
+716,,,,,,,,,,,,,,,,,,,,,,
+717,,,,,,,,,,,,,,,,,,,,,,
+718,,,,,,,,,,,,,,,,,,,,,,
+719,,,,,,,,,,,,,,,,,,,,,,
+720,,,,,,,,,,,,,,,,,,,,,,
+721,,,,,,,,,,,,,,,,,,,,,,
+722,,,,,,,,,,,,,,,,,,,,,,
+723,,,,,,,,,,,,,,,,,,,,,,
+724,,,,,,,,,,,,,,,,,,,,,,
+725,,,,,,,,,,,,,,,,,,,,,,
+726,,,,,,,,,,,,,,,,,,,,,,
+727,,,,,,,,,,,,,,,,,,,,,,
+728,,,,,,,,,,,,,,,,,,,,,,
+729,,,,,,,,,,,,,,,,,,,,,,
+730,,,,,,,,,,,,,,,,,,,,,,
+731,,,,,,,,,,,,,,,,,,,,,,
+732,,,,,,,,,,,,,,,,,,,,,,
+733,,,,,,,,,,,,,,,,,,,,,,
+734,,,,,,,,,,,,,,,,,,,,,,
+735,,,,,,,,,,,,,,,,,,,,,,
+736,,,,,,,,,,,,,,,,,,,,,,
+737,,,,,,,,,,,,,,,,,,,,,,
+738,,,,,,,,,,,,,,,,,,,,,,
+739,,,,,,,,,,,,,,,,,,,,,,
+740,,,,,,,,,,,,,,,,,,,,,,
+741,,,,,,,,,,,,,,,,,,,,,,
+742,,,,,,,,,,,,,,,,,,,,,,
+743,,,,,,,,,,,,,,,,,,,,,,
+744,,,,,,,,,,,,,,,,,,,,,,
+745,,,,,,,,,,,,,,,,,,,,,,
+746,,,,,,,,,,,,,,,,,,,,,,
+747,,,,,,,,,,,,,,,,,,,,,,
+748,,,,,,,,,,,,,,,,,,,,,,
+749,,,,,,,,,,,,,,,,,,,,,,
+750,,,,,,,,,,,,,,,,,,,,,,
+751,,,,,,,,,,,,,,,,,,,,,,
+752,,,,,,,,,,,,,,,,,,,,,,
+753,,,,,,,,,,,,,,,,,,,,,,
+754,,,,,,,,,,,,,,,,,,,,,,
+755,,,,,,,,,,,,,,,,,,,,,,
+756,,,,,,,,,,,,,,,,,,,,,,
+757,,,,,,,,,,,,,,,,,,,,,,
+758,,,,,,,,,,,,,,,,,,,,,,
+759,,,,,,,,,,,,,,,,,,,,,,
+760,,,,,,,,,,,,,,,,,,,,,,
+761,,,,,,,,,,,,,,,,,,,,,,
+762,,,,,,,,,,,,,,,,,,,,,,
+763,,,,,,,,,,,,,,,,,,,,,,
+764,,,,,,,,,,,,,,,,,,,,,,
+765,,,,,,,,,,,,,,,,,,,,,,
+766,,,,,,,,,,,,,,,,,,,,,,
+767,,,,,,,,,,,,,,,,,,,,,,
+768,,,,,,,,,,,,,,,,,,,,,,
+769,,,,,,,,,,,,,,,,,,,,,,
+770,,,,,,,,,,,,,,,,,,,,,,
+771,,,,,,,,,,,,,,,,,,,,,,
+772,,,,,,,,,,,,,,,,,,,,,,
+773,,,,,,,,,,,,,,,,,,,,,,
+774,,,,,,,,,,,,,,,,,,,,,,
+775,,,,,,,,,,,,,,,,,,,,,,
+776,,,,,,,,,,,,,,,,,,,,,,
+777,,,,,,,,,,,,,,,,,,,,,,
+778,,,,,,,,,,,,,,,,,,,,,,
+779,,,,,,,,,,,,,,,,,,,,,,
+780,,,,,,,,,,,,,,,,,,,,,,
+781,,,,,,,,,,,,,,,,,,,,,,
+782,,,,,,,,,,,,,,,,,,,,,,
+783,,,,,,,,,,,,,,,,,,,,,,
+784,,,,,,,,,,,,,,,,,,,,,,
+785,,,,,,,,,,,,,,,,,,,,,,
+786,,,,,,,,,,,,,,,,,,,,,,
+787,,,,,,,,,,,,,,,,,,,,,,
+788,,,,,,,,,,,,,,,,,,,,,,
+789,,,,,,,,,,,,,,,,,,,,,,
+790,,,,,,,,,,,,,,,,,,,,,,
+791,,,,,,,,,,,,,,,,,,,,,,
+792,,,,,,,,,,,,,,,,,,,,,,
+793,,,,,,,,,,,,,,,,,,,,,,
+794,,,,,,,,,,,,,,,,,,,,,,
+795,,,,,,,,,,,,,,,,,,,,,,
+796,,,,,,,,,,,,,,,,,,,,,,
+797,,,,,,,,,,,,,,,,,,,,,,
+798,,,,,,,,,,,,,,,,,,,,,,
+800,,,,,,,,,,,,,,,,,,,,,,
+801,,,,,,,,,,,,,,,,,,,,,,
+802,,,,,,,,,,,,,,,,,,,,,,
+803,,,,,,,,,,,,,,,,,,,,,,
+804,,,,,,,,,,,,,,,,,,,,,,
+805,,,,,,,,,,,,,,,,,,,,,,
+806,,,,,,,,,,,,,,,,,,,,,,
+807,,,,,,,,,,,,,,,,,,,,,,
+808,,,,,,,,,,,,,,,,,,,,,,
+809,,,,,,,,,,,,,,,,,,,,,,
+810,,,,,,,,,,,,,,,,,,,,,,
+811,,,,,,,,,,,,,,,,,,,,,,
+812,,,,,,,,,,,,,,,,,,,,,,
+813,,,,,,,,,,,,,,,,,,,,,,
+814,,,,,,,,,,,,,,,,,,,,,,
+815,,,,,,,,,,,,,,,,,,,,,,
+816,,,,,,,,,,,,,,,,,,,,,,
+817,,,,,,,,,,,,,,,,,,,,,,
+818,,,,,,,,,,,,,,,,,,,,,,
+819,,,,,,,,,,,,,,,,,,,,,,
+820,,,,,,,,,,,,,,,,,,,,,,
+821,,,,,,,,,,,,,,,,,,,,,,
+822,,,,,,,,,,,,,,,,,,,,,,
+823,,,,,,,,,,,,,,,,,,,,,,
+824,,,,,,,,,,,,,,,,,,,,,,
+825,,,,,,,,,,,,,,,,,,,,,,
+826,,,,,,,,,,,,,,,,,,,,,,
+827,,,,,,,,,,,,,,,,,,,,,,
+828,,,,,,,,,,,,,,,,,,,,,,
+829,,,,,,,,,,,,,,,,,,,,,,
+830,,,,,,,,,,,,,,,,,,,,,,
+831,,,,,,,,,,,,,,,,,,,,,,
+832,,,,,,,,,,,,,,,,,,,,,,
+833,,,,,,,,,,,,,,,,,,,,,,
+834,,,,,,,,,,,,,,,,,,,,,,
+835,,,,,,,,,,,,,,,,,,,,,,
+836,,,,,,,,,,,,,,,,,,,,,,

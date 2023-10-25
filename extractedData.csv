@@ -1,0 +1,1625 @@
+UID,ID,Title,Abstract,Authors,Venue,VenueType,Year,Source,GA_description,GA_qualities,G_evolution,G_flexibility,G_duration,G_multiplicity,G_dependency,CA_description,CC_source,C_type,C_frequency,C_anticipation,MA_description,Category,M_type,M_autonomy,M_organization,MC_scope,M_duration,M_timeliness,M_triggering,EA_description,E_criticality,E_predictability,E_overhead,E_resilience,Domain,Domain categorized,Challenges,AI_involved,Notes
+"We will assign the value of this colum as soon as we will finish the data extraction. It will be like: P1, P2, P3, .... Pn, based on the cronological order of the papers (most recent first).",3,Adaptive Code Offloading for Mobile Cloud Applications: Exploiting Fuzzy Sets and Evidence-based Learning,"Mobile cloud computing is arising as a prominent domain that is seeking to bring the massive advantages of the cloud to the resource constrained smartphones, by following a delegation or offloading criteria. In a delegation model, a mobile device consumes services from multiple clouds by efficiently utilizing solutions like middleware. In the offloading model, a mobile application is partitioned and analyzed so that the most computational expensive operations at code level can be identified and offloaded for remote processing. While code offloading is studied extensively for the development of mobile cloud applications, much of the advantages of cloud computing are still left unexploited and poorly considered in these approaches. Cloud computing may introduce many other dynamic variables like performance metrics, parallelization of tasks, elasticity etc., to current code offloading models that could affect the overall offloading decision process. To address this, we propose a fuzzy decision engine for code offloading, that considers both mobile and cloud variables. The cloud parameters and rules are introduced asynchronously to the mobile, using notification services. The paper also proposes a strategy to enrich the offloading decision process with evidence-based learning methods, by exploiting cloud processing capabilities over code offloading traces.","H Flores, S Srirama",Proceeding of the Fourth ACM Workshop on Mobile Cloud Computing and Services,W,2013,Query,a mobile application is partitioned and analyzed so that the most computational expensive operations at code level can be identified and offloaded for remote processing,PERF,S,U,P,S,NA,"Mobile
+Bandwidth = speed low, speed normal, speed high
+Data transfered = data small, data medium, data big Cloud and Code traces
+CPU instance = cpu low, cpu normal, cpu high Video execution = video low, video normal, video high","APP,BACK,INTERNET",NF,F,FN,"we propose a fuzzy decision engine for code offloading, that considers both mobile and cloud variables. The cloud parameters and rules are introduced asynchronously to the mobile, using notification services. The paper also proposes a strategy to enrich the offloading decision process with evidence-based learning methods, by exploiting cloud processing capabilities over code offloading traces. ### Rules are generated dynamically in the cloud by analyzing code offloading traces with a conceptual neuronal networks algorithm.",Fuzzy logic/method,S,AU,D,"APP,BACK",S,B,E,"For instance, even though, the execution of an offloaded mobile component is faster in a remote cloud-based instance [13] than in a mobile, the execution time of an offloaded mobile component depends directly on the processing capabilities of the instance. In other words, the higher the computational capabilities the faster the execution of a mobile component.",H,ND,F,S,GENERIC,GENERIC,"
+As future research directions in this domain, we are in- terested in fully implementing the current simulated com- ponent of our mobile cloud architecture, and in demonstrat- ing the approach with possible case studies. Basically, we want to develop a parallel version of the neural network al- gorithm that can be deployed on a MapReduce cluster so that it can be utilized to analyze big repositories of code of- floading traces. Moreover, we are also interested to explore and compare other machine learning strategies (e.g. cluster- ing) that can be utilized in a parallel fashion in order to find if-then-else patterns that can enrich our fuzzy logic engine.
+Furthermore, while it has been shown that the offloading decision process may be enriched from a global infrastruc- ture perspective in this paper, we are interested to compare our fuzzy logic mechanism with other offloading decision en- gines, in order to show the energetic benefits of splitting the the decision process between the mobile and cloud.","The analysis may happen based on different machine learning strategies (e.g. clustering). However, we envision an approach based on neuronal networks due to combining its inference power with the human- like reasoning of fuzzy logic, may allow us to build a system in which the cloud is the expert, and the device asks the cloud for its expertise (Neuro-Fuzzy).","Backward snowballing: [14]. 
+Forward snowballing:
+- http://people.cs.vt.edu/tilevich/papers/mobilesoft15.pdf
+- https://ieeexplore.ieee.org/abstract/document/7944875
+ 
+"
+,186,A self-adaptive framework for enhancing energy efficiency in mobile applications,"Nowadays, many software applications are executed in mobile devices. This poses new challenges on optimizing the limited capacity set by battery life without compromising energy efficiency and performance. In this paper, we propose a framework for mobile applications to enable and evaluate self-adaptability for the purpose of improving energy efficiency without sacrificing performance. Our framework consists of two main parts: the mobile apps simulator and the scheduler.","Fahimeh Alizadeh Moghaddam 
+S2 & SNE groups, Vrije Universiteit Amsterdam & University of Amsterdam
+; Mario Simaremare ; Patricia Lago ; Paola Grosso",Sustainable Internet and ICT for Sustainability (SustainIT),C,2017,Query,optimizing the limited capacity set by battery life without compromising energy efficiency and performance,"EN,PERF",S,U,P,M,CF,"The former collects information on the quality requirements of the applications, which can be referred to as the static profiles. The latter monitors the utilization of resources, which help forming the dynamic profiles.","APP,INTERNET",NF,F,FN,"extensively evaluate energy efficiency of mobile apps based on resource utilization in the sim- ulated mobile device, in particular, the network interfaces with several built-in energy states. We develop the framework
+in the form of the MAPE model functionalities (Monitor- Analyze-Plan-Execute) [3] in a modular fashion that can be extended with new mobile application profiles, new scheduling components (e.g. adding new scheduling strategies), and new computation/communication technologies in the mobile device (e.g. technologies other than Wifi and 4G).",MAPE,S,AU,C,"APP,PLAT",S,B,E,"The adaptation plans generated by both the app wrapper and the scheduler will be configured at this stage. The software reconfiguration component of the app wrapper adapts the target mobile apps based on the plan and likewise the infrastructure-level resources (e.g. mobile device, network interface, data transfer, and energy models) are configured based on the infrastructure reconfiguration component of the scheduler.",H,D,I,R,GENERIC,GENERIC,"Our next steps are to evaluate our framework in a case study involving a set of most popular mobile apps. In particular, we will study each app to identify the usage scenarios with dif- ferent configurations, and further investigate how the features of the apps can be used to make them self-adaptive.",NO,"Snowballing completed (backward and forward), no additional paper."
+,7,Towards Context-aware and Resource-driven Self-adaptation for Mobile Handheld Applications,"Mobile handheld computing is gaining momentum as more and more wireless handheld devices are being used to accomplish various computing tasks. Context-awareness can help to adapt and personalize applications or to optimize resource usage. However, many existing context infrastructures by themselves impose heavy resource requirements for deployment or highly affect the limited autonomy of the mobile device. In this paper we describe how resource-driven self-adaptation is used in our layered context-driven application middleware in order to enable deployment on a mobile device and optimize resource usage. Our evaluation shows that the introspection and intercession capabilities of the self-adapting middleware provide the necessary flexibility to achieve a balanced resource usage between the context-driven application middleware and the context-aware applications, and that the resource-driven self-adaptation is able to more than double the battery lifetime in real life scenarios."," D Preuveneers, Y Berbers ",Proceedings of the 2007 ACM Symposium on Applied Computing,C,2007,Query,an application middleware that self-adapts in order to reduce its own resource consumption to a minimum ### Runtime adaptation ensures a resource efficient deployment of components.,"EN,PERF",S,C,P,M,"CF,CM","Context information is required to initiate non-intrusive behavioral self-adaptation: location awareness, user preferences, devices and resources ### the Jabber Protocol component will replace itself with an alternative instant messaging component based on the address of the user. ### If the storage capacity of the context repository is limited so that not all context information can be retained for future use, then the Context Layer will self-adapt ### When a context-aware application requests specific con- text information, the Context Layer will add the ap- propriate components into the processing chain. If a context concept is no longer used, then all the relevant input and transformation context components are removed from the processing chain. ### Decrease the CPU clock frequency when no application is active or when the system is idle. Reduce the display backlight to extend the autonomy of the device when running on battery. Increase concurrent behavior by changing the number of messages that can be processed in parallel. ### These modules are enabled on demand when required by the applications or the Context Layer and again disabled when no longer active and after a resource specific timeout.","APP,PLAT,HW,SMARTO","F,NF,TECH","R,F","FN,FE","We use components [9] as modular building blocks for the design and deployment of adaptable services [7] and con- text management [6]. The component paradigm makes it possible to add, remove or replace a component at run- time when the execution context changes. ### Applications are implemented as a composition of compo- nents and accompanied by a deployment descriptor specify- ing all the mandatory, alternative and optional components (see Figure 3). The Runtime Layer provides the means for introspection to find out which of the alternative compo- nents has actually been deployed. The state of a component is modeled explicitly as a list of state variables and their values, not only for inspection purposes, but also to support replacement of components at runtime while preserving the state. A component’s state can be retrieved by sending a state requesting message to the dedicated State port of the component (not shown in Figure 2 for legibility reasons).
+Behavioral self-adaptation is performed by sending mes- sages to a particular component port. Structural self-adap- tation is initiated within each layer independently. Each layer determines the state of its components and the new configuration and instructs the Runtime Layer to activate new components and/or to reconnect the composition. The old component state retrieved by introspection is forwarded to the new component’s State port. ###",Component based adaptation,"S,P",AU,D,"APP,PLAT",S,B,E,Experiments have shown that our self-adapting ap- plication middleware can more than double the autonomy of a mobile handheld device by intelligently adapting the ap- proach for location-awareness depending on the resolution required by the applications. The result is an increased autonomy of the handheld device and a better resource usage trade-off between the application middleware and the regu- lar applications.,M,ND,I,S,"a conferencing client that supports Jabber-based instant messaging, web based docu- ment sharing and playing multimedia files.",CONFERENCING,"Ongoing work looks at how to make use of resource rich systems in the environment of the mobile device by dis- tributing applications or single components to other devices. However, this requires a clear view on the message flow of each components as a good trade-off needs to be found be- tween, for example, memory and CPU consumption on the one hand and network bandwidth and energy efficiency on the other hand. ### Future work will focus on the modeling of resource re- quirements for other indoor and outdoor locating methods and integration of other positioning systems into our context middleware. The major focus in this paper with respect to resource usage was on battery lifetime and CPU load. This will be further enhanced by modeling the interdependencies of CPU load, the battery lifetime, the memory and band- width usage. This should result in a better trade-off when relocating context information and processing components from one system to another, as relocating data also has an effect on the CPU load, the autonomy of the device, and the overall quality of service of the regular applications.",NO,"Backward snowballing: Done, no additional papers. 
+Forward snowballing:
+- http://www.eurecom.fr/en/publication/4256/download/cm-publi-4256.pdf
+- https://link.springer.com/chapter/10.1007/978-3-642-37087-8_8
+- http://www-di.inf.puc-rio.br/~endler/paperlinks/MCA-BookChapter.pdf
+- https://vsis-www.informatik.uni-hamburg.de/getDoc.php/publications/583/mobispc_si.pdf
+ 
+"
+,18,Can adaptive interfaces improve the usability of mobile applications?,"Mobile applications are becoming increasingly widespread and complex. Many of these applications suffer from usability issues, including information overload, screen clutter, lack of task support and limited interaction mechanisms. Adaptive user interfaces (AUIs) have been proposed to address some of these usability issues. The aim of this paper is to investigate how AUIs can improve the usability of mobile applications. This paper discusses several simple types of adaptation that have been shown to yield significant usability benefits for mobile applications. Two case studies are presented to illustrate how an AUI can be incorporated into different types of mobile applications. This paper also discusses the lessons learned from these case studies and presents some implications for designing adaptive systems in the future.","JL Wesson, A Singh, B Van Tonder","Human-Computer Interaction, 2010 - Springer",C,2010,Query,minimize the clutter problem that would otherwise result if a user’s entire media collection was visualized in a single view ### the user often needs to perform many operations to find information ### Interface adaptation is implemented in the form of list ordering in MediaMaps,US,S,U,P,M,CM,"The following four variables commonly influence adaptation [4]:
+• User: User-based adaptation is commonly employed in AUIs. AUIs can adapt to the user’s preferences, knowledge and skills.
+• Task: Adaptation according to the user’s current task can ensure that the ad- aptation is relevant and helps users in their current activity.
+• System: Adaptation can take place to adjust to differing device capabilities and variables such as network connectivity (in the case of mobile devices).
+• Context: Adaptation according to the user’s current context can play an im- portant role, particularly in mobile applications.","USER,APP,PLAT,HW,INTERNET","F,NF,TECH","R,F",F,"three types of adaptation, namely information, visualization and inter- face adaptation. ### Information: The information selected and the organization of the information can be adapted.
+• Visualization: The presentation of information can be adapted.
+• User Interface: The user interface can be adapted in a variety of ways, includ-
+ing adaptation of the UI controls and the interaction techniques.","describe the types of adaptation, but not how it is done",P,AU,C,APP,"S,M",B,E,yield significant usability benefits for desktop systems and mobile applica- tions,H,D,I,R,"MediaMaps: Capturing and location-tagging of photos, videos and sound recordings; organization of multimedia into collections, based on time and location; lap-based visualization of media collections and individual items; list-based browsing of media collections; searching of collections based on time and location; and saving and loading of views. ###
+A-POInter: mobile tourist guide","MAP,TOURIST",NI,NO,"Snowballing completed (backward and forward), no additional paper."
+,19,"A framework for context-aware self-adaptive mobile applications SPL
+","Mobile Applications are rapidly emerging as a convenient medium for using a variety of services. Over time and with the high penetration of smartphones in society, self-adaptation has become an essential capability required by mobile application users. In an ideal scenario, an application is required to adjust its behavior according to the current context of its use. This raises the challenge in mobile computing towards the design and development of applications that sense and react to contextual changes to provide a value-added user experience. In its general sense, context information can relate to the environment, the user, or the device status. In this paper, we propose a novel framework for building context aware and adaptive mobile applications. Based on feature modeling and Software Product Lines (SPL) concepts, this framework guides the modeling of adaptability at design time and supports context awareness and adaptability at runtime. In the core of the approach, is a feature meta-model that incorporates, in addition to SPL concepts, application feature priorities to drive the adaptability. A tool, based on that feature model, is presented to model the mobile application features and to derive the SPL members. A mobile framework, built on top of OSGI framework to dynamically adapt the application at runtime is also described.","Rabeb Mizouni, Mohammad AbuMatar, Zaid AlMahmoud, Salwa Alzahmi, Aziz Salah",Expert Systems with Applications,J,2014,Query,"to easily adapt mobile applications to context changes. In our framework, the adaptation to context changes corresponds to product derivation in SPL. ### dynamic adaptation of mobile applications ### to manage variability in mobile computing. ###  improve the runtime feature selection","FUN,EN,US,MAINT,PORT",S,"R,C",p,M,"CF,CM","This module is responsible for collecting the current user/device context. It relies on the handheld device operating system to col- lect the information needed. As mentioned previously, operating systems for smartphones and tablets offer a set of APIs made avail- able for developers to collect sensed information and make use of it. It includes: user location using the GPS, network type, and the battery level. Once this information is collected, it is communi- cated to the context decision module to adjust the behavior of the application accordingly as we will show next.","USER,PLAT,HW,INTERNET","F,NF","R,F",F,"we categorize the adaptability that a mobile adaptive application could exhibit to two types: Feature Availability and Feature Degradation. Feature Availability is an adaptability that changes the availability of the features at runtime. According to the context change, some features may be deactivated, others activated to better serve the current user context. As a consequence, the user may observe a change in the application GUI. Features that cannot be offered in the sensed context will be disabled (shaded). Only features that can be handled by the sensed context are offered to the user. Feature Degradation is an adaptability that changes the behavior of a given feature. This behavior may change to adapt to the sensed context. In order to implement these adaptability types, we present a framework for modeling and designing context-aware adaptive mobile applica- tions. We propose a multi-view SPL based variability approach which incorporates a modeling approach to easily adapt mobile applications to context changes. In our framework, the adaptation to context changes corresponds to product derivation in SPL.","multi-view SPL, a framework, theoretical description of the goal the process goes through and achieves but no concrete algorithm/tecnique given","S,P","AU,H",C,APP,S,B,E,"In addition to the traditional context acquisition module, the framework incorporates a context decision module that assesses contextual information and decides about the adaptation to perform based on the defined feature model.","H,M",D,R,R,"A running example is used to show the applicability of our approach. As home patient care is increasing, doctors and nurses are more and more on the move. They need applications to help accessing patient information while they are visiting them. In addition, they need to update patients’ records. Recently, many researchers (Jones et al., 2006; Varshney, 2009) focused on providing mobile applications to help them in this task. Because of doctors’ mobility, the context of use of these applications is con- tinuously changing. In addition to network-related changes, smart- phones/tablets, where the application is deployed, also undergo some changes like battery drainage, or network disconnection to cite a few.
+To improve the experience of doctors, we propose to develop an adaptive and context-aware healthcare doctor mobile client. It is an application that helps doctors on the move to have access to patients’ files, report medical conditions, prepare for intervention and advise hospital and emergencies about patient needs and arri- val.",HEALTH,"We proved in this work that the specification of context requirements in addition to feature modeling can be used to effi- ciently improve the runtime feature selection. In the future, we intend to further explore the algorithms in the Context decision module to improve the selection of variability at runtime.
+While the focus of this paper was the definition of the frame- work and handling runtime variability at the device end, future work will focus on handling variability on the server end by allow- ing the evolution of the mobile application itself. An interesting direction that we are planning to explore is the evolution of the requirement model at runtime. So far, the runtime adaptation we are suggesting is based on the representation of the application feature model to make adaptation decisions. Unpredictable con- texts that have not been taken into consideration while generating the composite components are so far treated in a static manner by deploying default composites selected by the modeler at design time. The research challenge here is to reflect this need by evolution of the feature model itself and re-evaluation of the design-time decision.",NO,"Meta-approach, generates self-adaptive apps. ### Platform: OSGI.
+
+Backward snowballing: To be done (potentially many new entries here, see Section 3).
+Forward snowballing:
+- https://ieeexplore.ieee.org/abstract/document/8004291
+"
+,24,Adaptive application offloading using distributed abstract class graphs in mobile environments,"Self-adaptation of software has been used as a mechanism to address complexity and constraint in mobile and pervasive computing environments. Adaptive offloading is a software adaptation mechanism in which an application dynamically distributes portions of itself to remote devices to achieve context specific optimizations. The feasibility of using adaptive offloading in pervasive environments is determined by the computational efficiency of adaptation algorithms and the efficacy of their decisions. However, existing state-of-the-art approaches incur overheads from storing, updating and partitioning complete application graphs on each device, which limits their utility and scalability in resource constrained mobile environments. Hence, this paper presents a novel distributed approach to application representation in which each device maintains a graph consisting only of components in its memory space, while maintaining abstraction elements for components in remote devices. This approach removes the need to store and update complete application graphs on each device and reduces the cost of partitioning an application during adaptation. In addition, an extension to an existing application graph partitioning heuristic is proposed to utilize this representation approach. An evaluation involving computationally heavy open-source applications adapting in a heterogeneous collaboration showed that the new approach reduced graph update network cost by 100%, collaboration-wide memory cost by between 37% and 50%, power usage by between 63% and 93%, and adaptation time by between 19.47% and 98%, while improving efficacy of adaptation by 12% and 34% for two of the considered applications.","E Abebe, C Ryan","Journal of Systems and Software, 2012 - Elsevier",J,2012,Query,"Specifically, in this approach, the constrained device computes an adaptation decision by computing a component distribution with the following objectives:
+Objective 1: ensure application components obtain enough resources to execute;
+Objective 2: satisfy the required load mitigation of the constrained (adapting) device (e.g. reduce power usage by 10% or free up mem- ory by 30% etc.);
+Objective 3: ensure remote devices are not over-loaded by the migrated (offloaded) components; and
+Objective 4: reduce the network cost that would arise from placing coupled components in different devices.","EN,PERF",S,C,P,M,"CF,CM","The process of monitoring context to deter- mine adaptation objectives, and ultimately compute adaptation decisions, is performed at the middleware layer, which abstracts the runtime architecture of an application for decision-making. High-level adaptation goals (resource utilization reduction, perfor- mance improvement of application etc.) are determined based on resource constraints within a collaboration environment and the resource requirements of the application.","PLAT,APP,INTERNET",NF,F,F,"An adaptation decision engine was developed which included the following two subcomponents: (1) a light-weight and dynamic application monitoring sub-system, which constructs and main- tains a runtime component graph reflecting the resource usage, performance and coupling information of components. This infor- mation was obtained by injecting resource-monitoring capabilities into an application using Byte-Code Injection. (2) An adaptation sub-system that computed application graph partitions based on the algorithm proposed in Section 3. ###","construction of a runtime component graph, which is assested to determine if adaptation is needed.",S,AU,D,"APP,BACKEND",S,B,E,"reduce network, power, and memory utilization as well as the performance cost of adaptive
+offloading. Additionally, the efficacy of the generated partitions was also improved in terms of reduced remote object coupling, as well as reduced migration cost.",H,ND,I,R,"the following three open-source appli- cations were considered for evaluation; (1) a Java based n-body simulator using the Barnes–Hut algorithm (Cahoon and McKinley); (2) a Hospital System Simulator (Cahoon and McKinley) and (3) the NASA World Wind Demo application (National Aeronautics and Space Administration, 2004). The runtime class graph of the Barnes–Hut implementation consisted of 8 classes and 15 edges; that of the Hospital Simulator consisted of 7 classes and 9 edges; whereas the NASA-WWJ application consisted of 80 classes connected with 197 edges. The respective class graphs of these applications excluded System classes (java.* etc.) which had their requirements and resource usage implicitly represented by appli- cation classes which utilized them. The GUI component classes and main thread entry-point class were declared to be anchored classes (see Section 3.2) for each application.
+","MATH,HEALTH,SCIENCE",Future work will focus on more extensive eval- uation using synthetic applications to simulate a wider range of application behaviours in real world collaboration scenarios.,NO,"Snowballing completed (backward and forward), no additional paper.
+
+Related work (secondary study): https://www.sciencedirect.com/science/article/pii/S1084804516302570
+
+Extension of: Abebe, E., Ryan, C., 2011a. A hybrid granularity graph for improving application adaptation efficacy in mobile computing environments. In: The 10th IEEE Inter- national Symposium on Network Computing and Applications (IEEE NCA11), IEEE, Boston, MA, pp. 59–66."
+,27,Middleware Support for Context-Aware Mobile Applications with Adaptive Multimodal User Interfaces,"Context-awareness has been widely recognized as the key enabler for ubiquitous applications. However, in spite of the recent middleware developments for this field, the design and implementation of such applications is still a major challenge mainly due to the complexity of designing the variant context-specific application behaviors, and structuring the application code so as to enable the seamless switching between the corresponding functions. In order to address these problems we have developed a mobile middleware system on top of Android which eases the development and maintenance of adaptive, context-aware ubiquitous mobile applications. In this paper we present this middleware and show how we used it to implement a prototype of a context-aware Instant Messenger with an adaptive multi-modal user interface. In order to assess the benefit of using our middleware, we compare its implementation with another version of the same messenger application (also with an adaptive and context-aware multi-modal user interface), that we implemented using only the Android framework.",Lincoln David ; Markus Endler ; Simone D.J. Barbosa ; Jose Viterbo Filho,2011 Fourth International Conference on Ubi-Media Computing,C,2011,Query,"This lack of support causes the resulting context-adaptive application source code to contain several conditionals that are not part of its main logic (i.e. if-else control structures spread all over the code), which increases the complexity of development and maintenance. Since these conditionals are cross-cutting concerns, a more appropriate programming paradigm, such as Aspect-Oriented Programming [2] or Context- Oriented Programming [3] is required.",MAINT,D,U,"T,P","S,M","CF,CM","Currently, we are setting up a library of Context Providers for CMS that includes following types of context: Geographic location (GPS), Time, Battery level, Type of wireless connection, WiFi RF Accelerometer, signal strength, etc.
+","PLAT,INTERNET","F,NF,TECH","R,F",F,"In order to address these problems we have developed a mobile middleware system on top of Android which eases the development and maintenance of adaptive, context-aware mobile applications. Our middleware not only supports the composition, reuse, dynamic deployment and interaction between context provisioning modules (i.e. Context Providers), but also provides a programming-level abstraction that eases the coding of context-aware mobile applications in Java. This abstraction, named Context Situation, has been integrated with ContextJ* [3], a Java library for Context-Oriented Programming. It greatly enhances the structuring of an adaptive application, by structuring the variant fragments of application code and bringing developers closer to the definition of usage situations in an application domain. ### Figure 1 illustrates the basic interactions between an application, the CMS and the SDM: A ContextConsumer of an application issues a subscription to SDM for some specific type of context information, e.g. Battery level, and notifies CMS (steps 1+2). Alternatively, the ContextConsumer may also make a synchronous request to obtain the current state of a specific context type (step 2b). In either case, CMS searches for any locally deployed Context Provider that can produce the requested context information. If none can be found locally, CMS searches, downloads the corresponding CP from the remote repository and activates it (step 3). Once activated, the CP polls or invokes methods at the Android API of the corresponding Resource Manager, and delivers the polled data to CMS as a ContextInformationObject (step 4). CMS adds some data to this object (e.g. the deviceID and timestamp), and publishes it through SDM (step 5). This object is then delivered to all ContextConsumers with matching subscriptions (step 6), which in turn pass it to the applications for specific handling (step 7).",middleware built on Android and Android API allows to monitor the usage of the app,P,AU,C,APP,S,B,E,"We have also shown that our middleware makes it easier for developers to code their context-aware applications, as opposed to using platform-specific libraries.",NI,D,NI,NI,"the Adaptive Mobile Communicator (AMC), which adapts its user interface depending on the user’s movement. The AMC is a simple Instant Messenger for the Android platform (version 2.1, or above) and to be executed on any mobile device equipped with a GPS receiver. It uses periodic GPS data readings to infer whether the user is stationary or moving slowly (i.e. less than 5 km/h) or fast. By default, the messaging interface is entirely textual, as found in all traditional messengers.",CHAT,"A noteworthy limitation of our study is that both versions of the AMC were implemented by the same team that developed the middleware, which could have introduced bias in the results or in the selection of the metrics used in the evaluation. Further studies are needed in which we only briefly instruct programmers on the middleware, to gather additional metrics on the learning curve, and also some subjective data to help to uncover needs or opportunities for refinement.
+Additional work is underway to further evaluate our middleware. We hope to increase and refine the
+complexity measures used to evaluate the cost of programming with the middleware in comparison to platform-specific codes. We are also planning the development of additional adaptive applications to assess the applicability of the middleware, i.e., the range of applications and situations to which it can be applied. Regarding the AMC, there is still some work to be done in terms of usability, especially regarding system feedback and user control. We are currently conducting a qualitative study to inform the development of a future version of AMC. We hope this study will provide insights and new requirements on the middleware itself, to make it even easier to code usable context-aware applications.",NO,"Snowballing completed (backward and forward), no additional paper."
+,29,Transformable Menu Component for Mobile Device Applications: Working with both Adaptive and Adaptable User Interfaces,"Using a learning system in a mobile environment is not effective if barriers are not overcome in the interaction with targeted users. For that purpose all mobile services, including m-learning ones, demand special attention being paid to interaction with the user. While mobile device applications are becoming more powerful, their development process must utilize the concepts of universal access and universal usability. This paper describes the model of both adaptable and adaptive mobile user interface, through the introduction of a transformable menu component capable to be personalized to each individual user with respect to her/his preferences and interaction style. We discuss the use of customization and adaptation techniques, with the aim to both enhance mobile HCI and to increase user satisfaction, particularly when working with graphically rich m-learning applications.","V Glavinic, S Ljubic, M Kukec","Internation Journal of Interactive Mobile Technologies (iJIM) ― Volume 2, Issue 3, July 2008",J,2008,Query,"efficiency enhancement in mobile HCI, and additionally that MDAs integrating the proposed menu component can definitely be considered a significant benefit in the field of m-learning. ### To improve mobile user interaction with menu navigation, a new model of menu component for graphical MDAs is required. The proposed transformable menu component would have the same form as PC desktop applications menus, as well as suitable size and shape with respect to limitations of mobile device displays. The above mentioned motivation goals (i.e. HCI issues) would be encompassed by using both adaptable and adaptive procedures, thus making the menu component both personalized and easy to use.",US,S,U,P,S,NA,"It is highly probable that different users will use different menu interaction patterns, even when working on very similar tasks. In that respect, a set of frequently used menu items will vary from one person to another.  ### ",USER,F,F,F,"While the user interacts with the MDA, her/his menu actions (navigation and selections) must be actively monitored. This involves installing proper adaptation algorithms which should operate “in the background” and, based on data thus collected, change the momentary menu configuration (Fig. 7). The most suitable and well-known adaptation algorithms are based on the user’s most frequently and recently used items ([3], [11]). ### User models, initially created by users themselves, can then be altered again, through profile learning algorithms",adaptation algorithms and a user model,P,AU,C,APP,L,B,E," The use of the aforesaid background algorithms allows modeling a user behavior profile, which describes the preferred way of user interaction. This profile can also be used in anticipating future user objectives in specific tasks of her/his work process. Such objective anticipation can extend menu usefulness by introducing completely new menu items for multiple action shortcuts. Along with behavior profile modeling, it is also possible to construct user models containing (and updating) information which would help the system to determine the interaction skill category (e.g. beginner, intermediate, advanced).",M,D,NI,R,M-learning ,EDUCATION,"We are continuing our work on the implementation of the presented model by primarily focusing on the development of menu adaptive algorithms. The menu based MDA prototype will be tested in various working environments among the student population. We intend to carry out both usability testing and efficiency measurement (with respect to interaction speed) in controlled experiments, initially run with mobile device emulators. We believe that the obtained results will confirm our expectations, in particular about increasing user satisfaction. ",NO,"About older platforms (e.g., J2ME)
+
+Backward snowballing:
+- refs [2] and [10]
+
+Forward snowballing:
+- http://www.riteh.uniri.hr/~sljubic/publications/hcii09-1.pdf
+"
+,32,"Multi-layer faults in the architectures of mobile, context-aware adaptive applications","Modern hand-held devices are equipped with multiple context sensors exploited by increasingly sophisticated software applications, called Context-Aware Adaptive Applications (CAAAs), that adapt automatically to changes in the surrounding environment, such as by responding to the location and speed of the user. The architecture of CAAAs is typically layered and incorporates a context-awareness component to support processing of context values and triggering of adaptive changes. While this layered architecture is very natural for the design and implementation of CAAAs, it exhibits new kinds of failures that arise as a result of faults that are specific to the choice of technology for specific layers. In this paper we investigate the occurrence of such faults and failures that manifest across architectural layers, and we describe samples of such failures in four CAAAs.","M Sama, DS Rosenblum, Z Wang, S Elbaum ",Journal of Systems and Software,J,2010,Query,"Once a predicate or a set of predicates is evaluated and triggers an adaptation, the CAAA adapts to match the environment by gen- erating a presumed context (as shown in top level of the pyramid). The form of these top-level contextual variables again depends on the implementation. They can be state variables or more complex configuration of components aiming to achieve a certain task (e.g., to connect a mobile device to the car’s hands-free system through Bluetooth). ###  Such decisions are made based on the evaluation of a set of adaptation predicates. Generally, these are Boolean predicates whose evaluation produces the inferred context, representing a set of higher-level concepts inferred about the external environment. Once any relevant predicates are satisfied, an adaptation is triggered, and the application behavior changes to match the presumed context, which represents a high level, application-oriented view of the external environment.",?,S,U,T,M,"CF,CM","Starting from the external environment, which embodies the physical context, the Context Manager loads environmental infor- mation by using available sensors. Each sensor works indepen- dently from the others, and they sense context asynchronously with respect to each other, possibly via multiple threads. In this way the Context Manager generates the sensed context, which is a discretization of the physical context created by multiple sensors at different times. ### ","USER,PLAT,HW,SO","F,NF","R,F",F,"At a high level we identify four kinds of supporting techniques. First are techniques that analyze specific architectural layers (as indicated by the arrows labeled with the number 1 in Fig. 3). For example, our previous work targets the Adaptation Manager layer by analyzing the rule-based models that define a CAAA’s adapta- tion behavior (Sama et al., 2008b). Second are techniques that both observe and analyze the context through some form of anomaly detection (with the former indicated by the arrows labeled with the number 2). For example, existing middleware bundles often provide options to generate a log of context events or notify listen- ers of context updates for further analysis (Open Handset Alliance, 2008c). Third are techniques that first manipulate and observe and then analyze the context (with the manipulation indicated by the reversing arrows labeled with the number 3). The manipulation is applied to context data that serve as input to a particular layer; then, the context data resulting from computations within that layer are observed and analyzed against some expected behavior. For example, Lu et al. introduced an input test generation scheme targeting CAAA inconsistencies (Lu et al., 2006), and previously we described a technique focused on analyzing thread scheduling con- flicts leading to context data inconsistencies (Wang et al., 2007a). Fourth are techniques that add an intermediate layer (labeled with the number 4 in the figure) to support some combination of anal- ysis, observation and manipulation of context data. For example, Xu et al. proposed to detect sensor inconsistencies by identifying con- flicting patterns among context inputs before they are fed to a CAAA (Xu and Cheung, 2005; Xu et al., 2006).","anomaly detection algorithms, algorithm to a an architectural layer","S,P",AU,C,APP,"S,M,L",B,E,"Accounting for where the user is located, what he is near, how fast he is moving, and predicting where he is going, are key features for popular applications running on these devices. These emerging Context-Aware Adaptive Applications (CAAAs) thus use all possible sources of surrounding information to adapt and improve the user experience. ### reacts to a context change immediately upon a change to some context variable, which can be independent of some situation of interest to the application","H,M,S",D,R,V,"PhoneAdapter adapts a phone’s profile according to context information. Phone profiles are a set of parameters that determine a phone’s behavior, such as settings for display intensity, ring tone volume and vibration. Instead of requiring the user to select a pro- file manually, PhoneAdapter uses a set of adaptation rules to trigger automatic selection of a profile suitable to the user’s current con- text. The selected profile prevails until a more suitable one is cho- sen through the triggering of other rules. As we shall see, however, the selected profile is not always the most appropriate one. ### TourApp is a context-aware application that runs on mobile de- vices of visitors attending an exhibition to notify them of the pre- sentations of interests. TourApp was distributed originally with the Context Toolkit (Salber et al., 1999) and has become a common demonstration application for context-awareness middleware.
+Context sensing is supported by different Widgets, each running on a router in some room of the exhibition. As the user walks to- ward a registration desk, the application is supposed to sense a Registration Widget, which stores the user’s preferences and deter- mines which information the user will receive. As the user enters different presentation rooms, the application will receive informa- tion (e.g., presentation title, duration, speaker bio) from a set of Presentation Widgets. As the battery becomes critically low during the visit, the application will enter a power saving mode, reducing the quantity of displayed information. ### This application was conceived by Lu et al. and used to illustrate the effectiveness and efficiency of their Context Inconsistency Reso- lution (CIR) techniques (Lu et al., 2008). The scenario consists of a battery of RFIDs placed along a conveyor belt to identify the posi- tion of a moving package in order to manipulate it precisely. When we map this application to our architectural model, the context management layer reads all the RFIDs, and the adaptation logic simply uses their estimate_position function to infer the position of the package, which it does by reading the strength of the signal received by each RFID. Once the package’s position on the conveyor belt has been determined, the program unit relevant to that loca- tion is started.","TOURIST,UTILITY","We have also underlined intrinsic problems of this architecture and how it gives rise to com- plex adaptation faults in CAAAs. The refresh rate of context vari- ables and the intrinsic asynchrony of their updates produce interferences while reading and refreshing their values in memory, and the evaluation of the variables consequently produces incon- sistencies. The CAAAs we investigated concretely illustrate several instances of those faults and their manifestation in failures, and they reveal areas where additional architectural support would be beneficial. As CAAAs become increasingly pervasive, architec- tural choices must inform and be informed by validation and ver- ification techniques in order to mitigate the impact of such adaptation faults and their associated failures.
+",NO,"Technology: J2ME
+
+Extension of this paper: ""Multi-layer faults in the architectures of mobile, context-aware adaptive applications: a position paper"" by Sama et al.
+
+Backward snowballing: No additional papers
+
+Forward snowballing:
+- https://www.sciencedirect.com/science/article/pii/S0164121212003287
+- http://www.idi.ntnu.no/~alfw/papers/sea2010-CAMF.pdf
+"
+,35,CloudAware: A Context-Adaptive Middleware for Mobile Edge and Cloud Computing Applications,"The widespread use of mobile devices such as smartphones and tablets is accompanied by an ever increasing market for mobile applications, including resource demanding services like speech-or face recognition, that formerly were restricted to stationary devices. But as mobile devices remain comparatively limited in terms of resources (e.g., computation, storage and battery life), current approaches for augmentation have advocated the integration of cloud servers as well as other nearby devices to provide scalable computation-and storage resources to mobile end users. A current solution is the so-called computation offloading, which is the most prominent strategy used in Mobile Cloud Computing (MCC) and its successor known as Mobile Edge Computing (MEC). While MCC and MEC are receiving increasing attention, current work is often not able to cope with the quickly and constantly changing context (e.g., intermittent connectivity) of mobile devices. Therefore, this paper presents the evaluation of CloudAware, a context-adaptive mobile middleware for MCC as well as MEC that supports automated context adaptation by linking the distribution features of mobile middleware with context-aware self-adaptation techniques. In particular, we present a system software infrastructure and a data mining process which facilitate the development of elastic, scalable and context-adaptive mobile applications and present their evaluation using real usage data provided by the Nokia Mobile Data Challenge (MDC) dataset.","G Orsini, D Bade, W Lamersdorf ",2016 IEEE 1st International Workshops on Foundations and Applications of Self* Systems (FAS*W),W,2016,Query,"the specific design goals of CloudAware can be summarized by the following key objectives:
+• Speed up computation through parallelization
+• Save energy or bandwidth by offloading computations • Enable offloading for diverse mobility scenarios ### CloudAware differs from previous or similar approaches in the domain of MEC and context-adaptive mobile middleware by its primary design goal to support ad-hoc and short-time interaction with not only centralized resources, but also nearby devices. This idea is extended by the secondary design goal, which is to provide an uninterrupted availability of a mobile application even if no surrogates are available or the connec- tion gets interrupted by using the mobile device as a fallback.","PERF,EN,FUN,MAINT",S,R,P,M,CM,"GSM/WiFi/Bluetooth state (on/off), discovered MAC addresses and GSM cells, signal strength of WiFi as well as GSM cells, extended with our own mea- surements to get an assumption about the available bandwidth.
+• General information about the mobile device itself: time since the last user interaction, silent mode switch, charging state, battery level, free memory.
+• Date, time, location, calendar events, average and predicted remaining duration of stay at the current location.
+• Reasoned attributes: remaining duration of stay at the same WiFi AP or GSM cell, user is at home/work, traveling, moving, resting.
+• Application usage data: The applications the user interacts with and the specific screens of these ap- plications.","USER,PLAT,HW,INTERNET","F,NF",F,FN,"To provide dynamic adaptation through a configuration- free programming model CloudAware employs compositional adaptation and sensor-based reasoning to allow a flexible adaptation to current as well as future context states, that can hardly be foreseen by developers. In particular, we use connectivity- and execution predictions that support the effi- ciency of the so-called offloading decision in MCC- as well as MEC scenarios. In this way, more generic and flexible scenarios that go beyond than just offloading computations become possible. To realize such scenarios and to support a broad range of mobile applications, CloudAware only relies on the presence of a Java Virtual Machine which enables our prototype to augment Android applications without modifying the underlying mobile operating system.","Component based adaptation and sensor based reasoning, with the reliance of a Java virtual machine",S,AU,C,"APP,BACKEND",S,B,E,"For each of the of- floadable tasks, it is decided whether to offload this task to a cloud-server or a cloudlet by predicting its probability to be executed successfully, meaning that the result is returned to the mobile device.",NI,D,I,R,GENERIC,GENERIC,"Just to name a few challenges: The information about the current bandwidth to specific resources and a forecast about their future availability, the current battery level or the probability that an offloaded task will be successfully executed are all part of the applications’ and devices’ so-called context that needs to be integrated into the distribution strategy. ### available solutions are often domain specific. Furthermore, the requirement for additional configura- tion prevents their immediate use in the domain of MEC where a quick, efficient and dynamic context-adaptation is necessary in order to even anticipate future context scenarios that are unforeseeable by the developer.",NO,"Technology: Android
+
+Backward snowballing: see Section IV
+
+Forward snowballing: Done, no additional papers.
+"
+,36,Efficient profile aggregation and policy evaluation in a middleware for adaptive mobile applications,"There is a large consensus on the need for a middleware to efficiently support adaptation in pervasive and mobile computing. Advanced forms of adaptation require the aggregation of context data and the evaluation of policy rules that are typically provided by multiple sources. This paper addresses the problem of designing the reasoning core of a middleware that supports these tasks, while guaranteeing very low response times as required by mobile applications. Technically, the paper presents strategies to deal with conflicting rules, algorithms that implement the strategies, and algorithms that detect and solve potential rule cycles. A detailed experimental analysis supports the theoretical results and shows the applicability of the resulting middleware in large-scale applications.","C Bettini, L Pareschi, D Riboni ",Pervasive and Mobile Computing,J,2008,Query,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,EXCLUDED: it is begore Android/ios apps
+,39,"MUSIC: an autonomous platform supporting self-adaptive mobile applications
+","With the continuous improvement of device capabilities, mobile applications are becoming not only context-aware, but also self-adaptive. This new trend of applications are capable of tuning their behavior depending on changes observed in the surrounding environment. However, these adaptations are often restrained by the static features of the supporting middleware, which is not able to exploit the opportunities offered by the environment in order to improve the quality of the adaptations. The MUSIC platform offers a modular support maximizing the user satisfaction by adapting dynamically mobile applications. Beyond this support, the MUSIC platform can itself be adapted towards the evolving environment (e.g., location, network connectivity) in order to satisfy both the user requirements and the device properties. In this paper, we focus on three complementary approaches for adapting the MUSIC platform, namely i) the distribution of the adaptation process among the neighboring devices, ii) the assignment of the devices responsibilities, and iii) the adaptation of the platform components. Thus, MUSIC leverages the adaptation of mobile applications by changing autonomously the middleware characteristics.","R Rouvoy, M Beauvois, L Lozano, J Lorenzo, F Eliassen",Proceedings of the 1st Workshop on Mobile Middleware: Embracing the Personal Communication Device,W,2008,Query,"The MUSIC platform offers a modular support maximizing the
+user satisfaction by adapting dynamically mobile applications, such
+as InstantSocial [5]. Beyond this support, the MUSIC platform can
+itself be adapted towards the evolving environment in order to sat-
+isfy both the user requirements and the device properties.### As the MUSIC platform targets mobile and changeable environ-
+ments, it encourages the support of a dynamic platform configuration to optimize the scarce resources of mobile devices. This
+dynamic configuration embraces two different issues: i) the conformance to the adaptation domain, and ii) the assignment of a profile to each device in the adaptation domain.","PERF,EN",S,U,P,M,x,"Triggering of a self-adaptation. Policies also specify when the
+Profile Assigner has to trigger an adaptation and how to carry out
+this adaptation. The events triggering an adaptation are:
+A device performing a profile becomes unavailable: the Profile
+Assigner tries to replace this profile or reconfigures the
+adaptation domain if no substitute is found;
+Profiles conflict: the Profile Assigner decides which device per-
+forms the profile;
+Performance degradation: in this case, it will be necessary to re-
+assign profiles according to the policies, in order to enhance
+the performance of the adaptation domain.
+A node becomes available: if the node has sufficient resources,
+the Profile Assigner triggers a profile reassignment;###The MUSIC platform can therefore switch
+between configurations supporting or not the discovery of remote
+business services when needed (e.g., the battery level becomes too
+low).","INTERNET,HW,APP",x,F,FN,"we describe three complementary approaches used
+by the MUSIC platform to optimize its behavior according to the
+surrounding environment and the application requirements. This
+first approach enables the publishing and the discovery of platform
+services available in the adaptation domain. This enables MUSIC
+to distribute the adaptation process across a set of platform profiles.
+These profiles are dynamically organized by the second approach,
+which assigns each required platform profile to a mobile devices
+available in the adaptation domain. Finally, the third approach enables the MUSIC platform to reconfigure the profile it is assigned by itself, thus offering new alternative services for distributing the
+adaptation process.###
+Adaptation Reasoner enables other devices to use its planning
+
+heuristics to determine the best configuration of an appli-
+cation. As the MUSIC platform supports various planning
+
+heuristics (exhaustive, Bellman-Ford, constraint satisfaction
+
+algorithms [2, 3]), the other devices can exploit the associ-
+ated services depending on their objective (optimal configu-
+ration, resource-saving configuration, etc.);",Constrainted satisfaction algorithm ,S,AU,D,APP,S,B,E,"MUSIC is a middleware platform supporting the adaptation of
+mobile applications, but opposed to existing platforms, the MUSIC
+platform is able to adapt itself for improving the adaptation quality.###
+The MUSIC platform offers a modular support maximizing the
+user satisfaction",H,D,R,R,GENERIC,GENERIC,"In a near future, these approaches will be vali-
+dated by the industrial pilot applications of the MUSIC project.###
+This reflective support for self-adaptation requires to take into
+account specific issues related to bootstrapping, planning, and re-
+configuring the platform.
+Bootstrapping the MUSIC platform. This step corresponds the
+initial deployment of the platform, which can be operated in two
+ways. A minimal MUSIC platform can be instantiated and trig-
+gered to plan and deploy a new configuration of the platform, which
+fits to the device properties. A remote MUSIC platform can be re-
+quested to plan and deploy an optimal configuration of the MUSIC
+platform for the current device.
+Planning a new platform configuration. When triggered by a
+context change, the adaptation reasoner requests the plans associ-
+ated to the MUSIC platform components and builds the alternative
+platform configurations. The heuristics compares their respective
+utility functions and selects the configuration with the best score.
+For example, the heuristics may choose between a MUSIC platform
+configuration providing the SOA support and an simple planning
+heuristics realization, or a configuration with an efficient planning
+heuristics implementation, but no SOA support.
+Reconfiguring the MUSIC platform. The reconfiguration of the
+MUSIC platform can be operated in two different ways, similarly
+to its boostrapping. If the local Configuration Executor executes
+the configuration of the platform, then the Kernel and the Con-
+figuration Executor cannot be replaced by the reconfiguration as
+these components are central to the platform. To leverage this lim-
+itation, the Adaptation Reasoner can trigger a remote Config-
+uration Executor to operate the reconfiguration, thus allowing a
+comprehensive reconfiguration of the MUSIC platform.###",NO,"Technology: Thus, thanks to the integration of the R-OSGi framework within
+the MUSIC platform, the Adaptation Manager can exploits the
+loose coupling feature of the OSGi framework to select and invoke
+adaptation services in a transparent manner
+
+Backward snowballing: ref [1], ref [11]
+Forward Snowballing: https://www.sciencedirect.com/science/article/pii/S1574119211001283"
+,53,"An Adaptive Context Acquisition Framework to Support Mobile Spatial and Context-Aware Applications
+","The increasing number of mobile devices allows users to access applications anytime and anywhere. In such applications, location is a key information to improve the interaction between user and services. Existing applications combine location with other context information, such as weather, user’s activity, temperature, among others. However, developing context-aware applications is still a non-trivial task due to the complexity to implement context management. Additionally, existing context management infrastructures are too brittle to handle changes in the underlying execution infrastructure. In this scenario, this work proposes a context acquisition framework, which tries to reduce the development complexity of mobile spatial and context-aware applications. The framework uses tuples space and OSGi to promote uncoupling and to adapt itself according to application requirements. A proof of concept was developed in order to show how spatial and context filters can be easily implemented during the development of a tracking application.","André Sales FontelesBenedito J. A. NetoMarcio MaiaWindson VianaRossana M. C. Andrade
+","International Symposium on Web and Wireless Geographical Information Systems
+W2GIS 2013: Web and Wireless Geographical Information Systems pp 100-116",C,2013,Query,"In this scenario, we propose a context acquisition framework implemented
+
+in the Android platform, which tries to reduce the complexity of the develop-
+ment of mobile spatial and context-aware applications.###
+As a consequence, the framework reduces coupling
+
+among applications and the context acquisition layer. This clear separation be-
+tween context acquisition and context consumption allows the framework to
+
+adapt the way context is acquired without the perception of the applications
+above. This adaptation mechanism tries to reduce resource consumption and
+provides transparency when sensors are switched.",PERF,S,U,P,S,x,"The adaptation of the proposed context acquisition framework takes place in two
+different moments: deployment time and runtime. Deployment time adaptation
+permits the developer to install strictly those CACs with CKs required by the
+applications.
+Additionally, runtime adaptation is performed based on the context of the
+
+running applications. Context, as previously described, is the intersection be-
+tween Interest Zone and Observation Zone. Thus, the CAC lifecycle management
+
+allows the framework to stop and remove CACs in order to optimize resource
+consumption based on the current context of all applications. The main goal of
+the runtime adaptation is to reach a state where IZ contains the OZ, as shown in
+Fig. 7. Therefore, all unnecessary CACs in a given time are stopped. When the
+IZ changes, the adaptation mechanism is responsible for detecting this change
+and searches for compatible CACs to handle the new IZ.","APP,HW",x,F,FN,"We also define a
+region on map (e.g., an area around a square), in a certain point of the trajectory,
+where an application would desire to be notified to perform some action when a
+user get inside or nearby (depending on the filter).",This is a framework and the authors don't give details to the adaptation mechanism,S,AU,C,APP,S,B,E,"This allows the framework to change how the context acquisition is performed
+without the application worry about these changes (e.g., sensor errors, sensors
+reconfiguration to reduce resource consumption). In addition, the framework
+facilitates the development of this kind of application by hiding the complexity
+of context acquisition and matching.",H,D,I,R,"This paper presented an adaptive context acquisition framework to support mo-
+bile spatial and context-aware applications.",GENERIC,"As a future work, a online CAC repository is going to be developed, per-
+mitting CACs to be accessed at runtime. This repository would be used in case
+
+of an application interest can not be satisfied. Also, we would like to increase
+the number of filters to be used with SysSU to facilitate the management of
+contextual data. Finally, information regarding quality of service (QoS) is going
+to be annotated on each CAC, permitting applications to consider QoS when
+deciding which CAC is more appropriate in a given situation.",NO,
+,54,"Self-adaptive battery and context aware mobile application development
+","Overall high power consumption in the mobile applications forces the mobile users to recharge frequently. Most of the Android applications do not implement any self-adaptive strategies that react to the battery level, status and context. Thus the applications continue to consume power even when battery is critically low. Intelligent control of hardware and software optimization based on the battery level is the key to power saving. This paper introduces a self-adaptive application development framework which proposes three profiles with various self-adaptive features for mobile applications. The framework employs an analyzer engine which decides the activation of appropriate profile based on battery and context information. The self-adaption takes place in four levels - hardware & software features adaption, user features adaption and additional optimization. When the battery is critically low, priority is given to maximize the battery life until next charging opportunity. Such implementation is highly desirable for mobile applications with high dependency on display hardware (e.g. games) and/or on network operations (e.g. YouTube, Dropbox). Prototype Android applications are developed and results show up to 40% reduction in application power consumption. Power Tutor has been used to get the power consumption results.","SK Datta, C Bonnet, N Nikaein ",2014 International Wireless Communications and Mobile Computing Conference (IWCMC),C,2014,Query,"This paper proposes a self-adaptive framework to facilitate
+the development of power efficient mobile applications.###
+When the battery is critically low, the application will offer
+energy efficient alternatives to the user to minimize the battery
+consumption while compromising the UX.",EN,S,U,P,S,x,"In this section we describe the self-adaptive framework to
+develop Android application that reacts to battery level, status
+and context.###
+Such
+applications respond to the battery level, status (AC/USB
+charging or discharging) and context information by modifying
+their behavior, optimizing resource usage & performance and
+user experience (UX).","HW,INTERNET",x,F,FN,"The
+engine receives the battery and context related information at
+the real time. The received information are examined at four
+levels – (i) current battery level, (ii) battery status, (iii)
+occurrence of next charging opportunity and (iv) travelling
+information. The engine is configured with predefined rules
+which take into account combinations of the above four
+
+conditions to determine the appropriate self-adaptive profile.",predifined rules to determine the appropriate self-adaptive profile,S,AU,C,"APP,HW",S,B,E,"A prototype application has been
+developed using the approach. The results clearly establish
+that such development strategies can immensely benefit the
+smart devices and applications can become power efficient.",H,D,R,R,"In this paper we have presented a self-adaptive framework
+for Android application development. The primary goal of the
+framework is to monitor the battery level, status and context
+information at real time, analyze them and trigger the
+appropriate self-adaptive profile.",GENERIC,NULL,NO,
+,55,"Adaptive Application Configuration and Distribution in Mobile Cloudlet Middleware
+","Despite recent advances in mobile device capabilities in terms of CPU power, memory, connectivity, etc, these devices still fall short to execute complex media rich and data analysis applications. Therefore, the concept of cloudlets was introduced, where nearby infrastructure is used by the mobile user for code offloading. However, the way this infrastructure is used is often left to the application developer, leading to a best effort approach in utilizing remote resources. In this paper we present a middleware approach for such cloudlet environments, that manages mobile applications on a component level. The middleware monitors application components in the cloudlet, and optimizes both the configuration and the deployment of all components in the cloudlet for the current execution context. We present a prototype implementation of the middleware platform, and show the effectiveness of our adaptation strategy using an augmented reality use case.","T Verbelen, P Simoens, F De Turck, B Dhoedt","Mobile Wireless Middleware, Operating Systems, and Applications",C,2013,Query,"In this paper we present a component based middleware architecture, that
+configures and distributes application components at runtime. We propose a
+model driven middleware decision algorithm that optimizes both the application
+configuration and distribution, taking into account the network connectivity,
+the available resources and application constraints imposed by the application
+developer.","PERF,EN",S,C,P,M,x,"The middleware
+monitors application components in the cloudlet, and optimizes both the
+configuration and the deployment of all components in the cloudlet for
+the current execution context.###
+The Cloudlet Agent has a global overview of all application components
+running on the different EEs, and contains the decision algorithm to optimize the
+deployment and configuration of all components in the cloudlet. This decision
+algorithm is triggered when an event occurs in the cloudlet, e.g. when a new
+device joins the cloudlet, when an EE detects a constraint violation, etc.",APP,x,F,FN,"To find the optimal configuration and deployment, the goal is to find an assign-
+ment of each component to a device, and a value for each configuration parameter
+
+that optimizes the utility function, while adhering to all imposed constraints.###
+a brute
+force search for the optimum is inappropriate for use at runtime due to the
+long calculation time. To find a valid (although possibly suboptimal) solution in
+acceptable time, we use the heuristic explained in pseudocode in algorithm 1###
+The algorithm is inspired by the KL graph partitioning algorithm [8],","middleware, adaptation done with algorithm finding adequate adaptation configuration in regards to the costraints
+","S,P",AU,D,"APP,HW",S,B,E,"In this paper we present a cloudlet middleware architecture, that manages ap-
+plication on a component level. The middleware can both adapt the deployment
+
+and the configuration of the components at runtime, in order to optimize the of-
+fered quality of experience to the end user.",H,D,I,S,"As a use case, we present an augmented reality application featuring markerless
+tracking as described by Klein et al. [9], combined with an object recognition
+algorithm presented in",GENERIC,"Future work
+consists of further evaluating the quality of the heuristic, as well as integrating
+the algorithm in a full implementation of the cloudlet middleware.",NO,INCLUDED
+,58,"Towards Battery-Aware Self-Adaptive Mobile Applications
+","Mobile Applications are rapidly emerging as a convenient medium for using a variety of services. In ubiquitous environment, the challenge relies on developing applications that sense and react to environmental changes to provide a value-added user experience. This context awareness property improves application usability. Context information can be related to the environment, user but also to the device itself. Since smart phones are battery-powered, in an ideal scenario, the application will self-adapt and adjust its behavior according to the current battery status of the device. In this paper, we address the challenge of building self-adaptive battery-aware applications for mobile devices. Our solution is based on a dynamic feature configuration to adapt efficiently to the device status. We propose a distributed battery-awareness architecture where both the mobile client and the server side optimize the battery utilization when needed. We also propose three layers of dynamic adaptation: user features' availability adaptation, internal features' behavior adaptation, and data consumption adaptation. As illustrated by the experiments, doing the right adaptation in both server and client sides increases the lifetime span of the mobile device and hence the availability of the application.",Rabeb Mizouni ; M. Adel Serhani ; Abdelghani Benharref ; Oubai Al-Abassi,2012 IEEE Ninth International Conference on Services Computing,C,2012,Query,"In this paper a self-adaptive battery-aware mobile
+application approach development has been presented. The
+main design objectives are:
+1) to minimize the battery usage of the mobile
+application
+2) to dynamically adapt the behavior of the application
+at the run time when critical battery levels are
+reached
+3) to propagate the battery-awareness to the server side
+where a mobility aware service will dynamically
+adapt its answers according to the communicated
+battery level.",EN,S,C,P,S,x,"Figure 4 shows the dynamic adaptation of features’
+availability. We used two battery thresholds to disable
+features: 60% and 20%. At 60%, video downloading and
+uploading is disabled while at 20% all pictures’
+downloading and uploading is disabled.",HW,x,F,FN,"To effectively add battery-awareness, we identified three
+types of adaptation: External Feature Availability, Internal
+behavior adaptation and Data consumption adaptability.",The adaptation in the use case is done with the use of thresholds.,P,AU,D,"APP,BACK",S,B,E,"Having an application that is battery-aware extends the
+lifetime of the application, its connectivity and hence its
+
+availability.",H,D,I,R,"To illustrate the proposed approach, we present the
+development of an example application that incorporates the
+three types of adaptation we have proposed. This application
+is a self adaptive battery-aware weather application for a
+mobile device.",GENERIC,"In many applications such as e-health or e-
+learning, it would be better to limit the application services
+
+rather than disconnecting from the network because of a
+battery shortage. As a future work, all our efforts will go to
+
+the development of a framework for battery-aware self-
+adaptive mobile application.",NO,
+,62,Adaptive service-oriented mobile applications: A declarative approach,"Modern society increasingly relies on mobile devices and on distributed applications that use them. To increase development efficiency and shorten time-to-market, mobile applications are typically developed by composing together ad-hoc developed components, services available on-line, and other third-party mobile applications. To cope with unpredictable changes and failures, but also with the various settings offered by the plethora of devices, mobile applications need to be adaptive. We address this issue by proposing a declarative approach. The advantages of the proposed solution are demonstrated through an example inspired by an existing worldwide distributed mobile application.","G Cugola, C Ghezzi, LS Pinto, G Tamburrelli","International Conference on Service-Oriented Computing
+ICSOC 2012: Service-Oriented Computing pp 607-614",C,2012,Query,"As introduced in the previous section, the development process for an app like
+SR starts by listing the needed functionalities and by deciding which of them will
+be implemented through an ad-hoc component and which will be implemented by
+re-using existing solutions. For example, the communication with social networks
+may be delegated to a third party app, while geo-localization of the user may be
+performed by a ad-hoc component which exploits the GPS sensor on the device.",?,S,U,T,M,x,"Since such component may execute correctly only on devices with an autofocus camera and
+does not work properly on other devices, our choice would limit the usability of
+our app. To overcome this limitation and allow a correct barcode recognition also
+on devices with fixed focus cameras, SR needs to provide a form of adaptivity.
+Indeed, it has to detect if the camera on the current device is autofocus and,
+if not, it has to invoke an external service to process the acquired image with
+a special blurry decoder algorithm. A similar approach can be used to get the
+user location (i.e., GetPosition component), which requires a GPS sensor3
+. To
+execute SR on devices without GPS we may offer a different implementation,
+which shows a map to the user for a manual indication of the current location.###","?
+",x,F,"FN,FE",NI,NI,S,AU,"C,D",NI,NI,B,E,"we solve two typical problems of
+mobile apps: (1) how to adapt to the plethora of devices available, and (2) how to
+cope with failures happening at run-time.###","H,M,S",D,R,V,"It allows users to share data concerning a commercial product or
+query for data shared by others. Users may use SR to publish the price of a
+product they have found in a certain shop (chosen among those close to their
+current location). In response, the app provides the users with alternative, nearby
+places where the same product is sold at a more convenient price.",ECOMM,"Future work includes building an IDE, possibly integrated in a widely adopted
+
+tool such as Eclipse, to further simplify the definition of abstract/concrete ac-
+tions and goals. As for the SelfMotion middleware, while the current prototype
+
+is operational and publicly available, there is still space to further improve per-
+formance and robustness.",NO,
+,64,Adaptive Mobile Web Applications Through Fine-Grained Progressive Enhancement,"The availability of mobile devices is growing at an incredible pace. This trend has set a need for applications being available at anytime, anywhere, and on any device. As most mobile users carry their device at all times, being truly mobile provides users an unprecedented freedom. Nevertheless the clear advantages, application developers are facing challenges due to device fragmentation. Current application development solutions are insufﬁciently prepared for the high variety of mobile platforms and hardware characteristics. In this paper we propose a platform for the development and delivery of adaptive mobile applications. An adaptive application composition approach is introduced, capable of autonomously bypassing fragmentation related issues. This goal is achieved by incorporating ﬁne-grained progressive application enhancements through a quantitative evaluation strategy.","H Desruelle, D Blomme, F Gielen",(2011) ADAPTIVE 2011 : the third International conference on adaptive and self-adaptive systems and applications. p.51-56,C,2011,Query,"An adaptive
+application composition approach is introduced, capable of
+autonomously bypassing fragmentation related issues.###",,,,,,x,,,x,,,,,,,,,,,,,,,,,"a platform in support of
+developing and delivering adaptive mobile web applications.",GENERIC,"Other necessary steps in the
+development of this application composition method are
+related to broadening the scope on supported device types.
+The diversity of devices that enable access to third party
+software applications is currently extending towards home
+
+entertainment systems, automotive, etc. Such evolution fur-
+ther emphasizes the impact of fragmentation on application
+
+developers. This is why the applicability of our proposed
+application composition method should be evaluated for
+more ubiquitous environments.",,EXCLUDED (mobile web apps)
+,78,A system structure for adaptive mobile applications,"A system structure for adaptive mobile applications is introduced and discussed, together with a compliant architecture and a prototypic implementation. A methodology is also introduced, which exploits our structure to decompose the behavior of non stable systems into a set of quasi-stable scenarios. Within each of these scenarios we can exploit the knowledge of the available QoS figures to express simpler and better adaptation strategies.","V De Florio, C Blondia ","In Proc. of the Sixth IEEE Int.l Symposium on a World of Wireless, Mobile and Multimedia Networks (WoWMoM 2005)",C,2005,Query,"We introduced a system structure for adaptive mobile ap-
+plications based on decomposing the behavior of a non sta-
+ble system into a set of quasi stable scenarios.###
+This said, we can draw now two observations:
+1. Common solutions such as connection-orientation and
+transparency are not adequate for MA [5, 6, 10, 12].
+
+Trying to enforce the connection-oriented communi-
+cation model despite the inherently many system par-
+titionings experienced by non-stable environments is a
+
+Sisyphean labor—both costly and ineffective.
+2. MA require two specific abilities—that of detecting
+the various “changes” characterizing their system and
+
+surrounding environment, and that of adapting accord-
+ingly their course in order to maximize the ratio QoS
+
+over costs. The latter property is the so-called adapt-
+ability. It is worth noting how transparency and adapt-
+ability are mutually incompatible.
+
+We can conclude that MA must be structured after the
+above abilities, and that in particular they require system
+support for adaptability.
+We present herein an architecture and a system structure
+
+for adaptive MA addressing the above requirements system-
+atically.",?,S,C,P,"S,M",x,"QoS information include power
+
+availability, physical location, device proximity and com-
+munications capabilities and costs [5]. Such information
+
+must be made available to the application and control layers
+in order to drive the adaptation processes.###
+Once a meaningful QoS change has occurred and has
+been detected, the next step is to react to this event. An
+
+example of reaction could be, e.g., adapting the error pro-
+tection scheme to the current state",?,x,F,"FN,FE","The proposed methodology encompasses the following
+steps:
+
+• Monitoring the system response and QoS under vari-
+ous configurations of, e.g., available energy, or band-
+width, or local or overall CPU usage.
+• Computing a Pareto curve trading off, e.g., power
+availability and observed throughput.
+• Defining the scenarios corresponding to the points in
+the Pareto curve.
+• Writing an Ariel program for each of these points and
+associating it to its scenario.
+• Detecting at run-time “where the system is” with re-
+spect to the Pareto curve and, accordingly, pushing the
+corresponding Ariel program onto ASI (see Fig. 2).",A methodoligy similar to a MAPE-K,S,AU,"C,D",G,S,B,E,"Within each
+
+of these scenarios we can exploit the known QoS figures to
+express simpler and better strategies.###","H,M,S",D,"R,F",S,"a system structure for adaptive mobile ap-
+plications based on decomposing the behavior of a non sta-
+ble system into a set of quasi stable scenarios.",GENERIC,"Foreseen future work
+includes augmenting our prototype, exercising it on various
+case studies, and analyzing its performance.",NO,"No explicit mention of ios, android, iphone or smartphone"
+,83,"Design of an Adaptive Persuasive Mobile Application for Stimulating the Medication Adherence
+","There is a variety of persuasive applications that have been proposed in different application domains like well-being, health-care and e-commerce. However many have been designed largely for a general audience. Designers of these technologies may achieve more success if applications consider contextual information of the user for making them more adaptable. This paper is an proposal for improving medication adherence by sending personalized persuasive message and reinforcing feedback. To do this, we propose an adaptive services oriented architecture, and a persuasion strategy defined for selecting the appropriate persuasiveness level according to contextual information such as time and stress. Stress measure is derived from physiological data (e.g. Electro Dermal Activity, heart rate, temperature), which is collected through a wearable wireless multi-sensor device.","FS Lopez, N Condori-Fernández ",Intelligent Technologies for Interactive Entertainment,C,2017,Query,"we present the architectural design of an adaptive persuasive mo-
+bile application for stimulating the medication adherence. The purpose of the
+
+application is to provide the most effective reminder service by means of using
+
+adaptive persuasive messages.",US,S,R,P,S,x,"We argue that this adaptation is possible by ex-
+ploiting physiological data in order to adjust the different persuasiveness levels
+
+at run-time.",SMARTO,x,F,FN,"The application basically consists of a messaging interface that is able to
+i) make use of the feedback user interface to render persuasive messages and reinforcing feedback to care-receiver; and ii) push messages targeted at care-
+givers. The rendering of messages can be done in text and/or in audio form,
+
+depending on a format header associated to each message.###
+We use fuzzy theory for representing the Stress level as a linguistic variable.",The researchers use a threshold approach to decide what the appropriate message is,P,AU,C,APP,S,B,E,"adaptive persuasive mo-
+bile application for stimulating the medication adherence. The purpose of the
+
+application is to provide the most effective reminder service by means of using
+
+adaptive persuasive messages.",S,D,F,S,"adaptive persuasive mo-
+bile application for stimulating the medication adherence.",HEALTH,"As part of our future work, we are going to validate the
+prototype of our adaptive persuasive application",NO,"No explicit mention of ios, android, iphone. Only smartphone is mentioned"
+,85,Adaptive RDF graph replication for Mobile semantic web applications,"An increasing number of applications are based on Semantic Web technologies and the amount of information available on the Web in the form of RDF is continuously growing. The adaption of the Semantic Web for Personal Information Management and the increasing desire for mobility is often accompanied by situations where no network connectivity is available and hence access to remote data is limited. Such situations could be obviated when mobile devices are able to operate on offline data replicas and synchronize changes when connectivity is reestablished. In this paper we present a framework allowing for adaptive RDF graph replication and synchronization on mobile devices. It extends the architecture of typical Semantic Web applications with components that analyze various information sources of semantic applications (including ontologies, queries, and expressed user interest) and use them for selecting parts of RDF data bases, which are then made available offline using a proxy SPARQL endpoint on a mobile device. Thus, we provide access to Semantic Web data without the need for permanent network connectivity.","B Schandl, S Zander ",Ubiquitous Computing and Communication Journal (Special Issue on Managing …	,J,2009,Query,"The
+goal of this framework is to provide access to RDF
+data sets in situations where there is no network
+connectivity available and hence communication
+with remote data sources is impossible.",FUN,S,R,P,S,x,"first, there may be no physical
+network connectivity (e.g., because of the lack of
+mobile network coverage), and secondly, security
+restrictions may apply (e.g., a VPN connection to the
+company network cannot be established). In such
+situations it is desirable to make relevant data
+available on the mobile device so that applications
+can operate offline,###
+In this paper we present the MobiSem
+Replication and Versioning (MRV) framework that
+aims to provide this functionality.",INTERNET,x,R,FN,"Instead, we introduce two new
+components that serve as mediator layer between the
+client application and the SPARQL endpoint. We
+denote these components the client-side replication
+engine and the server-side replication manager.###
+handle SPARQL queries transparently, either by
+forwarding them to the actual data store if
+connectivity is up, or by answering them from a
+locally cached partial replica of the data set on the
+mobile device, if there is no connectivity.###
+For instance, based on upcoming
+appointments or events in the user's calendar, the
+replication engine could infer on the data
+probably needed. We investigate further
+approaches on how to utilize user behavior and
+contextual information to enhance the quality of
+the data retrieval process.","Subsectioning the RDF graph that seems interesting, with intersting being determined by a few parameters (context is one)",S,AU,D,"APP,BACK",S,B,E,NI,M,D,I,R,"framework for selective
+replication of RDF data sets to mobile devices.",GENERIC,"extending
+their underlying algorithms so that they can be
+applied to real-world scenarios and application
+requirements. In parallel we are working on further
+improvements of the client-side part of our
+framework; namely the optimization of processing
+and storing larger RDF graphs on mobile devices.",NO,
+,96,"Adaptive application offloading decision and transmission scheduling for mobile cloud computing
+","Offloading application to cloud can augment mobile devices' computation capabilities for the emerging resource-hungry mobile application, however it can also consume both much time and energy for mobile device offloading application remotely to cloud. In this paper, we develop a newly adaptive application offloading decision-transmission scheduling scheme which can solve above problem efficiently. Specifically, we first propose an adaptive application offloading model which allows multiple target clouds coexisting. Second, based on Lyapunov optimization theory, a low complexity adaptive offloading decision-transmission scheduling scheme has been proposed. And the performance analysis is also given. Finally, simulation results show that, compared with that all applications are executed locally, mobile device can save 68.557% average execution time and 67.095% average energy consumption under situations.","J Wang, J Peng, Y Wei, D Liu, J Fu ","China Communications ( Volume: 14 , Issue: 3 , March 2017 )",J,2017,Query,"In this paper, based on all these valuable researches we
+
+develop a good applicability offloading model which simulta-
+neously optimizes these two key performance indexes.###
+energy and response time","PERF,EN",S,C,P,M,x,"Every slot t, if any application (D(t), S(t)) occurs,
+the application offloading policy observes Qn(t), μn(t) and
+μ
+n
+cld(t) for each n ∈ א. Based on all these observed values,
+the application offloading policy makes offloading decision
+an(t) for every cloud:###
+the numerical results shows that mobile device
+can save about 68.557% average response time and 67.095%
+average energy consumption.","HW,APP",x,F,FN,"As for an application request, let an(t) ∈ {0, 1}, n ∈ א be
+the execution indicator variable on slot t, which determines
+whether or not to offload application to the cloud n. If
+an(t) = 1 exists, application is offloaded remotely to cloud
+n. On the other hand, If an(t) = 0 the application is executed
+on local mobile device. Let a(t) = {a1(t), a2(t), ...aN (t)}.
+According to the assumption that the application which needs
+to be offloaded can only be offloaded to one cloud during one
+application request, ∑
+
+n∈א an(t) ∈ {0, 1} satisfies.","The above problem (7) can be cast as a stochastic network
+optimization. Early works [9] used Lyapunov optimization
+theory to show that the queuing naturally fits in the related
+application offloading problem.",S,AU,D,"APP,BACK",S,B,E,"In this paper, we have designed
+
+and implemented an adaptive application offloading policy.
+Unlike previous works, which consider only one target cloud,
+our offloading policy is suitable for multiple offloading target
+clouds.",H,D,I,S,GENERIC,GENERIC,NI,NO,INCLUDED
+,99,"Facilitating the Implementation of Adaptive Cloud Offloading to Improve the Energy Efficiency of Mobile Applications
+","Cloud offloading – leveraging remote cloud-based computing resources to execute energy-intensive functionality – has become a common optimization technique for mobile applications. However, implementing cloud offloading techniques remains a delicate and complex task, reserved for expert programmers. If cloud computing is to realize its promise as a generally applicable, powerful optimization technique for mobile applications, its implementation barrier must be lowered. As we have discovered, reusable system building blocks exposed via a convenient programming model can facilitate the implementation of complex cloud offloading optimizations. This paper describes a system architecture for implementing adaptive cloud offloading optimizations. In particular, the architecture features parameterizable building blocks for monitoring and estimating energy consumption and performance efficiency as well as state synchronization across address spaces, which the mobile programmer can use a la carte. These blocks streamline the implementation procedure for a wide array of adaptive offloading optimizations. Applying this system architecture to third-party mobile applications has optimized their energy efficiency, depending on the execution environment in place.","YW Kwon, E Tilevich",2015 2nd ACM International Conference on Mobile Software Engineering and Systems,C,2015,Query,"An extensible system architecture for implementing cloud
+offloading optimizations with reusable building blocks
+that the programmer can use a la carte.","PERF,EN",S,U,P,M,x,NI,HW,x,F,FN,NI,NI,S,AU,D,BACK,S,B,E,"The results of our case study
+
+and energy efficiency evaluation indicate that our system archi-
+tecture and programming model make it possible to implement
+
+highly effective cloud offloading optimizations.",H,D,R,S,"This research focuses on the problem of engineering adap-
+tive cloud offloading optimizations to improve the energy
+
+efficiency of mobile applications.",GENERIC,"the estima-
+tion modules may not report the actual amounts of energy
+
+consumed by mobile applications. In addition, our energy
+model only takes CPU and network information, so that the
+energy consumption of a method containing significant file
+I/O or using sensors may turn inaccurate. Finally, while our
+
+system architecture provides fine-tuned reusable implementa-
+tion blocks, the quality of end-product runtime system still
+
+remain highly dependent on the programmer’s skills.",NO,
+,104,Providing assurances for self-adaptation in a mobile digital storytelling application using ActivFORMS,"Self-adaptability enables a system to adapt itself to changes in its execution conditions and user requirements in order to achieve particular quality goals. However, assuring that the adaptation goals are satisfied poses complex challenges. We recently developed the ActivFORMS approach that aims to tackle some of these challenges, but further research is required to evaluate the approach. This paper presents the results of a study in which we applied ActivFORMS to a mobile storytelling application that employs a social recommender. The initial version of the application used a static recommender that could not deal with changing environment conditions, or take into account preferences of users. To that end, we added a self-adaptive layer on top of the application. The study results show that self-adaptation significantly increases the quality of recommendations compared to the initial version by: (1) enabling the social recommender to adapt to the quality of user input and unavailability of the GPS service, and (2) making the recommender adaptive to user preferences. Providing guarantees for these adaptation goals is crucial in this domain from a business perspective. The study results show the feasibility and effectiveness of ActivFORMS for a practical application, but they also underpin the need for an integrated verification approach for self-adaptive systems that combines offline with online verification.","D Weyns, S Shevtsov, S Pllana",IEEE Eighth International Conference on Self-Adaptive and Self-Organizing Systems,C,2014,Query,"The initial
+version of the application used a static recommender that could
+not deal with issues such as unavailability of GPS or user
+preferences. To deal with these issues, we added a self-adaption
+layer to the application.",PORT,S,R,P,M,x,"When GPS is not available or Flickr provides no response to
+a query, self-adaptation should switch off the algorithms
+that require these resources and provide recommendations
+from alternative algorithms; always 5 in total.###
+The social recommender should be able to adapt
+dynamically to user preferences;","3A,HW",x,F,FN,"The Plan behavior (Figure 10. ) creates a plan for adapting
+the recommender algorithms depending on GPS availability and
+the response of Flickr to a query with a story title. If GPS is not
+available (GPS==OFF) and there are no photos provided by
+Flickr (photosInRespToStoryTitle==0), a plan that only includes
+algorithms with tags (PlaN=Count_only_on_tags) is generated.
+
+If photos are returned (photosInRespToStoryTitle>0), a plan that
+depends on text (PlaN=Count_only_on_text) is generated. If
+GPS is available, but Flickr does not provide recommendations
+(photoinRespToStoryTitle==0), a plan that only depends on
+GPS (PlaN=Count_only_on_gps) is generated. If both services
+are available, a plan is generated that uses all available
+algorithms (PlaN=Count_only_on_gps_and_text).",A rule based approach to choose the correct adaptation ,S,AU,C,"APP,HW",S,B,E,"A self-
+adaptive layer was designed using a formal model of a MAPE-K
+
+feedback loop that was added to the social recommender of the
+digital storytelling application to improve its flexibility.",H,D,F,S,"A self-
+adaptive layer was designed using a formal model of a MAPE-K
+
+feedback loop that was added to the social recommender of the
+digital storytelling application to improve its flexibility.",SOCIAL,"As exhaustive verification
+at design time is difficult or even impossible, some guarantees
+can only be obtained during runtime. In the mDS-SR
+application, the behavior of the user and availability of resources
+in the environment are difficult to predict. Consequently, the
+guarantees provided by offline verification are only valid for
+restricted models.",NO,
+,110,"Adaptive Deployment Infrastructure for Android Applications
+","Due to the popularization of mobile devices, the number of mobile applications has increased in recent years. Mobile devices are constantly evolving on computing capabilities, requiring the ability of mobile applications to deal with variations in services availability and computing resources. However, most of these applications are deployed using static configurations, making difficult to tolerate failures during their execution. In this context, we propose an adaptive deployment infrastructure to deal with this problem. Our solution proposes an autonomic loop that manages the current configuration model of a service application using dynamic feature model associated with the deployed architectural model. During runtime, according to the dynamic feature selection, the deployed architectural model can be modified in order to provide a new deployment solution. A mobile application was implemented using our solution, and after changes in services availability, it proved to be able to tolerate failures by dynamically changing its deployed configuration.","JC Casquina, JDAS Eleuterio, CM. F. Rubira",12th European Dependable Computing Conference (EDCC),C,2016,Query,"In this paper, we propose an adaptive deployment infras-
+tructure, called Cosmapek, based on the concepts of Dynamic
+
+Software Product Line (DSPL). Cosmapek uses feature model
+composed of static and dynamic features in order to provide
+variability reconfiguration at runtime of the dynamic features.",PORT,S,U,P,M,x,"The application was submitted to changing scenarios in the
+availability of services (enabling and disabling servers), and it
+
+proved to be able to tolerate them by changing its deployed ar-
+chitectural configuration on the Android device.","APP,HW",x,R,FE,"When a SOA-based application is deployed and executed,
+the adaptation loop from managing subsystem is activated.
+In case, a current service of the application is not available,
+the sensor associated with this service will detect and inform
+this event to Monitor module. Then, the Monitor module
+will save the status of the sensor in the knowledge. On the
+other hand, the Analyzer module will check the sensors status
+from Knowledge in order to analyze the current deployed
+configuration of managed subsystem. Because of a current
+service is not available, the result of the analysis will indicate
+that the managed subsystem needs to be reconfigured.
+
+The Planner module is executed when the managed subsys-
+tem needs a reconfiguration. It will prepare a new architectural
+
+configuration plan, according to the feature model and its
+
+mapping to architectural elements. In our scenario, the ar-
+chitectural configuration plan is composed by an architectural
+
+configuration, without the service that is not working. After the
+Planner module finalizes its plan, the Executor module begins
+to work, it uses the plan to execute the effectors (using the
+Java reflection API) associated to each element of the plan.
+Consequently, these effectors will reconfigure the managed
+subsystem and finally the application will work in a normal
+way.","adaptation loop, MAPE-K",S,AU,D,APP,S,B,E,"The main contribution
+of this work is to provide an infrastructure to dynamically
+deploy a managed subsystem on Android platform.",M,ND,F,S,"This paper presented the Cosmapek, an adaptive deployment
+infrastructure that uses techniques of SASS as a means to
+achieve dynamic deployment.",GENERIC,"However, the performance to detect changes in
+
+the context (sensors) was poor despite the tests to the in-
+frastructure had a good performance. The good performance
+
+obtained may be associated with that few states of adaptation
+of Buscame. Nonetheless, we need to apply more test to the
+infrastructure, especially in big applications, to conclude the
+above.
+As future work, we plan to modify the components of our
+
+infrastructure such that supports distributed self-adaptive soft-
+ware systems.",NO,
+,113,"An Architecture for Adaptive and Adaptable Mobile Applications for Physically Handicapped People
+","Context-awareness is an important capability needed in devices in a ubiquitous computing environment. Ubiquitous computing devices use different types of sensors along with the user’s interaction history in order to collect and store data. This data is then used to adapt the user’s behavior to suit the current environment. In addition to the explicit modifications by user control, the behavior of these computing devices along with the interaction amongst one another depends on the continuously changing environment conditions. These characteristics require the development of systems that have both, adaptive and an adaptable nature. Context-awareness is particularly important for physically handicapped people. This is due to the fact that context-aware ubiquitous devices are able to help them detect changes in the surrounding, which handicapped people can not do for themselves. In this research paper we suggest a general architecture of Context-Aware Adaptable System (CAAS). We exemplify this architecture with an Ambient Service prototype that we have developed.","M Betz, M Huq, V Pipek, M Rohde, G Stevens, R Englert, V Wulf","International Conference on Universal Access in Human-Computer Interaction
+UAHCI 2007: Universal Acess in Human Computer Interaction. Coping with Diversity pp 335-344",C,2007,Query,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,EXCLUDED (no mobile apps)
+,114,Architecture for Adaptive Mobile Applications,"Mobile computing is a relatively new field. While the challenges arising from mobility and the limitations of the portable devices are relatively well understood, there is no consensus yet as to what should be done to address these challenges. A comprehensive solution has to address many different aspects, such as the issue of dynamically changing bandwidth, the power, computational, and other limitations of the portable devices, or the varying availability of services in different environments.",HK Kim ,International Journal of Bio-Science and Bio-Technology,J,2013,Query,,,,,,,x,,,x,,,,,,,,,,,,,,,,,"Body clinic is a dietary guide application
+that integrates data from different users through different devices that engage them in
+truly measuring devices.",HEALTH,"We also believe that the
+template can be further enriched by adding design patterns and considering other
+architectural artifacts as input to the designed process of creating reference architecture
+for an application.",,This paper is so vague I don't know how to fill the boxes!
+,118,An adaptive and unified mobile application development framework for Java,"Although wireless networks and mobile devices have become prevalent, the diversity of mobile devices and unsteadiness of wireless networks still cause software development much trouble. In addition, the variety of services in Internet or Intranet, such as Web services, UPnP services, Jini services and so on, will also increase the difficulty in using them. Thus, when developing a mobile application to access these services, developers are forced to expose to these problems and therefore it will spend much time writing a mobile application. Although many studies on user interface adaptation and language transformation have attempted to solve the problems, most of them do not consider the computing power and functionalities of end-devices. As a result, some resources are ignored or wasted. To solve above problems, an adaptive framework, named GMA, is proposed to help developers build mobile applications quickly and easily. GMA framework can tailor an application to fit different devices according to not only user interface formats but also the computing power and functionalities of the devices. Besides, a universal service interface is proposed and developers can use a unified API to access different backend-services. As a result, a mobile application developed on GMA can enjoy the ""write once, run everywhere, and access anything"" benefit.","MC Cheng, SM Yuan",JOURNAL OF INFORMATION SCIENCE AND ENGINEERING,J,2007,Query,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,EXCLUDED (no mobile apps)
+,119,"Improving the user experience using an intelligent Adaptive User Interface in mobile applications
+","nowadays, we witness an abundancy in mobile applications and a richness in their functionality. However, many of them were developed with insufficient attention when it comes to usability and user friendliness. As such, we may find one application's interface clogged with controls that hamper the user from using it properly or another's interface designed without taking care of universal usability. The result is that the user experience with different applications goes from being a total satisfaction to a total frustration. Very good care should be taken while designing mobile applications since the mobile phone are constrained with a limited screen size and a few interaction mechanisms. Adaptive User Interfaces (AUIs) were proposed in order to levitate the negative impact of these constraints and, as such, help improve the application's usability. In this paper, we propose a number of intelligent adaptive mechanisms capable of monitoring the user's behavior on a mobile phone and then adapting the interface accordingly. Our proposed mechanisms yield significant usability benefits and make the user's experience with this application more satisfying.",S Raheel , IEEE International Multidisciplinary Conference on Engineering Technology (IMCET),C,2016,Query,"iMeAid was designed as an example of a medical
+adaptive mobile application. The main objective of this
+application is to help the elderly remember taking their
+medications at specific times.",US,S,R,P,M,x,"After a short period of time, if the user does not react after 3
+alarms then the alarm the volume starts slowly increasing as
+shown in the figure below:###
+
+Then we ask the user to locate and press a certain element
+on the screen.###
+locations).It is clear that the user is mostly pressing on
+buckets 3, 7, and 8 (where the number of presses in buckets
+3 and 8 is identical and larger than
+the ones in bucket 7). Therefore,
+the interface has to adapt to this
+scenario.",USER,x,R,FN,"Relocation (with awareness): To correctly relocate
+an element the screen is divided into horizontal
+zones (that we refer to as buckets) as shown in the
+figure below:###
+2.Resizing: another solution for correctly locating a certain
+element is resizing. This approach follows the same
+methodology as the previous one but, this time, rather than
+relocating the element to a new location, it is resized to
+cover the area starting from its original location up/down
+to the designated location. By increasing the size of a
+button the use is now able to better see it and correctly
+locating and touching it.","Relocation of elements on the screen and resizing them, so changing of the code of the UI",P,H,C,APP,S,B,E,"that AUIs can be very effectively
+used to overcome some usability problems in mobile
+applications.
+The experiments show that integrating
+adaptive features in a mobile applicaton improves usability,
+acceptance, and user experience.",M,D,R,S,"iMeAid was designed as an example of a medical
+adaptive mobile application. The main objective of this
+application is to help the elderly remember taking their
+medications at specific times.",HEALTH,,NO,
+,121,"MAsCOT: Self-Adaptive Opportunistic Offloading for Cloud-Enabled Smart Mobile Applications with Probabilistic Graphical Models at Runtime
+","Although extensive progress has been made in Mobile Cloud Augmentation, automated decision support on the device that enables the opportunistic and intelligent use of cloud resources is missing. Furthermore, we need solutions with reflective capabilities that can handle a changing environment and runtime variability. To simplify the deployment of smart mobile applications, we present a framework with retrospective decision support based on reinforcement learning to cater for various resource-performance trade-offs. We have adopted the MAPE-K (Monitor-Analyse-Plan-Execute-Knowledge) control loop architecture and realized the loop with Dynamic Decision Networks to manage self-adaptation at runtime. Our experiments show that our framework is capable of intelligently inferring appropriate decisions with an acceptable performance overhead of 10 milliseconds on mobile devices.",Nayyab Zia Naqvi ; Jonas Devlieghere ; Davy Preuveneers ; Yolande Berbers,9th Hawaii International Conference on System Sciences (HICSS),C,2016,Query,"R1: The framework should support a way to express
+the Qo*-requirements and optimization objectives###
+R2: The framework should consider the QoS/QoE
+constraints and trade-offs###
+R3: The framework should optimize for opportunistic
+offloading###
+R4: The self-adaptation should be with low-overhead###
+R5: The framework should be scalable",PERF,"S,D",U,P,M,x,"Our solution starts without historic
+information and uses only the context at hand to predict the
+Qo*-aware dynamic deployment scheme for each component
+of a smart mobile application.###
+and taking actions that
+maximize the chances of success [24]. The definition clearly
+identifies the two notions that will make the offloading decision
+intelligent: (1) the device’s environment needs to be perceived
+and turned into a software model, (2) a mechanism is required
+to use this model to reason about the environment and identify
+the success-maximizing decision.",?,x,"F,R","FN,FE","A runtime model is
+required to represent the environment of the device to perform
+reasoning, enabling dynamic adaptation [26]. A model with
+a clear mapping between the problem and solution domain is
+preferred. A runtime model is an abstracted, problem-focused,
+self-representation of the system [27]. It reduces the inherent complexity of the runtime environment and allows the system
+to focus its reasoning on the concerns that are associated with
+the problem domain.
+For our framework, reasoning means combining observations
+with trade-off knowledge and inferring the offloading decision.
+For the reasoning mechanism, we considered reasoning under
+uncertainty as we want to be able to decide even in the
+absence of total information. Furthermore, using a probabilistic
+approach enables us to model the varying nature of the Qo*
+Requirements determining the decision outcome [4].","runtime model of the system, using probabilistic approach",S,AU,"C,D","APP,BACK,HW,BACK","S,M",B,E,"Our experiments showed that the framework is indeed
+expressive as our network design accurately modelled different
+trade-offs associated with the face recognition use case.###
+It was also confirmed that the framework
+swiftly adapts its decision based on feedback from previous
+executions.","H,M,S","D,ND",F,S,Cloud-Enabled Smart Mobile Applications,GENERIC,"In future work, learning could be extended to the model itself.
+An extension of the framework could start using a predefined
+network and update the probabilities based on the previous
+observations enabling the model to configure the trade-offs
+based on its own observations. The security and privacy
+requirements can also be modelled before making a decision.
+Implementing other data-intensive applications with various
+Qo*-requirements is also of interest. A distributed decision
+framework can be of interest for opportunistic decision-making
+in cyber-physical environments. The decision optimization can
+be ported for other constrained embedded devices.###
+models. However, network
+design requires domain knowledge. The decision component
+requires at least a two sliced network. Further experiments
+are required to determine the optimal rate at which the data
+should be updated by the monitoring component. The network
+is capable of learning from its previous decisions, however, the
+model is sensitive to the assigned probabilities and the utility
+values affecting the decision outcomes.",NO,
+,122,Adaptive Mobile Applications to Dynamic Context,"Context-aware computing is a mobile computing paradigm in which applications can discover and take advantage of contextual information, such as user location, time of the day, nearby people and devices, and user activity. This paper intends to study the context-awareness in depth and demonstrate the usefulness of this new technology through two mobile applications that are adaptive to dynamic context.","M Zheng, B Wei, Z Zhang, X Yan","Journal of Computer and Communications, 2014, 2, 9-13
+Published Online July 2014 in SciRes. http://www.scirp.org/journal/jcc
+http://dx.doi.org/10.4236/jcc.2014.29002",J,2014,Query,"The user will use his/her phone as usual. The application will automatically adjust
+the status of the phone based on the user’s current location, the time of the day, etc.",US,S,R,P,S,x,"The application identifies three different environments based on the user’s location: at work, at home and on
+
+the go.",USER,x,R,FN,"When the application running in the background recognizes the user’s current location is at work, it will
+
+change the wallpaper to be office background, set the ringtone’s volume to medium, and convert the email ac-
+count setting to the office account. If there is an incoming call, the application will first check the user’s calen-
+dar. If the user is currently having a meeting, the incoming call will be cut off, instead, a text message will be
+
+sent from the user’s smart phone to the caller: “I am in a meeting”. When it is the time for lunch, the application
+will list all the restaurants near the office with the phone number.
+When the application running in the background recognizes the user’s current location is at home, it will
+change the wallpaper to be a home background, set the ringtone’s volume to minimum, and convert the email
+account setting to the home account. The application will also list the movies showing for the next few hours at
+nearby cinemas after the user gets home.
+When the user is not at work or home, the application will identify the phone’s status to be on the go. It will
+change the wallpaper to be an on the go background, set the ringtone’s volume to maximum. The application
+
+will read the user’s current location from the built-in GPS, then display a map with a number of points of inter-
+ests close by. Once the user selects a destination, the routing information from the user’s current location, to the
+
+destination will be given.",Rule based adaptation,P,AU,C,APP,S,B,E,"we are able to categorize the types of context, collect vari-
+ous contextual information through built-in sensors and update the applications behavior based on dynamic con-
+text.",H,D,I,R,"This mobile application intends to provide information about a university campus to a tourist using his/her cur-
+rent location.",TOURIST,"However, storage, modeling and representing of the context information have not been fully studied in
+
+these applications. We are interested in the formal models underlying the context-aware systems.",NO,
+,124,"An Optimization of Context Sharing for Self-adaptive Mobile Applications
+","Because of the high potential of mobile and pervasive computing systems, there is an ongoing trend in developing applications exhibiting context awareness and adaptive behavior. While context awareness guarantees that the applications are aware of both their context and their own state, dynamic adaptivity enables them to react on their knowledge about it and optimize their offered services. However, because in pervasive computing environments there is also a need for enabling arbitrary synergies, such a behavior also requires appropriate algorithms implementing the adaptation logic required to reason on the sensed context and dynamically decide on the most appropriate adaptations. This paper discusses how utility function-based approaches can use context-awareness for that and, additionally, it shows how the decision-making process is improved with respect to both performance and resource consumption by using a more intelligent approach.","N Paspallis, GA Papadopoulos ",Algorithms and Architectures for Parallel Processing,C,2008,Query,"This paper
+discusses the proactive and reactive approaches for sharing context information with
+the purpose of achieving distributed adaptation reasoning. Furthermore, it proposes an
+optimization which is shown to significantly improve distributed context-awareness in
+terms of number of needed message exchanges.",FUN,S,R,P,S,x,"First, it monitors the context for changes and notifies the adaptation logic
+module when a relevant change occurs.###
+This process is triggered by changes to the context, which in this
+case includes the user context (preferences, activities, state, mood, etc), the computing context (devices, networks, UI options and capabilities, available composition plans
+and services, etc) and the environment (location, weather, light and noise, etc).","HW,INTERNET",x,F,FN,"The adaptations are performed at the application layer, where different components
+and services can be interchangeably replaced (or [re]connect to each other in different
+configurations) in order to form different variants of the application. Although these
+variants are assumed to be characterized by different extra-functional properties, they
+are nevertheless assumed to offer the same functional service. This results in different
+
+application variants, which can offer different levels of Quality of Service (QoS) de-
+pending on their contextual conditions. To enable self-adaptation, these variants are
+
+then evaluated (e.g. using utility functions) and the optimal one is selected (for an
+example see [8]).###
+A typical centralized implementation, triggered by context changes, is expressed
+by the following pseudo-code:
+1. Detect a relevant context change
+2. For all application variants (including distributed
+ones), compute the utility value for the new context
+3. If the optimal variant is different from the current
+one, then adapt (reconfigure the application)",They do not specify a particular algorithm or technique used to perform the adaptation,S,AU,C,APP,S,B,E,NI,H,D,I,R,"In this respect, we have revisited the scenario discussed in [11], which describes an
+application used by onsite workers for assisting them into performing their everyday
+tasks.",UTILITY,"In the future, we plan to investigate further approaches which can enable agile and
+efficient adaptation reasoning for distributed computing environments. Furthermore,
+we aim at further studying the relationship between distributed context-awareness and
+distributed adaptation reasoning, and propose approaches which further challenge it.",NO,INCLUDED
+,127,"Adaptive and Dynamic Service Composition for Cloud-Based Mobile Application
+","Adaptive and dynamic service composition are the main research challenges in Service-oriented Architecture (SOA). We are looking into improving the efficiency of dynamic composition and the methods on how to improve the discovery of web services. Currently the approaches which are available do not compose while checking for errors. In this paper, we will be composing web services using Multi Agent Methods (MAS) and Petri Net for error checking to improve the efficiency of the composition. We are implementing the composition engine using Business Process Model (BPM) to compose web services while MAS is used to locate web services. Proposed architecture is expected to produce a dynamic web service composition engine and improve reusability for Cloud-Based Mobile Application.","RK Ramasamy, FF Chua, SC Haw",Advanced Computer and Communication Engineering Technology,C,2015,Query,"We aim to reduce service selection scope and improve on the
+composition efficiency.",,,,,,,,,,,,,,,,,,,,,,,,,,"Proposed architecture is expected to produce a
+dynamic web service composition engine and improve reusability for Cloud-Based
+Mobile Application.",GENERIC,"As for future work,
+we are planning for performance analysis using QoS attributes to test the efficiency
+of adaptive service composition strategy.",,Too little info to extract. Can't fill in the columns
+,131,CloudAware: Empowering context‐aware self‐adaptation for mobile applications,"Mobile devices are already woven into our everyday life, and we became accustomed that mobile applications assist us in a multitude of daily activities. With the rise of the Internet of Things, new opportunities to further automatize tedious tasks open up. New functional and user experience requirements demand for further resources and new ways to acquire these, because mobile devices remain comparatively limited in terms of, eg, computation, storage, and battery life. To face these challenges, current approaches augment mobile applications either with cloud resources (mobile cloud computing) or with resources near the mobile device at the logical edge of the network (mobile edge computing) onto which tasks can be offloaded during runtime. However, this does not automatically solve the conflict between resource demands and good user experience, as current solutions prove. It is the dynamically changing context that makes for good or bad offloading strategies. In this paper, we corroborate this finding by first evaluating 40 existing solutions based on a requirements catalogue derived from several application scenarios as well as the International Organization for Standardization/International Electrotechnical Commission criteria for software quality. Afterward, we present CloudAware, which is a mobile cloud computing/mobile edge computing middleware that supports automated context-aware self-adaptation techniques that ease the development of elastic, scalable, and context-adaptive mobile applications. Moreover, we present a qualitative evaluation of our concepts and quantitatively evaluate different offloading scenarios using real usage data to prove that mobile applications indeed benefit from context-aware self-adaptation techniques. Finally, we conclude with a discussion of open challenges.","G Orsini, D Bade, W Lamersdorf ",Transactions on Emerging Telecommunications Technologies,J,2018,Query,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"Extension of paper 35 as stated here: Filling this gap, this paper, which is an extended
+version of previous work"
+,139,Adaptive Dissemination for Mobile Electronic Health Record Applications with Proactive Situational Awareness,"Bring Your Own Device (BYOD) has been an emerging trend in the enterprise, including the healthcare domain. However, efficient and personalized content delivery for data intensive applications remains a technical challenge. In this work, we explore a mobile electronic health record (EHR) web application for general practitioners (GPs) on the road for patient visits. Keeping all the health records up to date on a tablet is impossible due to resource constraints of the device, and dynamic planning of home visits. We therefore investigate how to deliver the right information at the right time under variable connectivity and limited resource availability. We present a flexible framework that capitalizes on situational awareness for proactive and adaptive content delivery to mobile applications. It leverages distributed probabilistic models and dynamic decision networks to improve the overall user experience with better on-device resource utilization. The added value is that it lifts the burden from the GP to customize and personalize the application by learning data consumption patterns in different contexts. Compared to baseline scenarios for this particular use case, our framework shows an improvement in the precision and recall with an acceptable runtime overhead for memory and CPU.","Davy Preuveneers, Nayyab Zia Naqvi, Arun Ramakrishnan, Yolande Berbers, Wouter Joosen",49th Hawaii International Conference on System Sciences (HICSS),C,2016,Query,"In this work, we consider the case of a mobile electronic
+health record (EHR) application for general practitioners
+(GPs).###
+The goal of this work is the realization of adaptive dissem-
+ination of health related data to healthcare professionals and
+
+caregivers, and more specifically proactive content delivery
+for EHRs to mobile devices###
+The main objective of this work is to optimize mobile
+content delivery with situation-aware, dynamic and proactive
+decisions to procure health records from a remote server.","FUN,REL",S,C,P,M,x,"(1) capitalizing on various
+contextual parameters for situational awareness and learn
+about useful/irrelevant content, (2) adapt these learned models
+as user preference change over time (i.e. context drift), and
+(3) speeding up the learning of these models through transfer
+learning across similar users.","USER,INTERNET",x,F,FN,"the predicted relevance of each EHR type
+was used to decide what to download when and the precision
+was 72-77% and recall 82-84%.###
+Enactment of the decisions. In this step, the dynamic
+
+properties are observed and the decisions are adapted accord-
+ing to the temporal impact. This content delivery decision
+
+is a continuous process, where the framework optimizes the
+application’s behavior to reach the required objectives based
+on the required attributes.###
+Our
+
+Dynamic Decision component takes an advantage of prob-
+ability theory and statistics to describe uncertain attributes.
+
+Building on the previous work in decision making under
+uncertainty [5][6][7], we have employed DDNs for stochastic decision making",DDN for stochastic decision making,S,AU,C,APP,S,B,E,"Our framework capitalizes on
+
+situational awareness for proactive and adaptive content deliv-
+ery to mobile applications, and uses distributed probabilistic
+
+models and dynamic decision networks to improve on-device
+resource utilization. Experimental results and comparisons to
+baseline scenarios with our mobile EHR application shows
+that our framework improves precision and recall with an
+acceptable runtime overhead for memory and CPU.",M,P,F,S,mobile electronic health record application,HEALTH,"Further work will focus on additional evaluations with
+such use cases. At the moment, all experimental results were
+obtained through simulation. We expect real-world field trials
+will offer better insights in the strengths and weaknesses in
+our framework, and the suitability of our decision models.
+Furthermore, the utility values should be normalized and
+the sensitivity analysis should be performed for real-world
+experiments. Additionally, while the algorithmic components
+for transfer learning have been embedded in our framework
+and tested, a quantitative assessment on how much time it
+saves on training is part of our ongoing research.",YES,
+,142,A Fine-Grained Adaptive Middleware Framework for Parallel Mobile Hybrid Cloud Applications,"Mobile Cloud Computing (MCC) overcomes mobile device limitations by delegating tasks to more capable cloud spaces. Existing mobile ofﬂoading solutions generally rely on full virtual machine migration, which is coarse-grained and costly, or implementation of code ofﬂoading as part of the application logic, which greatly increases the application complexity and the associated software development costs. Some recent solutions implement ﬁne-grained ofﬂoading, but pause the local mobile application while waiting for the ofﬂoaded code results. This leads to sequential execution and wastes local mobile resources and ignores the potential elasticity of the cloud environment. We have developed the IMCM framework to support parallel mobile application ofﬂoading to multiple cloud spaces. IMCM is ﬁnegrained, supporting application distribution at the granularity of individual components; it is adaptive, addressing the dynamicity in run-time conditions and end-user contexts; and it is fully parallel, supporting both parallel application model and simultaneous execution at mobile device and multiple private and public cloud spaces. Our evaluation results show that IMCM can improve the performance of computationally intensive mobile applications by a factor of over 50, while masking the underlying complexity of mobile-to-cloud code ofﬂoading.","R Shiftehfar, K Mechitov, G Agha","6th Annual International Conference on ICT: Big Data, Cloud and Security, 27-28",C,2015,Query,"In this paper we proposed IMCM middleware framework
+
+for transparent automatic code offloading from mobile de-
+vices to hybrid cloud spaces.###
+Although we focused on the goal of maximizing application
+performance, offloading decision for the goal of minimizing
+mobile device energy consumption is similar for sequential
+applications.###
+Similar to
+
+previous sections, target offloading goal is maximizing appli-
+cation performance or minimizing total application execution
+
+time.","PERF,EN",S,C,P,S,x,NI,APP,X,F,FN,NI,NI,S,AU,D,"BACK
+","S,M",B,E,"it provides a new code offloading model that
+
+supports parallel program execution where application com-
+ponents located at mobile device and different cloud spaces
+
+are executed independently but concurrently. Evaluation re-
+sults show that the offloading result depends on application
+
+behavior, offloading cost, and run-time parameters and can
+range between 9 to 56 times.",H,D,R,R,GENERIC,GENERIC,"speedup between different applications
+cannot be performed. The external validity of our evaluation
+is threatened by our focused corpus. Despite most of programs
+being selected according to benchmarks used in previous
+works, the corpus does not constitute a random sample of
+programs. Consequently, our results may generalize poorly.###
+A
+big challenge with energy optimization is profiling detailed
+consumption of individual application components. While
+execution time of different components can individually be
+recorded using system clock, mobile device only reports lump
+sum energy consumption and break down of total energy
+among different components remains as a challenge",NO,
+,161,An adaptive system architecture for devising adaptive user interfaces for mobile ERP apps,"The mobile ERP model can enrich the research on smart city concept with an ICT application that can enhance the sustainability and the quality of business life for enterprises' employees, and economic prosperity for people. Presently, this model has become a core requirement for enterprises that have ERP systems, due to the benefits that can be reaped from it. However, this model suffers from poor usability, due to the usability challenges that are inherited from ERP systems, and the mobile context of use. Adaptive user interfaces (AUIs) were exploited in numerous research works as a means to improve the usability of software applications by addressing their usability challenges through these types of UIs. However, a knowledge gap was identified in finding an appropriate adaptive system architecture that can support the adaptation processes in AUIs for mobile ERP apps. Therefore, this paper aims to bridge this gap by presenting an adaptive system architecture that can enable the automatic adaptation for the UIs' components of mobile ERP apps according to the context of use.",Khalil Omar ; Jorge Marx Gómez,2nd International Conference on the Applications of Information Technology in Developing Renewable Energy Processes & Systems (IT-DREPS),C,2017,Query,"Therefore,
+this paper aims to bridge this gap by proposing an adaptive
+system architecture for devising AUIs for mobile ERP apps.",US,S,C,P,M,x,"1. Invoking the appropriate activity based on the current
+context of use.
+2. Invoking the appropriate dialog based on the current
+context of use for the invoked activity.
+3. Adapting the UI widgets based on the current context
+of use.###","USER,INTERNET,HW",x,F,FE,"This layer is composed of the
+adaptive engine module, which aims at:
+1. Checking whether the adaptation process is prevented
+by the end-user based on his/her predefined
+preferences in the user model.
+2. Selecting the appropriate rule from the adaptation
+models to perform the identified adaptation dimensions
+and types.###",rule based adaptation,S,AU,C,APP,S,B,E,"This paper presented an adaptive system architecture for
+devising AUIs for mobile ERP apps. These types of apps can
+be considered one of the promising applications in ICT that
+can support the realisation of the smart city concept, and in
+particular, in business dimension.",H,ND,R,R,"This paper presented an adaptive system architecture for
+devising AUIs for mobile ERP apps.",SMARTCITY,,NO,
+,165,A proactive approach for context-aware self-adaptive mobile applications to ensure Quality of Service,"Mobile Applications are rapidly emerging as a convenient medium for using a variety of services. With the high penetration of smart phones in society, self-adaptation has become an essential capability required by mobile application users. In an ideal scenario, an application is required to adjust its behavior according to the current context of its use. This raises the challenge in mobile computing towards the design and development of applications that sense and react to contextual changes to provide a value-added user experience. In its general sense, context information can relate to the environment, the user, or the device status. In this paper, a framework is proposed for building context aware and adaptive mobile applications. Based on the concepts of software requirement specification and probabilistic modeling, this framework guides the modeling of adaptability at design time and supports context awareness and adaptability at runtime to tackle potential issues that can hamper Quality of Service (QoS). In the core of the approach, a probabilistic model has been derived from the software requirement model using the quantitative terms of context dependability and then, it is continuously verified against the runtime operations of a mobile application. Finally, the proposed approach has been used in a mobile application development use case to observe how proactive adaptability can be built into mobile application development to ensure QoS.",Md. Shafiuzzaman ; Nadia Nahar ; Md. Rayhanur Rahman,18th International Conference on Computer and Information Technology (ICCIT),C,2015,Query,"A medical emergency can
+occur at any time, in any place, and as no emergency is
+ever convenient, people are in a fix what to do. A mobile
+application that locates nearby hospitals or helps to contact
+with specialised doctors may come with great usefulness
+during these critical situations. The context of this application
+is continuously changing because of users mobility. In
+addition, the computing environment where the application is
+deployed, also undergo some changes like battery drainage
+and network disconnection. To improve user experience,
+the application should be adaptive enough to recognise and
+tolerate the changes.
+The above mentioned application can be a proper example
+
+to motivate the concepts of this paper for its adaptive require-
+ments.","REL,FUNC",S,C,P,M,x,"From Table II, it is easily identified when
+there will be an alert for adaptation.###
+Feature Hierarchy Success Requirements
+Video Conference (F4) Communication —>Real-time—>Audio-visual—>Video Network = Strong, Battery = High and GPS = No
+Voice Communication (F5) Communication—>Real-time—>Audio-visual—>Voice Network = Strong, Battery = Medium and GPS = No
+Textual Chat (F6) Communication—>Real-time—>Textual Network = Poor, Battery = Medium and GPS = No
+Offline (F7) Communication—>Offline Network = Offline, Battery = Low and GPS = No
+Track Emergency with GPS (F1) Location—>Real-time Network = Strong, Battery = High and GPS = Yes
+Stored Map (F2) Location—>Static—>Map Network = Strong, Battery = High and GPS = No
+Text (F3) Location—>Static—>Text Network = Poor, Battery = Low and GPS = No","HW,INTERNET,USER",x,F,FE,"This is a continuous loop comprising
+with following four steps:
+• Observation: Observation collects emerging patterns of
+application behavior through context data collection.
+
+• Inference: From the collected data regarding to opera-
+tional context, it must be inferred which parameters have
+
+affected by context change (if any).
+• Verification: To support requirements satisfaction at run
+time the running system needs to be verified against the
+requirements models.
+• Adaptation: If any failure is predicted in verification step,
+a suitable adaptation mechanism needs to apply.",an adaptation loop similar to MAPE-K,S,AU,C,"APP,HW",S,B,E,"it
+proposes a proactive adaptation policy to identify the failure
+states before entering to those. Markov model is used for
+this to quantify the contextual dependability, and requirements
+models are used to derive the Markov model. Then the running
+system is continuously validated against the Markov model for
+identifying the need of adaptations proactively.",S,P,F,R,"The application will be used as running example in the
+
+remaining sections of this paper to describe and evaluate the
+proposed approach. It will be called as e-heath care throughout
+this paper.",HEALTH,"An alternative approach of the
+
+proposed method can investigate the use of interval estima-
+tors instead of single-value of the decision parameters.###
+The fourth step of the adaptation cycle is the selection of a self-adaptation
+strategy. Though in this area research is quite active, very few
+of them have concentrated on light weight applications like
+mobile application. Another debate-able area is still unsolved
+what approach an adaptation algorithm should follow between
+system reconfiguration and parametrised adaptation. Though
+the proposed work uses parametrised adaptation successfully,
+further extension of this work can be proper trade-off between
+these two approaches.",YES,
+,174,Optimizing performance and fault tolerance through cloud based adaptive replication for mobile applications,"Cloud Computing is one of the important emerging technologies, which is considered as computing infrastructure of the next generation. Mobile cloud computing is a research paradigm that integrates cloud computing into mobile computing. This integration raises many challenges like performance, battery time, efficiency, network bottlenecks etc. In this paper, issues addressed include performance and fault tolerance. The emphasis is to improve and optimize the performance and fault tolerance characteristics of mobile applications by method of replicating their resources or computation on cloud platform at back end. As a proof of concept, a prototype will be developed. It will be designed for managing and transporting the necessary contents of mobile application from mobile phone/tablets to cloud based platform. This framework or middleware will be responsible for offloading the computation intensive code on the cloud resources as well as adaptive or dynamic replication of data on the cloud resources. This middleware will be designed for android based phones using the java framework. An android application related to N-Queen problem will also be developed which will use this middleware. Google app engine will be used as back end cloud which will be used to perform data computation as well as for storage of results. The Mobile application's developers would be able to use this middleware by making slight changes in their application's code.",Tayyiba Naeem ; Sarmad Sadik,2nd International Conference on Systems and Informatics (ICSAI 2014),C,2014,Query,"It will be designed for
+managing and transporting the necessary contents of mobile
+application from mobile phone/tablets to cloud based platform. This
+framework or middleware will be responsible for offloading the
+computation intensive code on the cloud resources as well as
+adaptive or dynamic replication of data on the cloud resources.","PERF,FUNC,EN",S,U,P,M,x,"the system resources and making the
+offloading decision. Following parameters are considered in
+decision making engine while taking offloading decision.
+a) Battery Status
+b) Memory consumption
+c) CPU utilization
+d) Execution Time","HW,APP",x,F,FN,"When using server is selected, control is sent to middleware
+which is integrated in the application. The middleware directly
+send the computation intensive code to server without using
+decision making engine. Middleware is run using Asynctask,
+which is actually a separate thread for working long tasks in
+background. If user selects the local execution then middleware
+send control to decision making engine. This engine then selects
+the local execution or server execution depending upon the
+battery status, Memory consumption, CPU utilization, Execution
+Time.",rule based adaptation,S,"H,AU",D,APP.BACK,S,B,E,"This
+middleware enables a user to run their application on cloud
+platform to improve the performance of mobile devices.",H,ND,F,S,GENERIC,GENERIC,,NO,
+,178,MAMoC: Multisite Adaptive Offloading Framework for Mobile Cloud Applications,"This paper presents MAMoC, a framework which brings together a diverse range of infrastructure types including mobile devices, cloudlets, and remote cloud resources under one unified API. MAMoC allows mobile applications to leverage the power of multiple offloading destinations. MAMoC's intelligent offloading decision engine adapts to the contextual changes in this heterogeneous environment, in order to reduce the overall runtime for both single-site and multi-site offloading scenarios. MAMoC is evaluated through a set of offloading experiments, which evaluate the performance of our offloading decision engine. The results show that offloading computation using our framework can reduce the overall task completion time for both single-site and multi-site offloading scenarios.",Dawand Sulaiman ; Adam Barker,IEEE International Conference on Cloud Computing Technology and Science (CloudCom),C,2017,Query,"Our objectives for MAMoC include improving the running
+time of the compute-intensive tasks on the mobile devices
+as well as saving energy and bandwidth by computation
+offloading.","PERF,EN",S,U,P,M,x,"The engine is fed with the
+metrics from device profiler component and it is used by
+the framework to check whether to offload a task to other
+devices or execute it locally.","HW,INTERNET",x,F,FE,"Execute the job: the subtasks will be distributed accord-
+ingly to be processed in parallel on the target offloadees.
+
+The results are returned and merged together in the
+offloader device and presented to the user.",an algorithm to calculate the offloading score,S,AU,D,"BACK,APP
+",S,B,E,"we presented an adaptive multisite offload-
+ing framework that takes into consideration dynamic context
+
+changes in MCC environment and offloads computation to
+multiple offloadees including nearby mobile devices, cloudlets,
+
+and remote cloud servers.",H,ND,F,S,GENERIC,GENERIC,"we have built our framework with the assumption that
+
+the mobile user (offloader) stays in the same zone within the
+computation offloading duration. This cannot be guaranteed if
+the user moves away before the result from the destination is
+returned.",NO,
+,194,"Adaptive scheme for application methods offloading in mobile cloud
+computing","Recently, due to existence of a lot of mobile applications that consume high their computing power and energy. So, there are ofﬂoading schemes which move the computing power and data storage away from a mobile phone into a power full cloud server which has a big storage space by ofﬂoading methods or services to the cloud server. However, the ofﬂoading might consume more energy than the local processing of data when the size of code is small. This paper introduces a new ofﬂoading scheme by using decision making approaches. The scheme considers each service or process in a mobile application as a set of methods and can ofﬂoad a group of methods based on a deﬁned cost model. Also, it enumerates the set of solutions based on decision making approaches to ﬁnd all feasible solutions which satisfy the cost model then it selects the best feasible solution among them. The conducted simulation results show that the ofﬂoading performance of the proposed scheme is much better than local processing scheme.","Asaad Ahmed, Aly Emara",International Journal of Computer Science and Information Security,J,2017,Query,"In this paper to solve these problems method-based offloading
+scheme for mobile application is proposed.###
+It enumerates the set
+of solutions based on decision making approaches to find all
+feasible solutions which satisfy the cost model then it selects
+the best feasible solution among them.","PERF,EN",S,U,P,M,x,"Profile phase which determines the current
+value of a mobile, cloud server, each method in the logical
+layer, network conditions as bandwidth at run time. So,
+before each method is invoked, ADBMO determines
+whether the method invocation should run locally or
+remotely.","HW,INTERNET",x,F,FE,"By using the decision tree the problem can be reformulated
+for finding the Path (solution) with minimal total cost as the
+following.",Decision Tree,S,AU,D,"BACK,APP
+",S,B,E,"ADBMO provides method level code
+offloading which improves the performance and save energy of
+the mobile device.",NI,NI,NI,NI,"APPLICATION SCENARIO: MOBILE FACE
+
+RECOGNTION SYSTEM",HEALTH,,YES,
+,203,"How to Build Mobile Applications with Adaptive Architecture
+","Mobile computing is a relatively new field. While the challenges arising from mobility and the limitations of the portable devices are relatively well understood, there is no consensus yet as to what should be done to address these challenges. A comprehensive solution has to address many different aspects, such as the issue of dynamically changing bandwidth, the power, computational, and other limitations of the portable devices, or the varying availability of services in different environments.",Haeng-Kon Kim,International Journal of Software Engineering and Its Applications,J,2015,Query,,,,,,,x,,,x,,,,,,,,,,,,,,,,,,,,,This paper is directly connected to paper n 114. It is even written by the same author and most (if not all) of the abstract is copy paste
+,221,"Decision tree-based approaches for handling
+offloading decisions and performing adaptive
+monitoring in MCC systems","Mobile cloud computing (MCC) has emerged as a solution to overcome the resource constraints of mobile devices by using computation offloading to execute mobile application tasks on remote servers, thus enhancing performance and reducing the energy consumption of mobile devices. Nevertheless, the effectiveness of an offloading solution is determined by its ability to infer when offloading will improve performance. In this context, several solutions have been proposed to handle computational offloading operations and the decisions of when and where to offload. The problem is that such decisions depend on periodic monitoring of several metrics and usually involve compute intensive task that, when executed on mobile devices, can contribute to overhead the system. Thus, this paper proposes a novel approach for handling offloading decisions using decision trees and an adaptive monitoring scheme that allows MCC systems to monitor only the metrics that are relevant to the offloading decision. The results show that computation offloading can be beneficial for improving the performance of mobile applications and the energy consumption of mobile devices can be reduced by using the proposed adaptive monitoring scheme.
+","Paulo A. L. Rego∗, Elaine Cheong, Emanuel F. Coutinho∗, Fernando A. M. Trinta∗,
+
+Masum Z. Hasan† and Jose N. de Souza∗","5th IEEE International Conference on Mobile Cloud Computing, Services, and Engineering",C,2017,Snowballing,"In this paper, we propose a novel approach that leverages
+
+historical data to create decision trees for assisting the off-
+loading decision on MCC systems, as well as for reducing the
+
+energy consumption caused by periodic monitoring.###
+In addition, based on information theory concepts, we propose an adaptive monitoring scheme that identifies only
+the metrics that are relevant for the offloading decision and
+use such information for making on-demand changes to the
+list of metrics monitored by the system.",,,,,,x,,,x,,,,,,,,,,,,,,,,,,,"As next steps of our research, we intend to investigate
+
+the scalability of remote servers for mobile cloud comput-
+ing applications and the use of crowdsensing techniques to
+
+improve the offloading decision.",,
+,225,"Generic Context Adaptation for Mobile Cloud Computing
+Environments","Markets for mobile applications offer myriads of apps ranging from simple to quite demanding ones. The latter are on the rise since every new gener-
+ation of smartphones is equipped with more resources (CPU, memory, bandwidth, energy) to even allow re-
+source-demanding services like speech- or face recognition to be executed locally on a device. But compared to their stationary counterparts, mobile devices remain
+comparatively limited in terms of resources. Because of this, current approaches aim at extending mobile device capabilities with computation and storage resources offered by cloud services or other nearby devices. This paradigm, known as Mobile Cloud Computing (MCC), is challenged by the dynamically changing context of mobile devices, which developers are required to take into account to decide, e.g., which application parts are when to offload. To rise to such and similar challenges we introduce the concept of Generic Context Adaptation (GCA), a data mining process that facilitates the adaptation of (mobile) applications to their current and future context. Moreover, we evaluate our approach with real usage data provided by the Nokia Mobile Data Challenge (MDC) as well as with CloudAware, a context-adaptive mobile middleware for MCC that supports automated and context-aware self-adaptation techniques.",Gabriel Orsini · Dirk Bade · Winfried Lamersdorf,The 13th International Conference on Mobile Systems and Pervasive Computing,C,2016,Snowballing,"Consequently, we present the concept of Generic Context Adaptation (GCA), where we combine context awareness features
+with machine learning to serve as a prediction engine for arbitrary context attributes in mobile environments. In this
+way, more generic and flexible scenarios that go beyond than just adaptation to the current context but to a future
+context become possible.","PERF,EN",S,U,P,M,x,"GSM/WiFi/Bluetooth state (on/off), discovered MAC addresses and GSM cells, signal strength of WiFi as well
+as GSM cells, extended with our own measurements to get an assumption about the available bandwidth.
+• General information about the mobile device itself: time since the last user interaction, silent mode switch
+status, charging state, battery level, free memory.
+• Date, time, location, calendar events, average and predicted remaining duration of stay at the current location.
+• Reasoned attributes: remaining duration of stay at the same WiFi access point or GSM cell, user is at home/work,
+traveling, moving, resting.
+• Application usage data: The applications the user interacts with and the specific screens of these applications.","HW,USER,INTERNET",x,F,FN,"More formally, GCA represents a data mining process that provides three types of predictions:
+• A binary classifier (e.g. for predicting the future availability of a WiFi),
+• a multi-class classifier (e.g. to predict a bandwidth range) and
+• a regression mode to forecast real-valued attributes like the execution time of an offloaded task.",ML classifiers to predict resource availability and henece whether adaptation is done.,S,AU,D,"APP,BACKEND",S,B,E,"The presented approach of Generic Context Adaption provides a hands-free solution for developers to allow context
+adaption without having to deal with context at all, but leaving the possibility to do so. Apart from basic services like
+link- and connectivity prediction the presented approach is able to predict arbitrary context attributes that are time- and
+location-dependent or correlate with other monitored context features.",M,D,R,S,GENERIC,GENERIC,,YES,
+,226,Context-Aware Adaptation of Mobile Applications Driven by Software Quality and User Satisfaction,"Abstract—Mobile applications experience context changes dur-
+ing their execution, moreover their success depends on the user
+
+satisfaction that is strictly related to application quality. However,
+context changes may affect system quality and therefore user
+satisfaction, hence mobile applications may greatly benefit from
+context awareness that allows the application to adapt to context
+changes. In this paper we propose a context aware approach
+for mobile applications that targets both software quality and
+user satisfaction. In particular, we focus on service availability
+and develop a methodology that, leveraging on a novel reward
+formula that contains the notion of software availability and
+users feedback, determines the best application adaptation to
+be applied in a given context. We show the devised methodology
+on a motivating example.
+","Abusair, Mai, Antinisca Di Marco, and Paola Inverardi. ","2017 IEEE International Conference on Software Quality, Reliability and Security Companion (QRS-C), ",C,2017,Snowballing,"In this paper we propose a context aware approach for
+mobile applications that considers both software quality and
+user satisfaction concerns to drive the adaptation process.","PERF,EN",S,R,P,M,x,"For the software quality concern we focus on user perceived
+
+service availability that brings user behavior, software re-
+sources and hardware resources availability to the scene of
+
+computing the service availability[2]. Service providers are
+
+usually more concerned with user perceived service availabil-
+ity rather than traditional availability, since they aim to meet
+
+end-user expectations for high availability services. On the
+other hand, for user satisfaction concern, we make use of user
+feedbacks in determining user profile and relative satisfaction.
+Users in different profiles can show different interests that
+make considering user satisfaction really essential. These two concerns are quantified into a reward formula that drives the
+application adaptation process.###
+A strategy can be triggered if a context change is detected.
+A context change can be determined using thresholds. When
+context variables values reach such thresholds, an adaptation
+can be triggered","HW,USER,INTERNET",x,F,FE,"our proposed approach leverages on: i)
+Modeling Software Quality, namely user perceived service
+availability, and User Satisfaction under different contextual
+situations, ii) determining the best application adaptation to
+be applied in a given context by adopting a Reward Function
+that combines the notion of software availability and users
+satisfaction.",A reward formula is used to determine the type of adaptation to do,S,AU,C,APP,S,B,E,"In this paper, we have described an approach that employs
+user perceived service availability and user satisfaction in
+achieving context-aware application.###
+We merge the
+concerns of user satisfaction and service availability into a
+reward formula that contributes in driving adaptation.",H,D,SR,R,"As a motivating scenario we consider Off Site Art app
+(OSApp); it is an android mobile application that is connected
+to OffSiteArt — Artbridge for L’Aquila project. The project
+aims to cover the scaffolding of the buildings in reconstruction
+after the 2009 earthquake with pieces of art of emergent artists
+selected under a call for art.",ART,"In future work we will consider more general user behav-
+ior graph and system model for the user perceived service
+
+availability model [2] that adopts more complex models for
+user and system. Furthermore, our adaptation process runs at
+design time, and in the future work we aim to make users
+able to provide feedbacks at runtime, and allow the system to
+analyze their feedbacks and adapt accordingly.",NO,
+,230,Reliable Discovery and Selection of Composite Services in Mobile Environments,"Service providers as we know them nowadays are the
+always-on “static” web service providers, that aim at Five9
+availability (99.999%). Formal, or de-facto, standards,
+
+such as WSDL and BPEL, have become technology en-
+ablers for the easy discovery, use and coordination of such
+
+services. However, we envisage tomorrow’s services to be-
+come increasingly pervasive, being deployed within build-
+ings, transport systems, markets, as well as people portable
+
+devices. Such services will be, by their own nature, sim-
+ple and fine grained; as a consequence, service composi-
+tion will become crucial to deliver rich functionalities that
+
+satisfy end users requests. Composing services in mobile
+
+environments opens up significant challenges. In particu-
+lar, the Five9 availability assumption no longer holds: the
+
+higher the dynamic nature of the environment, the higher
+the chances that services will move out-of-reach before the
+composition completes, causing the service as a whole to
+
+fail. We argue that, in order to enable the successful com-
+pletion of compound services, the reliability of the compo-
+sition must be measured and reasoned about. In order to do
+
+so, we propose to dynamically deploy a prediction model
+to estimate the duration of colocation between component
+
+services. These estimates are fed in input to a service com-
+position semantics reasoner, which then autonomically se-
+lects those providers, within the current environment, that
+
+maximise the chances of successful compound service com-
+pletion. We demonstrate the positive impact that the relia-
+bility reasoning has onto the ratio of successfully completed
+
+compound services in a typical human movement scenario.","Lucia Del Prete,Licia Capra",Enterprise Distributed Object Computing Conference,C,2008,Snowballing,,,,,,,x,,,x,,,,,,,,,,,,,,,,,,,"we intend to run experiments on
+
+a broader set of human movement traces, and to quan-
+tify the gain obtained for each composition semantics our
+
+framework supports###
+we intend to investigate self-healing al-
+gorithms to react to changes in the environment, thus en-
+abling the smooth adaptation of the composite service in
+
+between entry gates of its execution flow,###
+Ultimately, our goal is to
+
+deliver a lightweight framework that will realise these tech-
+niques and that will run seamlessly on mobile devices, thus
+
+becoming an enabling technology for the realisation of per-
+vasive computing.",,The technique looks interesting but the def of mobile app might not be met (it is from 2008 and I can't find any explicit mention of a mobile app or smartphone in our sense of it)
+,232,FUSION: a framework for engineering self-tuning self-adaptive software systems.,"Self-adaptive software systems are capable of adjusting their
+behavior at run-time to achieve certain objectives. Such systems
+typically employ analytical models specified at design-time to
+assess their characteristics at run-time and make the appropriate
+adaptation decisions. However, prior to system’s deployment,
+engineers often cannot foresee the changes in the environment,
+requirements, and system’s operational profile. Therefore, any
+analytical model used in this setting relies on underlying
+assumptions that if not held at run-time make the analysis and
+hence the adaptation decisions inaccurate. We present and
+evaluate FeatUre-oriented Self-adaptatION (FUSION)
+framework, which aims to solve this problem by learning the
+impact of adaptation decisions on the system’s goals. The
+framework (1) allows for automatic online fine-tuning of the
+adaptation logic to unanticipated conditions, (2) reduces the
+upfront effort required for building such systems, and (3) makes
+the run-time analysis of such systems very efficient.","Elkhodary, Ahmed, Naeem Esfahani, and Sam Malek.",Proceedings of the eighteenth ACM SIGSOFT international symposium on Foundations of software engineering.,C,2010,Snowballing,"In this paper, we present an alternative and relatively unexplored
+method of constructing self-adaptive software systems aimed at
+alleviating the three problems mentioned above. Instead of
+manually developing an analytical model that relates the impact of
+
+adaptation decisions on the system’s goals, we present a learning-
+based approach in which such a model is automatically induced
+
+from the monitored data. The approach not only allows for
+automatic online fine-tuning of the adaptation logic to
+unanticipated conditions, but also reduces the upfront effort
+required for building such systems.",?,D,U,"T,P",M,x,"The
+underlying principle guiding the adaptation strategy in FUSION is
+simple: if the system works (i.e., satisfies the user), do not change
+it; when it breaks, find the best fix for only the broken part.",?,x,"R,F","FN,FE","Once an optimal feature selection is determined, the Effect activity
+is initiated to make the system transition from the current feature
+selection to the new one. Effect chooses a path containing several
+adaptation steps (transitions) towards the new feature selection.",A feature selection and optimization algorithm is chosen to guide the adaptation,S,AU,C,?,"S,M",B,E,"FUSION uses
+online learning to analyze and self-tune the adaptive behavior of
+the system to unanticipated changes. Learning is enabled by a
+dynamic feature-oriented representation of the system that
+incorporates the engineer’s knowledge of the application and its
+domain. Learning in turn enables FUSION to dynamically tailor
+the optimization problem to the violated goals, and hence achieve
+efficiency of analysis without trading accuracy.","M,S",ND,I,R,GENERIC,GENERIC,"we intend to investigate opportunistic self-
+training as a way to detect emerging behaviors before adaptation
+
+decisions are made. We are exploring a self-training method that
+takes place using a shadow clone of the running system during
+periods of low utilization. In addition, we intend to empirically
+compare FUSION against other self-adaptation frameworks.",YES,
+,238,"Context-oriented Programming for Mobile Devices:
+
+JCop on Android","The behavior of mobile applications is particularly affected
+by their execution context, such as location and state a the
+mobile device. Among other approaches, context-oriented
+
+programming can help to achieve context-dependent behav-
+ior without sacrificing modularity or adhering to a certain
+
+framework or library by enabling fine-grained adaptation of
+default behavior per control-flow.
+
+However, context information relevant for mobile applica-
+tions is mostly defined by external events and sensor data
+
+rather than by code and control flow. To accommodate this,
+the JCop language provides a more declarative approach by
+pointcut-like adaptation rules.
+
+In this paper, we explain how we applied JCop to the de-
+velopment of Android applications for which we extended
+
+the language semantics for static contexts and modified the
+
+compiler. Additionally, we outline the successful implemen-
+tation of a simple, proof-of-concept mobile application using
+
+our approach and report on promising early evaluation re-
+sults.","Schuster, Christopher, Malte Appeltauer, and Robert Hirschfeld",Proceedings of the 3rd International Workshop on Context-Oriented Programming.,C,2011,Snowballing,"we present in this pa-
+per a more declarative approach at programming language
+
+level that uses context-oriented programming (COP) and
+
+pointcut-based activation of adaptations which is less invad-
+ing and more modularized than frameworks and libraries.",?,S,C,"T,P",M,x,"Besides location and Internet availability, there are other
+factors that a mobile application programmer has to take
+into account in order to adapt the application’s behavior,
+such as battery status, current time, uplink and downlink
+bandwidth, mobility, sound volume, screen brightness, the
+user’s language, preferences and his or her intent.","HW,APP,INTERNET,USER",x,F,FE,NI,NI,NI,NI,NI,NI,NI,NI,E,NI,NI,NI,NI,NI,"Suppose a mobile device user is
+
+interested in science and wants an application that automat-
+ically downloads and displays the current Astronomy Pic-
+ture of the Day (APOD) as published by NASA alongside
+
+a short descriptive text. This application was implemented
+for the Android platform as a simple graphical user interface
+that asynchronously downloads the current APOD from the
+
+Web.",SCIENCE,"A more
+thorough benchmark has to be used in order to evaluate the
+
+performance in more realistic scenarios with a larger code-
+base and more context-dependent behavioral adaptations,
+
+but that is beyond the scope of this paper.
+Furthermore, the claims of increased modularity by COP
+in comparison with framework/library approaches are not
+backed by measurable numbers.###
+Other
+
+parameters like sensor data and especially the GPS location
+as part of the context are an important research topic with
+
+many opportunities for applying COP in a declarative man-
+ner.",NO,
+,244,"CAMF – CONTEXT-AWARE MACHINE LEARNING FRAMEWORK
+FOR ANDROID","Context-aware computing is a promising approach for
+utilizing the characteristics of mobile computing:
+communication, mobility and portability. By
+combining machine learning and context-aware
+computing, we can provide proactive services based
+on the users’ usage patterns of the mobile device
+combined with the environmental context of the user.
+Android has become a popular mobile platform,
+which have addressed context-awareness from day
+one through hardware and software support for sensor
+and context management. In this paper, we have
+
+evaluated the Android platform support for context-
+awareness and identified some shortcomings. Further,
+
+we have designed a Context-Aware Machine learning
+Framework (CAMF) for the Android platform that
+addresses these shortcomings as well as incorporating
+machine learning. We also demonstrate the usefulness
+of the framework through the implementation of an
+application that monitors the applications a user is
+running on an Android device along with the
+environmental context the applications are running in.
+This information can be used to proactively launch
+Android applications when the context is appropriate.
+Finally, the paper evaluates the CAMF framework
+and our context-aware application AppL.","Wang, Alf Inge, and Qadeer Khan Ahmad",Proceedings of the International Conference on Software Engineering and Applications,C,2010,Snowballing,"In this paper, we have evaluated the Android
+platform support for context-awareness and identified
+some shortcomings. Further, we have designed a
+Context-Aware Machine learning Framework
+(CAMF) for the Android platform that addresses
+these shortcomings as well as incorporating machine
+learning.",,,,,,x,"We also demonstrate the usefulness of the
+framework through the implementation of the
+Application Learner (AppL) application that monitors
+what applications a user is running along with the
+
+environmental context of the applications. This
+information can be used to proactively launch
+Android applications when the context is appropriate.",,x,,,"For
+internal context sources, an adaption controller
+component in the adaption layer can automatically
+disable or enable context sources as the accuracy
+drops or increases. For external context sources, this
+is much harder – but this can be implemented through
+the available PAN and WAN technologies provided
+on the Android device.",,,,,,,,,,,,,,"To test the usefulness and the performance of the
+CAMF framework, we implemented an application
+we named Application Learner (AppL). The main
+tasks of AppL is to learn when users start other
+applications by collecting context data and creating a
+classifier, and to use the learned classifier to start
+applications in the right context.",GENERIC,,YES,Whilst reading the paper I found that the adatpion layer is not yet implemented. That plus the nature of the framework make it possibly not fitting of out self-adaptation definition
+,252,"Clariisa, a context-aware framework based on geolocation for a health care governance system","Context-awareness has been successfully included
+in the mobile device applications due mainly to the presence of
+numerous sensors and the access to several communication
+networks. Therefore, this paper presents a context-aware
+framework based on geolocation for a health care governance
+system. While enabling remote health diagnosis of a patient using
+his/her own mobile device, the proposed system enriches the
+patient’s health data with geolocation before sending it to the
+
+Lariisa framework, an intelligent platform to support decision-
+making in public health governance. In order to collect
+
+information about a patient’s health status, the proposed
+application uses mobile devices equipped with medical sensors.
+While remotely registering a patient’s health diagnosis using a
+mobile device, the system allows the creation of an enriched
+description of the user context (e.g. weather, location, and date).
+The main contributions related to our framework include patient
+health diagnosis provided remotely, support for decision-making
+health systems, and context information for context-aware health
+systems.","Gardini, Leonardo M., Reinaldo Braga, Jose Bringel, Carina Oliveira, Rossana Andrade, Hervé Martin, Luiz OM Andrade, and Mauro Oliveira","2013 IEEE 15th International Conference on e-Health Networking, Applications & Services (Healthcom)",C,2013,Snowballing,,,,,,,x,,,x,,,,,,,,,,,,,,,,,e-Health,HEALTH,"As future work, we will focus on improving usability of
+the developed application. Besides that, we plan to study the
+content combination of different users in order to create
+reference among their trajectories, personal data and
+contextual information [24]. Finally, we have the intention to
+integrate the proposed system and the personal tracking
+scenario for health agents",,The framework whilst interesting is not self-adaptive
+,255,"Context-Aware Mobile Power Management Using
+Fuzzy Inference as a Service","As smartphones become ubiquitous, their energy consumption
+remains one of the most important issues. Mobile devices operate in a
+dynamically changing context, and their embedded sensors can be used to
+extract the relevant context needed for resource optimization. In this paper, we
+
+present a context-aware power management system implemented as a widely-
+applicable middleware application. Fuzzy inference is used to represent a high-
+level description of context, which is provided as a service. We test our
+
+approach using actual periodic and streaming applications on a mobile phone.
+Our results show energy reduction of 13-50% for periodic applications, and 18-
+36% for streaming applications.","Moghimi, Mohammad, Jagannathan Venkatesh, Piero Zappi, and Tajana Rosing.","International Conference on Mobile Computing, Applications, and Services",C,2012,Snowballing,"In this paper, we leverage such context managers to provide adaptive power
+management for mobile phones. We design and implement a low complexity,
+extensible framework that uses fuzzy inference of power-related context variables to
+mitigate a significant problem in mobile devices: energy consumption.",EN,S,R,P,S,x,"Applications
+expose needed context parameters to the power manager and register rules for
+adaptive behavior.###","HW,INTERNET,USER",x,F,FN,"The first represents applications that
+run in the background, periodically retrieving data from a remote sever (e.g. RSS
+feed, email). We define a cost function that models the trade-off between energy
+consumption of the system and its performance (measured as delay in presenting the
+user desired information) with which we can compare our approach to decision tree
+systems. We also develop and test a representative of streaming applications (e.g.
+audio and video streaming), which require continuous, lossy data retrieval from a
+backend server. We define a threshold for audible bitrates, and measure power
+savings on the device under context-aware conditions in comparison to non-adaptive
+conditions.",Fuzy inference,P,AU,C,APP,S,B,E,"The proposed technique has been compared
+to similar method and showed 10 to 50% percent lower power consumption, as well
+as up to 18% improvement over traditional decision-tree models.",H,D,I,S,"Periodically Downloading Applications###
+Streaming Applications",VIDEO,"Future work
+includes expanding the power manager with additional context variables and
+
+applications, as well as using learning techniques to dynamically determine higher-
+level context, as opposed to fixing them with static values.",YES,
+,272,Adaptive computation offloading from mobile devices into the cloud,"The inherently limited processing power and battery
+lifetime of mobile phones hinder the possible execution of
+computationally intensive applications like content-based video
+analysis or 3D modeling. Offloading of computationally intensive
+application parts from the mobile platform into a remote cloud
+infrastructure or nearby idle computers addresses this problem.
+This paper presents our Mobile Augmentation Cloud Services
+(MACS) middleware which enables adaptive extension of Android
+
+application execution from a mobile client into the cloud. Applica-
+tions are developed by using the standard Android development
+
+pattern. The middleware does the heavy lifting of adaptive
+application partitioning, resource monitoring and computation
+offloading. These elastic mobile applications can run as usual
+
+mobile application, but they can also reach transparently re-
+mote computing resources. Two prototype applications using the
+
+MACS middleware demonstrate the benefits of the approach. The
+evaluation shows that applications, which involve complicated
+algorithms and large computations, can benefit from offloading
+with around 95% energy savings and significant performance
+gains compared to local execution only.","Kovachev, Dejan, Tian Yu, and Ralf Klamma",2012 IEEE 10th International Symposium on Parallel and Distributed Processing with Applications (ISPA) ,C,2012,Snowballing,"We propose Mobile Augmentation Cloud Services (MACS), a
+services-based mobile cloud computing middleware. Android
+applications that use the MACS middleware benefit from
+
+seamless offloading of computation-intensive parts of the ap-
+plication into nearby or remote clouds.###
+The goal of our MACS middleware is to enable the execu-
+tion of elastic mobile applications.","EN,PERF",S,C,P,M,x,"MACS middleware monitors the resources on the mobile
+execution environment and available clouds. It then forms
+an optimization problem whose solution is used to decide
+whether the service which contains the called function should
+be offloaded or not.","HW,INTERNET",x,F,FN,"When the service is determined to be
+offloaded to the remote cloud, our middleware tries first to execute the service remotely. If there is no such service on
+the remote clouds, our framework transmits the service code
+(jar file) to the cloud, and the corresponding results after the
+service execution are returned to the mobile device. The cloud
+caches the jar files for subsequent execution.",Offloading decision is done with the use of a cost function,S,AU,D,"BACKEND,APP",S,B,E,"The results show that the local execution time can be
+
+reduced a lot through offloading,###
+Our framework supports offloading of multiple Android
+services. If there are multiple services in one application and
+all of those services can be offloaded to the remote clouds,
+our resource monitor natively supports this situation and can
+make the corresponding allocation determination, so that some
+of the services should be offloaded and the rest of the services
+should be run locally.",H,D,R,R,"The first application implements the well-known
+N-Queens problem. It is chosen because the performance
+bottleneck represents a pure computation problem. This use
+case can easily show the overhead introduced by MACS
+middleware. The second application involves face detection
+and recognition in video files. This use case involves lots of
+computation, but also requires much more memory resources
+to process and obtain results.",SCIENCE,"The next steps are to enable parallelization of the offloaded
+services. Additionally, we can extend the current middleware
+so that it supports automatic partitioning arbitrary mobile
+
+applications. A great challenge is how to estimate the char-
+acteristics of an application depending on different input
+
+parameters, which is precisely the relationship between the
+input of the invoked method and the execution time. We could
+characterize the relationship between execution time and input
+parameters by running the target application several times and
+adapt the offloading algorithm.",NO,
+,274,"A context‐aware and self‐adaptive offloading decision support model
+for mobile cloud computing system","Mobile cloud computing is one of the main ways to augment the resource-constrained mobile devices to run rich mobile
+applications through the offloading technique, which leverages resources and services from remote server in the cloud.
+
+However, an efficient and intelligent use of cloud resources is required due to changing environment conditions and appli-
+cation variability usage. In order to help address this issue we present CoSMOS—Context-Sensitive Model for Offloading
+
+System—a context-aware and self-adaptive offloading decision support model for mobile cloud computing systems, based
+on self-aware and self-expressive systems. It employs decision-taking estimation based on application’s time execution and
+energy consumption to decide efficiently when and which application components should be offloaded in order to improve
+system’s execution. Our experiments show that the model is capable of inferring appropriate decisions with acceptable
+performance in a range of environment conditions.","Nakahara, Flávio Akira, and Delano Medeiros Beder.",Journal of Ambient Intelligence and Humanized Computing,J,2018,Snowballing,"a
+
+context-aware and self-adaptive offloading decision model
+for mobile cloud computing, which employs self-adaptive
+system architecture to reinforce the model’s self-adaptive
+and context-aware capabilities on mobile cloud computing
+system in order to improve cloud support performance.","EN,PERF",S,C,P,M,x,"the context-awareness capa-
+bility is important in order to better adapt cloud support
+
+performance according to harsh environment conditions,
+as the network infrastructure and resource’s instability can
+degrade the support usage instead of improving.###
+As for the optimization parameters, we employ only two:
+
+(1) Mobile application’s time execution; (2) Energy con-
+sumption during application execution at mobile device.","APP,HW",x,F,FN,"CosMOS utilizes four stages to elab-
+orate its offloading decision:
+
+1. Data input stage Incorporates time awareness level
+capabilities. Responsible for validating if each method
+call parameters was executed before;
+2. First validation stage Incorporates stimulus awareness
+level capabilities. Uses linear regression to infer each
+method behavior for local and remote execution at each
+optimization parameter;
+
+3. Second validation stage Incorporates interaction aware-
+ness level capabilities. Uses specific formulas to infer
+
+each method call for both local and remote execution at
+each optimization parameter;
+4. Offloading decision and conflict solution Incorporates
+
+goal awareness and meta self-awareness level capa-
+bilities. Responsible for elaborating the final offloading
+
+decision through heuristics based on previous decision
+inference from first and second validation stage.",each parameter used for the decision is estimated and in some case linear regression is used for it,P.S,AU,D,"BACKEND,APP",S,B,E,"Our experiments showed not only execution perfor-
+mance improvement through computation offloading, but
+
+the execution was adapted to optimal performance accord-
+ing to each method behavior in all environment scenarios.",H,D,I,R,"To evaluate CoSMOS, two mobile applications were chosen
+to conduct our experiments:
+– An instance of the N-Queen problem, focused on CPU
+processing over a relatively small dataset;
+– BenchImage (Costa et al. 2015), an image-processing
+application focused on CPU processing over a data set
+of significant size.","SCIENCE,IMAGE","As the computation offloading technique can help improve
+application execution performance, sometimes it can also
+degrades its performance due to unstable environment
+and varying application usage.###
+Another research direction is to improve the
+
+offloading decision and conflict solution by means of evo-
+lutionary algorithm (Deb 2011), as currently the offload-
+ing decision stage employs specific heuristics to handle
+
+decision conflicts.",NO,
+,276,"Proactive Self-Adaptation for Improving
+the Reliability of Mission-Critical, Embedded,
+
+and Mobile Software","Embedded and mobile software systems are marked with a high degree of unpredictability and dynamism in the execution
+context. At the same time, such systems are often mission-critical, meaning that they need to satisfy strict reliability requirements. Most
+current software reliability analysis approaches are not suitable for these types of software systems, as they do not take the changes in
+the execution context of the system into account. We propose an approach geared to such systems which continuously furnishes
+refined reliability predictions at runtime by incorporating various sources of information, including the execution context of the system.
+The reliability predictions are leveraged to proactively place the software in the (near-)optimal configuration with respect to changing
+conditions. Our approach considers two representative architectural reconfiguration decisions that impact the system’s reliability:
+reallocation of components to processes and changing the number of component replicas. We have realized the approach as part of a
+framework intended for mission-critical settings, called REsilient SItuated SofTware system (RESIST), and evaluated it using a mobile
+emergency response system.","Cooray, Deshan, Ehsan Kouroshfar, Sam Malek, and Roshanak Roshandel",IEEE Transactions on Software Engineering,J,2013,Snowballing,"In this paper, we describe and evaluate REsilient SItuated
+SofTware system (RESIST), a framework intended to improve
+the reliability of embedded and mobile software systems.###
+RESIST’s goal is to maintain a configuration for a software
+
+system that satisfies a user specified reliability require-
+ment (e.g., system reliability should be greater than
+
+99 percent), while minimizing its resource usage. To that
+end, and as shown in Fig. 3, RESIST assumes two inputs
+from the user: 1) a reliability constraint representing the
+system-level reliability requirement, and 2) one or more
+utility functions indicating the acceptable tradeoffs with
+respect to resource usage.","REL,PERF",S,R,P,M,x,"RESIST continuously analyses and dynamically adapts the
+software to deal with changes in the execution context that
+could degrade its reliability.###
+Among them three main categories of context can be
+identified [1], [46]:
+
+. Computing Environment, such as the available re-
+sources, including CPU, network bandwidth, and
+
+battery power.
+. User Environment, such as the user’s location, social
+situation, and ongoing activities.
+. Physical Environment, such as proximity to near-by
+objects, the amount of light, and temperature.","HW,USER",x,NI,NI,"The Change Management layer is responsible for ensuring
+orderly execution of changes in the system. To that end,
+this layer is responsible for maintaining an updated
+architectural representation of the running software
+system.###
+Change Management layer of
+Fig. 3, architectural models form the centerpiece of our
+approach, and used at runtime to assess a variety of
+configuration choices and to serve as predictors for the
+future reliability of the system.###
+In addition, the Adaptation Coordinator of Change Manage-
+ment layer is responsible for determining the order in which
+
+changes should be effected in the software to avoid failures.
+For instance, the Change Management layer may devise a
+sequence of steps to ensure a software component is in the
+quiescence state [22] before it is replaced.",Uses a middleware to be able to make the changes to the software architecture ,S,AU,C,"APP,HW","S,M",B,E,"RESIST, a framework intended to satisfy the
+reliability requirements, while taking into consideration
+other quality attributes (e.g., efficiency) through proactive
+reconfiguration of the software.",M,ND,R,S,"Emergency response is a domain that entails a high degree
+of mission criticality.",EMERGENCY,"In our future work, we intend to evaluate the scalability
+of RESIST in large-scale software systems comprised of
+hundreds of components and hardware hosts. We also
+intend to increase the types of reconfiguration decisions and
+dependability tradeoffs that RESIST supports.###
+Another issue with state-based approaches to reliability
+estimation is the state-space explosion problem during the
+analysis. This, however, is significantly less of a problem in
+an architecture-centric approach, particularly because of the
+hierarchical and compositional nature of architectural
+models.###
+RESIST assumes changes in the system
+(e.g., context) are not so frequent that they would trigger
+constant adaptation of the system. One approach to
+address this limitation would be to make the adaptation
+decisions based on predictions over a period of time in
+future, such that a tradeoff analysis as to the benefits of
+adaptation versus its overhead could be made.",YES,
